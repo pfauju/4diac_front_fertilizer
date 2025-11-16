@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JetView-Project ProductVersion="5.7.1.6514" PlatformID="15" Flags="0" StartPage=".\DataMask_M2.jvi" StartPageExtended="" NeedsWorkingSet="1" NeedsStartPage="1">
+  <Item NodeName="Languages" guid="e96a767c-e7a0-48f4-ad44-51ad78c551a2" />
+  <Item NodeName="Resources" guid="553b1e85-0d32-4a9a-b99c-e37fa7b070d8">
+    <Item Path=".\Devices_DefaultPool.jrc" guid="c10d599f-5782-4df2-847d-bc459de5bdde" Flags="0" ResourceNamespace="Devices_DefaultPool" ResourceFileType="Hardware Resource" />
+  </Item>
+  <Item NodeName="Visualisation" guid="3b581944-f184-487f-be3d-0ecd83c37e0c">
+    <Item Path=".\WorkingSet_0.jvi" guid="59a89be8-711b-413f-9e7f-6603bb31543f" Flags="0" />
+    <Item Path=".\DataMask_M3.jvi" guid="a630f098-4c1a-40bb-8df4-64b32fce9617" Flags="0" />
+    <Item Path=".\SoftKeyMask_S1.jvi" guid="a131cbe4-bf57-44bf-b389-b3a331ce3e91" Flags="0" />
+    <Item Path=".\DataMask_M4.jvi" guid="097f2c53-4e9f-49bb-8ec6-bd0016993531" Flags="0" />
+    <Item Path=".\DataMask_M1.jvi" guid="8bcb3ea0-d599-4155-bd1a-7bafc8b9c9ef" Flags="0" />
+    <Item Path=".\DataMask_M2.jvi" guid="4ffcd2bd-2b43-4154-badd-ebd6b4514f2c" Flags="0" />
+    <Item Path=".\SoftKeyMask_S2.jvi" guid="5016dbb7-c26c-44b4-a1c4-862f0ca81ab0" Flags="0" />
+    <Item Path=".\SoftKeyMask_S3.jvi" guid="a17b52d8-208c-47d4-bee6-0a6c367792d7" Flags="0" />
+    <Item Path=".\SoftKeyMask_S4.jvi" guid="efc6699f-c70e-4c05-843e-262212e1da0c" Flags="0" />
+  </Item>
+</JetView-Project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JetViewSoft-DefaultObjects Version="3.0" ProductVersion="5.7.1.6514" RelatedObjectPool=".\DefaultPool.jop">
+	<Objects>
+		<Object Class="CInputNumber">
+			<Objects/>
+		</Object>
+		<Object Class="COutputNumber">
+			<Objects>
+				<Object Class="CFontStyle" JVS-ID="23000" ObjectName="FontAttributes_OutputNumber"/>
+			</Objects>
+		</Object>
+		<Object Class="COutputText">
+			<Objects>
+				<Object Class="CFontStyle" JVS-ID="23010" ObjectName="FontAttributes_string_start_stop_button"/>
+			</Objects>
+		</Object>
+		<Object Class="GraphicObject">
+			<Objects>
+				<Object Class="CLineStyle" JVS-ID="24000" ObjectName="LineAttributes_24000"/>
+			</Objects>
+		</Object>
+	</Objects>
+</JetViewSoft-DefaultObjects>
