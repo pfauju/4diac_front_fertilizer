@@ -7,7 +7,7 @@
 	<CompilerInfo packageName="Training">
 		<Import declaration="logiBUS::stations::Computers::C_00"/>
 	</CompilerInfo>
-	<Application Name="App" Comment="Default App for Everything">
+	<Application Name="App" Comment="Main App for a front fertilizer">
 		<SubAppNetwork>
 			<FB Name="Softkey_IX_main" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="400">
 				<Parameter Name="QI" Value="TRUE"/>
