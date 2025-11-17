@@ -9,6 +9,66 @@
 	</CompilerInfo>
 	<Application Name="App" Comment="Main App for a front fertilizer">
 		<SubAppNetwork>
+			<FB Name="Softkey_IX_main" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="400">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_main"/>
+			</FB>
+			<FB Name="Softkey_IX_calibration_run" Type="isobus::UT::io::Softkey::Softkey_IX" x="500" y="1300">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_calibration_run"/>
+			</FB>
+			<FB Name="Softkey_IX_settings" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="2200">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_settings"/>
+			</FB>
+			<FB Name="Softkey_IX_debug" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="3100">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_debug"/>
+			</FB>
+			<FB Name="E_R_TRIG_SoftKey_main" Type="iec61499::events::E_R_TRIG" x="1900" y="600">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="E_R_TRIG_SoftKey_calibration_run" Type="iec61499::events::E_R_TRIG" x="1700" y="1500">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="E_R_TRIG_SoftKey_settings" Type="iec61499::events::E_R_TRIG" x="1900" y="2400">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="E_R_TRIG_SoftKey_debug" Type="iec61499::events::E_R_TRIG" x="2000" y="3300">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="Q_ActiveMask_M1" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="400">
+				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+				<Parameter Name="u16NewMaskId" Value="DataMask_M1"/>
+			</FB>
+			<FB Name="Q_ActiveMask_M2" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="1300">
+				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+				<Parameter Name="u16NewMaskId" Value="DataMask_M2"/>
+			</FB>
+			<FB Name="Q_ActiveMask_M3" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="2200">
+				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+				<Parameter Name="u16NewMaskId" Value="DataMask_M3"/>
+			</FB>
+			<FB Name="Q_ActiveMask_M4" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="3100">
+				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+				<Parameter Name="u16NewMaskId" Value="DataMask_M4"/>
+			</FB>
+			<FB Name="E_RESTART" Type="iec61499::events::E_RESTART" x="-1800" y="200">
+			</FB>
+			<EventConnections>
+				<Connection Source="Softkey_IX_main.IND" Destination="E_R_TRIG_SoftKey_main.EI"/>
+				<Connection Source="E_R_TRIG_SoftKey_main.EO" Destination="Q_ActiveMask_M1.REQ" dx1="281.25"/>
+				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_main.INIT" dx1="362.5"/>
+				<Connection Source="Softkey_IX_calibration_run.IND" Destination="E_R_TRIG_SoftKey_calibration_run.EI"/>
+				<Connection Source="E_R_TRIG_SoftKey_calibration_run.EO" Destination="Q_ActiveMask_M2.REQ" dx1="281.25"/>
+				<Connection Source="Softkey_IX_settings.IND" Destination="E_R_TRIG_SoftKey_settings.EI"/>
+				<Connection Source="Softkey_IX_debug.IND" Destination="E_R_TRIG_SoftKey_debug.EI"/>
+				<Connection Source="E_R_TRIG_SoftKey_settings.EO" Destination="Q_ActiveMask_M3.REQ" dx1="281.25"/>
+				<Connection Source="E_R_TRIG_SoftKey_debug.EO" Destination="Q_ActiveMask_M4.REQ" dx1="312.5"/>
+				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_calibration_run.INIT" dx1="362.5"/>
+				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_settings.INIT" dx1="362.5"/>
+				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_debug.INIT" dx1="362.5"/>
+			</EventConnections>
 		</SubAppNetwork>
 	</Application>
 	<Device Name="FORTE_PC" Type="" x="3126.67" y="1113.33">
