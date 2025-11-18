@@ -55,6 +55,38 @@
 			</FB>
 			<FB Name="E_RESTART" Type="iec61499::events::E_RESTART" x="-1800" y="200">
 			</FB>
+			<FB Name="SoftKey_IE_start" Type="isobus::UT::io::Softkey::Softkey_IE" x="700" y="4100">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_start"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="SoftKey_IE_stop" Type="isobus::UT::io::Softkey::Softkey_IE" x="700" y="5100">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_stop"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="E_SR_start_stop" Type="iec61499::events::E_SR" x="2100" y="4300">
+			</FB>
+			<FB Name="logiBUS_QD_PWM" Type="logiBUS::io::DQ::logiBUS_QD_PWM" x="6000" y="6500">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="OUT" Value="16#00000000"/>
+				<Parameter Name="Output" Value="Output_Q1"/>
+			</FB>
+			<FB Name="F_USINT_TO_DWORD" Type="iec61131::conversion::F_USINT_TO_DWORD" x="4300" y="6600">
+			</FB>
+			<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="3200" y="6600">
+				<Parameter Name="IN2" Value="16843009"/>
+			</FB>
+			<FB Name="F_USINT_TO_UDINT" Type="iec61131::conversion::F_USINT_TO_UDINT" x="1700" y="6600">
+			</FB>
+			<FB Name="F_MUX_4" Type="iec61131::selection::F_MUX_4" x="800" y="6600">
+				<Parameter Name="IN1" Value="0"/>
+				<Parameter Name="IN2" Value="255" Comment="Automatic"/>
+				<Parameter Name="IN3" Value="0"/>
+				<Parameter Name="IN4" Value="0"/>
+			</FB>
+			<FB Name="F_BOOL_TO_USINT" Type="iec61131::conversion::F_BOOL_TO_USINT" x="3300" y="4300">
+			</FB>
 			<EventConnections>
 				<Connection Source="Softkey_IX_main.IND" Destination="E_R_TRIG_SoftKey_main.EI"/>
 				<Connection Source="E_R_TRIG_SoftKey_main.EO" Destination="Q_ActiveMask_M1.REQ" dx1="281.25"/>
@@ -68,7 +100,23 @@
 				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_calibration_run.INIT" dx1="362.5"/>
 				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_settings.INIT" dx1="362.5"/>
 				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_debug.INIT" dx1="362.5"/>
+				<Connection Source="SoftKey_IE_start.IND" Destination="E_SR_start_stop.S"/>
+				<Connection Source="SoftKey_IE_stop.IND" Destination="E_SR_start_stop.R" dx1="473.33"/>
+				<Connection Source="F_USINT_TO_DWORD.CNF" Destination="logiBUS_QD_PWM.REQ"/>
+				<Connection Source="F_MUL.CNF" Destination="F_USINT_TO_DWORD.REQ"/>
+				<Connection Source="F_USINT_TO_UDINT.CNF" Destination="F_MUL.REQ"/>
+				<Connection Source="F_MUX_4.CNF" Destination="F_USINT_TO_UDINT.REQ"/>
+				<Connection Source="E_SR_start_stop.EO" Destination="F_BOOL_TO_USINT.REQ"/>
+				<Connection Source="F_BOOL_TO_USINT.CNF" Destination="F_MUX_4.REQ" dx1="240" dx2="80" dy="1826.67"/>
 			</EventConnections>
+			<DataConnections>
+				<Connection Source="F_USINT_TO_DWORD.OUT" Destination="logiBUS_QD_PWM.OUT" dx1="333.33"/>
+				<Connection Source="F_MUL.OUT" Destination="F_USINT_TO_DWORD.IN"/>
+				<Connection Source="F_USINT_TO_UDINT.OUT" Destination="F_MUL.IN1"/>
+				<Connection Source="F_MUX_4.OUT" Destination="F_USINT_TO_UDINT.IN"/>
+				<Connection Source="E_SR_start_stop.Q" Destination="F_BOOL_TO_USINT.IN" dx1="306.67"/>
+				<Connection Source="F_BOOL_TO_USINT.OUT" Destination="F_MUX_4.K" dx1="80" dx2="193.33" dy="1520"/>
+			</DataConnections>
 		</SubAppNetwork>
 	</Application>
 	<Device Name="FORTE_PC" Type="" x="3126.67" y="1113.33">
