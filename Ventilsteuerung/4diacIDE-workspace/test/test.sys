@@ -84,6 +84,107 @@
 				<Parameter Name="QI" Value="TRUE"/>
 				<Parameter Name="Output" Value="(Pin := 255)"/>
 			</FB>
+			<FB Name="SoftKey_IE_100_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="8206.67">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_100_percent"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="E_T_FF_main_1" Type="iec61499::events::E_T_FF" x="3700" y="8406.67">
+			</FB>
+			<FB Name="SoftKey_IE_plus_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="9306.67">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_plus_percent"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="E_T_FF_main_2" Type="iec61499::events::E_T_FF" x="3700" y="9506.67">
+			</FB>
+			<FB Name="SoftKey_IE_minus_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="11306.67">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_minus_percent"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="E_T_FF_main_3" Type="iec61499::events::E_T_FF" x="3700" y="11506.67">
+			</FB>
+			<FB Name="F_ADD" Type="iec61131::arithmetic::F_ADD" x="5000" y="9700">
+				<Parameter Name="IN2" Value="1"/>
+			</FB>
+			<FB Name="F_SUB" Type="iec61131::arithmetic::F_SUB" x="5000" y="11700">
+				<Parameter Name="IN2" Value="1"/>
+			</FB>
+			<FB Name="F_LIMIT" Type="iec61131::selection::F_LIMIT" x="6100" y="11600">
+				<Parameter Name="MN" Value="10"/>
+				<Parameter Name="MX" Value="200"/>
+			</FB>
+			<FB Name="F_LIMIT_1" Type="iec61131::selection::F_LIMIT" x="6100" y="9600">
+				<Parameter Name="MN" Value="10"/>
+				<Parameter Name="MX" Value="200"/>
+			</FB>
+			<FB Name="I_GBSD" Type="isobus::tecu::I_GBSD" x="11000" y="5000">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="Q_NumericValue_GBSD" Type="isobus::UT::Q::Q_NumericValue" x="15526.67" y="5000">
+				<Parameter Name="u16ObjId" Value="NumberVariable_Ground_based_machine_speed"/>
+			</FB>
+			<FB Name="I_VDS" Type="isobus::tecu::I_VDS" x="11006.67" y="6446.67">
+				<Parameter Name="QI" Value="TRUE"/>
+			</FB>
+			<FB Name="Q_NumericValue_WBSD" Type="isobus::UT::Q::Q_NumericValue" x="15540" y="6446.67">
+				<Parameter Name="u16ObjId" Value="NumberVariable_Wheel_based_machine_speed"/>
+			</FB>
+			<FB Name="Q_NumericValue" Type="isobus::UT::Q::Q_NumericValue" x="8300" y="8300">
+				<Parameter Name="u16ObjId" Value="NumberVariable_application_rate"/>
+				<Parameter Name="u32NewValue" Value="100"/>
+			</FB>
+			<FB Name="Q_NumericValue_1" Type="isobus::UT::Q::Q_NumericValue" x="8300" y="9600">
+				<Parameter Name="u16ObjId" Value="NumberVariable_application_rate"/>
+			</FB>
+			<FB Name="Q_NumericValue_2" Type="isobus::UT::Q::Q_NumericValue" x="8300" y="11600">
+				<Parameter Name="u16ObjId" Value="NumberVariable_application_rate"/>
+			</FB>
+			<FB Name="Q_NumericValue_4" Type="isobus::UT::Q::Q_NumericValue" x="2100" y="10406.67">
+				<Parameter Name="u16ObjId" Value="NumberVariable_application_rate"/>
+			</FB>
+			<FB Name="Q_NumericValue_5" Type="isobus::UT::Q::Q_NumericValue" x="2100" y="12400">
+				<Parameter Name="u16ObjId" Value="NumberVariable_application_rate"/>
+			</FB>
+			<FB Name="Button_select_wheel_speed" Type="isobus::UT::io::Button::Button_IE" x="10800" y="8300">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="Button_select_wheel_speed"/>
+				<Parameter Name="InputEvent" Value="BT_RELEASED_UNLATCHED"/>
+			</FB>
+			<FB Name="E_T_FF" Type="iec61499::events::E_T_FF" x="12440" y="8500">
+			</FB>
+			<FB Name="Q_StringValue" Type="isobus::UT::Q::Q_StringValue" x="15500" y="8400">
+				<Parameter Name="u16ObjId" Value="OutputString_x_wheel_speed"/>
+				<Parameter Name="pau8String" Value="'X'"/>
+			</FB>
+			<FB Name="Q_NumericValue_3" Type="isobus::UT::Q::Q_NumericValue" x="15500" y="10000">
+				<Parameter Name="u16ObjId" Value="NumberVariable_bool_selected_speed"/>
+				<Parameter Name="u32NewValue" Value="0"/>
+			</FB>
+			<FB Name="Q_StringValue_1" Type="isobus::UT::Q::Q_StringValue" x="15500" y="9200">
+				<Parameter Name="u16ObjId" Value="OutputString_x_radar_speed"/>
+				<Parameter Name="pau8String" Value="''"/>
+			</FB>
+			<FB Name="E_T_FF_1" Type="iec61499::events::E_T_FF" x="12440" y="11200">
+			</FB>
+			<FB Name="Q_StringValue_2" Type="isobus::UT::Q::Q_StringValue" x="15500" y="11900">
+				<Parameter Name="u16ObjId" Value="OutputString_x_radar_speed"/>
+				<Parameter Name="pau8String" Value="'X'"/>
+			</FB>
+			<FB Name="Q_StringValue_3" Type="isobus::UT::Q::Q_StringValue" x="15500" y="11100">
+				<Parameter Name="u16ObjId" Value="OutputString_x_wheel_speed"/>
+				<Parameter Name="pau8String" Value="''"/>
+			</FB>
+			<FB Name="Button_select_radar_speed" Type="isobus::UT::io::Button::Button_IE" x="10800" y="11000">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="Button_select_radar_speed"/>
+				<Parameter Name="InputEvent" Value="BT_RELEASED_UNLATCHED"/>
+			</FB>
+			<FB Name="Q_NumericValue_6" Type="isobus::UT::Q::Q_NumericValue" x="15500" y="12700">
+				<Parameter Name="u16ObjId" Value="NumberVariable_bool_selected_speed"/>
+				<Parameter Name="u32NewValue" Value="1"/>
+			</FB>
 			<EventConnections>
 				<Connection Source="SoftKey_IE_main.IND" Destination="E_T_FF_main.CLK" dx1="373.33"/>
 				<Connection Source="E_T_FF_main.EO" Destination="Q_ActiveMask_main.REQ" dx1="513.33"/>
@@ -101,6 +202,28 @@
 				<Connection Source="F_USINT_TO_UDINT.CNF" Destination="F_MUL.REQ"/>
 				<Connection Source="F_MUL.CNF" Destination="F_USINT_TO_DWORD.REQ"/>
 				<Connection Source="F_USINT_TO_DWORD.CNF" Destination="logiBUS_QD_PWM.REQ" dx1="380"/>
+				<Connection Source="SoftKey_IE_100_percent.IND" Destination="E_T_FF_main_1.CLK" dx1="373.33"/>
+				<Connection Source="SoftKey_IE_plus_percent.IND" Destination="E_T_FF_main_2.CLK" dx1="373.33"/>
+				<Connection Source="SoftKey_IE_minus_percent.IND" Destination="E_T_FF_main_3.CLK" dx1="373.33"/>
+				<Connection Source="F_SUB.CNF" Destination="F_LIMIT.REQ" dx1="286.67"/>
+				<Connection Source="F_ADD.CNF" Destination="F_LIMIT_1.REQ" dx1="286.67"/>
+				<Connection Source="I_GBSD.IND" Destination="Q_NumericValue_GBSD.REQ"/>
+				<Connection Source="I_VDS.IND" Destination="Q_NumericValue_WBSD.REQ"/>
+				<Connection Source="E_T_FF_main_1.EO" Destination="Q_NumericValue.REQ"/>
+				<Connection Source="F_LIMIT_1.CNF" Destination="Q_NumericValue_1.REQ" dx1="793.33"/>
+				<Connection Source="F_LIMIT.CNF" Destination="Q_NumericValue_2.REQ" dx1="793.33"/>
+				<Connection Source="E_T_FF_main_2.EO" Destination="Q_NumericValue_4.REQ" dx1="80" dx2="80" dy="693.33"/>
+				<Connection Source="Q_NumericValue_4.CNF" Destination="F_ADD.REQ" dx1="1233.33"/>
+				<Connection Source="E_T_FF_main_3.EO" Destination="Q_NumericValue_5.REQ" dx1="80" dx2="80" dy="693.33"/>
+				<Connection Source="Q_NumericValue_5.CNF" Destination="F_SUB.REQ" dx1="1253.33"/>
+				<Connection Source="Button_select_wheel_speed.IND" Destination="E_T_FF.CLK" dx1="293.33"/>
+				<Connection Source="E_T_FF.EO" Destination="Q_StringValue.REQ" dx1="1240"/>
+				<Connection Source="E_T_FF.EO" Destination="Q_StringValue_1.REQ" dx1="1240"/>
+				<Connection Source="E_T_FF.EO" Destination="Q_NumericValue_3.REQ" dx1="1240"/>
+				<Connection Source="Button_select_radar_speed.IND" Destination="E_T_FF_1.CLK" dx1="293.33"/>
+				<Connection Source="E_T_FF_1.EO" Destination="Q_StringValue_3.REQ" dx1="1240"/>
+				<Connection Source="E_T_FF_1.EO" Destination="Q_NumericValue_6.REQ" dx1="1240"/>
+				<Connection Source="E_T_FF_1.EO" Destination="Q_StringValue_2.REQ" dx1="1240"/>
 			</EventConnections>
 			<DataConnections>
 				<Connection Source="E_SR_start_stop.Q" Destination="F_BOOL_TO_USINT_start_stop.IN" dx1="400"/>
@@ -109,6 +232,14 @@
 				<Connection Source="F_USINT_TO_UDINT.OUT" Destination="F_MUL.IN1"/>
 				<Connection Source="F_MUL.OUT" Destination="F_USINT_TO_DWORD.IN"/>
 				<Connection Source="F_USINT_TO_DWORD.OUT" Destination="logiBUS_QD_PWM.OUT" dx1="380"/>
+				<Connection Source="F_SUB.OUT" Destination="F_LIMIT.IN" dx1="286.67"/>
+				<Connection Source="F_ADD.OUT" Destination="F_LIMIT_1.IN" dx1="286.67"/>
+				<Connection Source="I_GBSD.GROUNDBASEDMACHINESPEED" Destination="Q_NumericValue_GBSD.u32NewValue" dx1="1480"/>
+				<Connection Source="I_VDS.NavigationBasedVehicleSpeed" Destination="Q_NumericValue_WBSD.u32NewValue" dx1="1480"/>
+				<Connection Source="F_LIMIT.OUT" Destination="Q_NumericValue_2.u32NewValue" dx1="80"/>
+				<Connection Source="F_LIMIT_1.OUT" Destination="Q_NumericValue_1.u32NewValue" dx1="80"/>
+				<Connection Source="Q_NumericValue_4.u32OldValue" Destination="F_ADD.IN1" dx1="1386.67"/>
+				<Connection Source="Q_NumericValue_5.u32OldValue" Destination="F_SUB.IN1" dx1="1406.67"/>
 			</DataConnections>
 		</SubAppNetwork>
 	</Application>
