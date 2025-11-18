@@ -3,6 +3,7 @@
 	<Objects>
 		<Object Class="COutputNumber">
 			<Objects>
+				<Object Class="CNumberVariable" JVS-ID="21003" ObjectName="NumberVariable_application_rate"/>
 				<Object Class="CFontStyle" JVS-ID="23000" ObjectName="FontAttributes_OutputNumber"/>
 			</Objects>
 		</Object>
