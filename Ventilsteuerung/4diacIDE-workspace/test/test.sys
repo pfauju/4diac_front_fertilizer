@@ -7,129 +7,122 @@
 	<CompilerInfo packageName="Training">
 		<Import declaration="logiBUS::stations::Computers::C_00"/>
 	</CompilerInfo>
-	<Application Name="App" Comment="Main App for a front fertilizer">
+	<Application Name="App" Comment="Default App for Everything">
 		<SubAppNetwork>
-			<FB Name="Softkey_IX_main" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="400">
+			<FB Name="SoftKey_IE_main" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="300">
 				<Parameter Name="QI" Value="TRUE"/>
 				<Parameter Name="u16ObjId" Value="SoftKey_main"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
 			</FB>
-			<FB Name="Softkey_IX_calibration_run" Type="isobus::UT::io::Softkey::Softkey_IX" x="500" y="1300">
-				<Parameter Name="QI" Value="TRUE"/>
-				<Parameter Name="u16ObjId" Value="SoftKey_calibration_run"/>
+			<FB Name="E_T_FF_main" Type="iec61499::events::E_T_FF" x="3700" y="500">
 			</FB>
-			<FB Name="Softkey_IX_settings" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="2200">
-				<Parameter Name="QI" Value="TRUE"/>
-				<Parameter Name="u16ObjId" Value="SoftKey_settings"/>
-			</FB>
-			<FB Name="Softkey_IX_debug" Type="isobus::UT::io::Softkey::Softkey_IX" x="700" y="3100">
-				<Parameter Name="QI" Value="TRUE"/>
-				<Parameter Name="u16ObjId" Value="SoftKey_debug"/>
-			</FB>
-			<FB Name="E_R_TRIG_SoftKey_main" Type="iec61499::events::E_R_TRIG" x="1900" y="600">
-				<Parameter Name="QI" Value="TRUE"/>
-			</FB>
-			<FB Name="E_R_TRIG_SoftKey_calibration_run" Type="iec61499::events::E_R_TRIG" x="1700" y="1500">
-				<Parameter Name="QI" Value="TRUE"/>
-			</FB>
-			<FB Name="E_R_TRIG_SoftKey_settings" Type="iec61499::events::E_R_TRIG" x="1900" y="2400">
-				<Parameter Name="QI" Value="TRUE"/>
-			</FB>
-			<FB Name="E_R_TRIG_SoftKey_debug" Type="iec61499::events::E_R_TRIG" x="2000" y="3300">
-				<Parameter Name="QI" Value="TRUE"/>
-			</FB>
-			<FB Name="Q_ActiveMask_M1" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="400">
+			<FB Name="Q_ActiveMask_main" Type="isobus::UT::Q::Q_ActiveMask" x="5200" y="400">
 				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
 				<Parameter Name="u16NewMaskId" Value="DataMask_M1"/>
 			</FB>
-			<FB Name="Q_ActiveMask_M2" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="1300">
+			<FB Name="E_T_FF_calibration_run" Type="iec61499::events::E_T_FF" x="3500" y="1600">
+			</FB>
+			<FB Name="Q_ActiveMask_calibration_run" Type="isobus::UT::Q::Q_ActiveMask" x="5200" y="1500">
 				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
 				<Parameter Name="u16NewMaskId" Value="DataMask_M2"/>
 			</FB>
-			<FB Name="Q_ActiveMask_M3" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="2200">
+			<FB Name="SoftKey_IE_calibration_run" Type="isobus::UT::io::Softkey::Softkey_IE" x="1800" y="1400">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_calibration_run"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="SoftKey_IE_settings" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="2500">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_settings"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="E_T_FF_settings" Type="iec61499::events::E_T_FF" x="3700" y="2700">
+			</FB>
+			<FB Name="Q_ActiveMask_settings" Type="isobus::UT::Q::Q_ActiveMask" x="5200" y="2600">
 				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
 				<Parameter Name="u16NewMaskId" Value="DataMask_M3"/>
 			</FB>
-			<FB Name="Q_ActiveMask_M4" Type="isobus::UT::Q::Q_ActiveMask" x="3400" y="3100">
+			<FB Name="SoftKey_IE_debug" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="3600">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="u16ObjId" Value="SoftKey_debug"/>
+				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+			</FB>
+			<FB Name="Q_ActiveMask_debug" Type="isobus::UT::Q::Q_ActiveMask" x="5200" y="3700">
 				<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
 				<Parameter Name="u16NewMaskId" Value="DataMask_M4"/>
 			</FB>
-			<FB Name="E_RESTART" Type="iec61499::events::E_RESTART" x="-1800" y="200">
+			<FB Name="E_T_FF_debug" Type="iec61499::events::E_T_FF" x="3700" y="3800">
 			</FB>
-			<FB Name="SoftKey_IE_start" Type="isobus::UT::io::Softkey::Softkey_IE" x="700" y="4100">
+			<FB Name="SoftKey_IE_start" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="4700">
 				<Parameter Name="QI" Value="TRUE"/>
 				<Parameter Name="u16ObjId" Value="SoftKey_start"/>
 				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
 			</FB>
-			<FB Name="SoftKey_IE_stop" Type="isobus::UT::io::Softkey::Softkey_IE" x="700" y="5100">
+			<FB Name="SoftKey_IE_stop" Type="isobus::UT::io::Softkey::Softkey_IE" x="2000" y="5800">
 				<Parameter Name="QI" Value="TRUE"/>
 				<Parameter Name="u16ObjId" Value="SoftKey_stop"/>
 				<Parameter Name="InputEvent" Value="SK_RELEASED"/>
 			</FB>
-			<FB Name="E_SR_start_stop" Type="iec61499::events::E_SR" x="2100" y="4300">
+			<FB Name="E_SR_start_stop" Type="iec61499::events::E_SR" x="3700" y="4800">
 			</FB>
-			<FB Name="logiBUS_QD_PWM" Type="logiBUS::io::DQ::logiBUS_QD_PWM" x="6000" y="6500">
-				<Parameter Name="QI" Value="TRUE"/>
-				<Parameter Name="OUT" Value="16#00000000"/>
-				<Parameter Name="Output" Value="Output_Q1"/>
+			<FB Name="F_BOOL_TO_USINT_start_stop" Type="iec61131::conversion::F_BOOL_TO_USINT" x="5100" y="4800">
 			</FB>
-			<FB Name="F_USINT_TO_DWORD" Type="iec61131::conversion::F_USINT_TO_DWORD" x="4300" y="6600">
-			</FB>
-			<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="3200" y="6600">
-				<Parameter Name="IN2" Value="16843009"/>
-			</FB>
-			<FB Name="F_USINT_TO_UDINT" Type="iec61131::conversion::F_USINT_TO_UDINT" x="1700" y="6600">
-			</FB>
-			<FB Name="F_MUX_4" Type="iec61131::selection::F_MUX_4" x="800" y="6600">
+			<FB Name="F_MUX_4" Type="iec61131::selection::F_MUX_4" x="2300" y="7200">
 				<Parameter Name="IN1" Value="0"/>
-				<Parameter Name="IN2" Value="255" Comment="Automatic"/>
+				<Parameter Name="IN2" Value="255"/>
 				<Parameter Name="IN3" Value="0"/>
 				<Parameter Name="IN4" Value="0"/>
 			</FB>
-			<FB Name="F_BOOL_TO_USINT" Type="iec61131::conversion::F_BOOL_TO_USINT" x="3300" y="4300">
+			<FB Name="F_USINT_TO_UDINT" Type="iec61131::conversion::F_USINT_TO_UDINT" x="3300" y="7200">
+			</FB>
+			<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="4800" y="7200">
+				<Parameter Name="IN2" Value="16843009"/>
+			</FB>
+			<FB Name="F_USINT_TO_DWORD" Type="iec61131::conversion::F_USINT_TO_DWORD" x="5600" y="7200">
+			</FB>
+			<FB Name="logiBUS_QD_PWM" Type="logiBUS::io::DQ::logiBUS_QD_PWM" x="7400" y="7100">
+				<Parameter Name="QI" Value="TRUE"/>
+				<Parameter Name="Output" Value="(Pin := 255)"/>
 			</FB>
 			<EventConnections>
-				<Connection Source="Softkey_IX_main.IND" Destination="E_R_TRIG_SoftKey_main.EI"/>
-				<Connection Source="E_R_TRIG_SoftKey_main.EO" Destination="Q_ActiveMask_M1.REQ" dx1="281.25"/>
-				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_main.INIT" dx1="362.5"/>
-				<Connection Source="Softkey_IX_calibration_run.IND" Destination="E_R_TRIG_SoftKey_calibration_run.EI"/>
-				<Connection Source="E_R_TRIG_SoftKey_calibration_run.EO" Destination="Q_ActiveMask_M2.REQ" dx1="281.25"/>
-				<Connection Source="Softkey_IX_settings.IND" Destination="E_R_TRIG_SoftKey_settings.EI"/>
-				<Connection Source="Softkey_IX_debug.IND" Destination="E_R_TRIG_SoftKey_debug.EI"/>
-				<Connection Source="E_R_TRIG_SoftKey_settings.EO" Destination="Q_ActiveMask_M3.REQ" dx1="281.25"/>
-				<Connection Source="E_R_TRIG_SoftKey_debug.EO" Destination="Q_ActiveMask_M4.REQ" dx1="312.5"/>
-				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_calibration_run.INIT" dx1="362.5"/>
-				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_settings.INIT" dx1="362.5"/>
-				<Connection Source="E_RESTART.COLD" Destination="Softkey_IX_debug.INIT" dx1="362.5"/>
-				<Connection Source="SoftKey_IE_start.IND" Destination="E_SR_start_stop.S"/>
-				<Connection Source="SoftKey_IE_stop.IND" Destination="E_SR_start_stop.R" dx1="473.33"/>
-				<Connection Source="F_USINT_TO_DWORD.CNF" Destination="logiBUS_QD_PWM.REQ"/>
-				<Connection Source="F_MUL.CNF" Destination="F_USINT_TO_DWORD.REQ"/>
-				<Connection Source="F_USINT_TO_UDINT.CNF" Destination="F_MUL.REQ"/>
+				<Connection Source="SoftKey_IE_main.IND" Destination="E_T_FF_main.CLK" dx1="373.33"/>
+				<Connection Source="E_T_FF_main.EO" Destination="Q_ActiveMask_main.REQ" dx1="513.33"/>
+				<Connection Source="E_T_FF_calibration_run.EO" Destination="Q_ActiveMask_calibration_run.REQ" dx1="513.33"/>
+				<Connection Source="SoftKey_IE_calibration_run.IND" Destination="E_T_FF_calibration_run.CLK" dx1="373.33"/>
+				<Connection Source="SoftKey_IE_settings.IND" Destination="E_T_FF_settings.CLK" dx1="373.33"/>
+				<Connection Source="E_T_FF_settings.EO" Destination="Q_ActiveMask_settings.REQ" dx1="513.33"/>
+				<Connection Source="E_T_FF_debug.EO" Destination="Q_ActiveMask_debug.REQ" dx1="513.33"/>
+				<Connection Source="SoftKey_IE_debug.IND" Destination="E_T_FF_debug.CLK" dx1="373.33"/>
+				<Connection Source="SoftKey_IE_start.IND" Destination="E_SR_start_stop.S" dx1="453.33"/>
+				<Connection Source="SoftKey_IE_stop.IND" Destination="E_SR_start_stop.R" dx1="453.33"/>
+				<Connection Source="E_SR_start_stop.EO" Destination="F_BOOL_TO_USINT_start_stop.REQ"/>
+				<Connection Source="F_BOOL_TO_USINT_start_stop.CNF" Destination="F_MUX_4.REQ" dx1="300" dx2="80" dy="2140"/>
 				<Connection Source="F_MUX_4.CNF" Destination="F_USINT_TO_UDINT.REQ"/>
-				<Connection Source="E_SR_start_stop.EO" Destination="F_BOOL_TO_USINT.REQ"/>
-				<Connection Source="F_BOOL_TO_USINT.CNF" Destination="F_MUX_4.REQ" dx1="240" dx2="80" dy="1826.67"/>
+				<Connection Source="F_USINT_TO_UDINT.CNF" Destination="F_MUL.REQ"/>
+				<Connection Source="F_MUL.CNF" Destination="F_USINT_TO_DWORD.REQ"/>
+				<Connection Source="F_USINT_TO_DWORD.CNF" Destination="logiBUS_QD_PWM.REQ" dx1="380"/>
 			</EventConnections>
 			<DataConnections>
-				<Connection Source="F_USINT_TO_DWORD.OUT" Destination="logiBUS_QD_PWM.OUT" dx1="333.33"/>
-				<Connection Source="F_MUL.OUT" Destination="F_USINT_TO_DWORD.IN"/>
-				<Connection Source="F_USINT_TO_UDINT.OUT" Destination="F_MUL.IN1"/>
+				<Connection Source="E_SR_start_stop.Q" Destination="F_BOOL_TO_USINT_start_stop.IN" dx1="400"/>
+				<Connection Source="F_BOOL_TO_USINT_start_stop.OUT" Destination="F_MUX_4.K" dx1="80" dx2="206.67" dy="1753.33"/>
 				<Connection Source="F_MUX_4.OUT" Destination="F_USINT_TO_UDINT.IN"/>
-				<Connection Source="E_SR_start_stop.Q" Destination="F_BOOL_TO_USINT.IN" dx1="306.67"/>
-				<Connection Source="F_BOOL_TO_USINT.OUT" Destination="F_MUX_4.K" dx1="80" dx2="193.33" dy="1520"/>
+				<Connection Source="F_USINT_TO_UDINT.OUT" Destination="F_MUL.IN1"/>
+				<Connection Source="F_MUL.OUT" Destination="F_USINT_TO_DWORD.IN"/>
+				<Connection Source="F_USINT_TO_DWORD.OUT" Destination="logiBUS_QD_PWM.OUT" dx1="380"/>
 			</DataConnections>
 		</SubAppNetwork>
 	</Application>
-	<Device Name="FORTE_PC" Type="" x="3126.67" y="1113.33">
+	<Device Name="FORTE_PC" Type="iec61499::system::FORTE_PC" x="3126.67" y="1113.33">
 		<Parameter Name="MGR_ID" Value="C_00" Comment="Device manager socket ID"/>
 		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC"/>
 		<Attribute Name="Color" Type="STRING" Value="255,190,111"/>
-		<Resource Name="EMB_RES" Type="" x="0" y="0">
+		<Resource Name="EMB_RES" Type="iec61499::system::EMB_RES" x="0" y="0">
 			<FBNetwork>
 				<FB Name="E_TRIG" Type="iec61499::events::E_TRIG" x="2300" y="800">
 					<Parameter Name="EVENTTYPE" Value="'EInit'"/>
 				</FB>
 				<EventConnections>
-					<Connection Destination="E_TRIG.REQ" dx1="746.67"/>
+					<Connection Source="START.COLD" Destination="E_TRIG.REQ" dx1="746.67"/>
 				</EventConnections>
 			</FBNetwork>
 		</Resource>
