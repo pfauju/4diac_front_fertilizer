@@ -15,6 +15,7 @@
 		<Object Class="GraphicObject">
 			<Objects>
 				<Object Class="CLineStyle" JVS-ID="24000" ObjectName="LineAttributes_24000"/>
+				<Object Class="CFillStyle" JVS-ID="25000" ObjectName="FillAttributes_box"/>
 			</Objects>
 		</Object>
 	</Objects>

@@ -62,186 +62,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 			</PropertySheet>
 		</Object>
-		<Object Class="CMacro" JVS-ID="1" ObjectName="Macro_select_wheel_speed" Pinned="FALSE">
-			<Commands>
-				<Command id="179" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11011 - OutputString_x_radar_speed</Param>
-						<Param Name="New Value" Type="13"/>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">6000 - Button_select_wheel_speed</Param>
-						<Param Name="Color" Type="12">8208128</Param>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">6001 - Button_select_radar_speed</Param>
-						<Param Name="Color" Type="12">13421772</Param>
-					</Params>
-				</Command>
-				<Command id="179" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11010 - OutputString_x_wheel_speed</Param>
-						<Param Name="New Value" Type="13">X</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="2" ObjectName="Macro_select_radar_speed" Pinned="FALSE">
-			<Commands>
-				<Command id="179" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11011 - OutputString_x_radar_speed</Param>
-						<Param Name="New Value" Type="13">X</Param>
-					</Params>
-				</Command>
-				<Command id="179" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11010 - OutputString_x_wheel_speed</Param>
-						<Param Name="New Value" Type="13"/>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">6001 - Button_select_radar_speed</Param>
-						<Param Name="Color" Type="12">8208128</Param>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">6000 - Button_select_wheel_speed</Param>
-						<Param Name="Color" Type="12">13421772</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="3" ObjectName="Macro_change2_main" Pinned="FALSE">
-			<Commands>
-				<Command id="173" subid="-1">
-					<Params>
-						<Param Name="Workingset" Type="7">0 - WorkingSet_0</Param>
-						<Param Name="New active Mask" Type="8">1002 - DataMask_M1</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="4" ObjectName="Macro_change2_calibration_run" Pinned="FALSE">
-			<Commands>
-				<Command id="173" subid="-1">
-					<Params>
-						<Param Name="Workingset" Type="7">0 - WorkingSet_0</Param>
-						<Param Name="New active Mask" Type="8">1003 - DataMask_M2</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="5" ObjectName="Macro_change2_debug" Pinned="FALSE">
-			<Commands>
-				<Command id="173" subid="-1">
-					<Params>
-						<Param Name="Workingset" Type="7">0 - WorkingSet_0</Param>
-						<Param Name="New active Mask" Type="8">1001 - DataMask_M4</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="8" ObjectName="Macro_stop_button" Pinned="FALSE">
-			<Commands>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11013 - OutputString_stop</Param>
-						<Param Name="Color" Type="12">10066329</Param>
-					</Params>
-				</Command>
-				<Command id="168" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">21002 - NumberVariable_bool_start_stop</Param>
-						<Param Name="New Value" Type="18">0</Param>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11012 - OutputString_start</Param>
-						<Param Name="Color" Type="12">8208128</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="9" ObjectName="Macro_start_button" Pinned="FALSE">
-			<Commands>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11012 - OutputString_start</Param>
-						<Param Name="Color" Type="12">10066329</Param>
-					</Params>
-				</Command>
-				<Command id="168" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">21002 - NumberVariable_bool_start_stop</Param>
-						<Param Name="New Value" Type="18">1</Param>
-					</Params>
-				</Command>
-				<Command id="167" subid="-1">
-					<Params>
-						<Param Name="Object ID" Type="3">11013 - OutputString_stop</Param>
-						<Param Name="Color" Type="12">255</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
-		<Object Class="CMacro" JVS-ID="11" ObjectName="Macro_change2_settings" Pinned="FALSE">
-			<Commands>
-				<Command id="173" subid="-1">
-					<Params>
-						<Param Name="Workingset" Type="7">0 - WorkingSet_0</Param>
-						<Param Name="New active Mask" Type="8">1000 - DataMask_M3</Param>
-					</Params>
-				</Command>
-			</Commands>
-			<Property Name="Comment">
-				<Value>
-					<![CDATA[AAA=]]>
-				</Value>
-			</Property>
-		</Object>
 		<Object Class="CFontStyle" JVS-ID="23000" ObjectName="FontAttributes_OutputNumber" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
@@ -842,6 +662,378 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 			</PropertySheet>
 		</Object>
+		<Object Class="CLineStyle" JVS-ID="24001" ObjectName="LineAttributes_24001" Pinned="FALSE">
+			<PropertySheet Name="LineStyle" ID="68696">
+				<Property Name="Color">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Style">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Transparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="LineArtBits">
+					<Value>1111111111111111</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CLineStyle" JVS-ID="24002" ObjectName="LineAttributes_24002" Pinned="FALSE">
+			<PropertySheet Name="LineStyle" ID="68696">
+				<Property Name="Color">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Style">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Transparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="LineArtBits">
+					<Value>1111111111111111</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CLineStyle" JVS-ID="24003" ObjectName="LineAttributes_24003" Pinned="FALSE">
+			<PropertySheet Name="LineStyle" ID="68696">
+				<Property Name="Color">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Style">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Transparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="LineArtBits">
+					<Value>1111111111111111</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CLineStyle" JVS-ID="24005" ObjectName="LineAttributes_24005" Pinned="FALSE">
+			<PropertySheet Name="LineStyle" ID="68696">
+				<Property Name="Color">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Style">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Transparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="LineArtBits">
+					<Value>1111111111111111</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="CapStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25000" ObjectName="FillAttributes_box" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25001" ObjectName="FillAttributes_main" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>16777215</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>16777215</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25002" ObjectName="FillAttributes_25002" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25003" ObjectName="FillAttributes_25003" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25004" ObjectName="FillAttributes_25004" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
+		<Object Class="CFillStyle" JVS-ID="25006" ObjectName="FillAttributes_25006" Pinned="FALSE">
+			<PropertySheet Name="FillStyle" Version="2" ID="68716">
+				<Property Name="HatchStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillStyle">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BackColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="ForeColor">
+					<Value>10066329</Value>
+				</Property>
+				<Property Name="TransparentBackground">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FillTransparent">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FillType">
+					<Value>2</Value>
+				</Property>
+				<Property Name="FillPatternObjectID">
+					<Value>-1</Value>
+				</Property>
+				<Property Name="GradientDirection">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="RadialRefPointIsCenter">
+					<Value>1</Value>
+				</Property>
+				<Property Name="DistanceInPercentFromStart">
+					<Value>0.000000</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+			</PropertySheet>
+		</Object>
 		<Object Class="CWorkingSet" Name="" ObjectName="WorkingSet_0" Pinned="FALSE" JVS-ID="0" JVS-RefCount="1">
 			<PropertySheet Name="Model">
 				<Property Name="MaskType">
@@ -1159,40 +1351,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[8]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194331"/>
 			</Objects>
@@ -1301,40 +1459,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[9]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194319"/>
 			</Objects>
@@ -1407,40 +1531,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[3]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194354"/>
 			</Objects>
@@ -1477,40 +1567,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[5]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194356"/>
 			</Objects>
@@ -1547,40 +1603,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[4]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194357"/>
 			</Objects>
@@ -1617,40 +1639,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[11]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194358"/>
 			</Objects>
@@ -2347,40 +2335,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[4|1|8]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194321"/>
 			</Objects>
@@ -2450,40 +2404,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
-			<Events>
-				<Event>
-					<Property Name="ID">
-						<Value>
-							<![CDATA[25]]>
-						</Value>
-					</Property>
-					<Property Name="Name">
-						<Value>
-							<![CDATA[OnKeyRelease]]>
-						</Value>
-					</Property>
-					<Property Name="Param">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="Macros">
-						<Value>
-							<![CDATA[2]]>
-						</Value>
-					</Property>
-					<Property Name="Conditions">
-						<Value>
-							<![CDATA[]]>
-						</Value>
-					</Property>
-					<Property Name="KeyCode">
-						<Value>
-							<![CDATA[0]]>
-						</Value>
-					</Property>
-				</Event>
-			</Events>
 			<Objects>
 				<Object JVS-ID="4194323"/>
 			</Objects>
@@ -4011,6 +3931,282 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Object JVS-ID="24000"/>
 			</Objects>
 		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14000" Pinned="FALSE" JVS-ID="14000">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(480.000014,0)(480.000014,320.000011)(0,320.000011)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(440,0)(440,330)(0,330)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0909091234207153)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.9696970022085941)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>480.000014</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>320.000011</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25001"/>
+				<Object JVS-ID="24000"/>
+			</Objects>
+		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14001" Pinned="FALSE" JVS-ID="14001">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(232,0)(232,99.999998)(0,99.999998)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0545454545454545)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.8333333134651184)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>232</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>99.999998</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25000"/>
+				<Object JVS-ID="24000"/>
+			</Objects>
+		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14002" Pinned="FALSE" JVS-ID="14002">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(232,0)(232,99.999998)(0,99.999998)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0545454545454545)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.8333333134651184)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>232</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>99.999998</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25002"/>
+				<Object JVS-ID="24001"/>
+			</Objects>
+		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14003" Pinned="FALSE" JVS-ID="14003">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(232,0)(232,99.999998)(0,99.999998)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0545454545454545)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.8333333134651184)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>232</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>99.999998</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25003"/>
+				<Object JVS-ID="24002"/>
+			</Objects>
+		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14004" Pinned="FALSE" JVS-ID="14004">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(232,0)(232,99.999998)(0,99.999998)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0545454545454545)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.8333333134651184)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>232</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>99.999998</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25004"/>
+				<Object JVS-ID="24003"/>
+			</Objects>
+		</Object>
+		<Object Class="CRectangle" Name="Rectangle" ObjectName="Rectangle_14006" Pinned="FALSE" JVS-ID="14006">
+			<PropertySheet Name="Rectangle">
+				<Property Name="LineSupression">
+					<Value>0000</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Points">
+					<Value>(0,0)(232,0)(232,99.999998)(0,99.999998)</Value>
+				</Property>
+				<Property Name="OriginalPoints">
+					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
+				</Property>
+				<Property Name="Transform">
+					<Value>(1.0545454545454545)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.8333333134651184)(0.0000000000000000)</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>232</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>99.999998</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="25006"/>
+				<Object JVS-ID="24005"/>
+			</Objects>
+		</Object>
 		<Object Class="CImage" Name="Image" ObjectName="Tractor_wheel_slip" Pinned="FALSE" JVS-ID="20000">
 			<PropertySheet Name="Image">
 				<Property Name="Path">
@@ -4603,60 +4799,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Height">
 					<Value>72</Value>
-				</Property>
-				<Property Name="Visible">
-					<Value>1</Value>
-				</Property>
-				<Property Name="Locked">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Comment">
-					<Value>
-						<![CDATA[AAA=]]>
-					</Value>
-				</Property>
-				<Property Name="Disabled">
-					<Value>0</Value>
-				</Property>
-				<Property Name="ExternalReferenceAllowed">
-					<Value>0</Value>
-				</Property>
-			</PropertySheet>
-		</Object>
-		<Object Class="CAuxFunction" Name="AuxFunction" ObjectName="AuxFunction2_31000" Pinned="FALSE" JVS-ID="31000">
-			<PropertySheet Name="AuxFunction">
-				<Property Name="BackColor">
-					<Value>16777215</Value>
-				</Property>
-				<Property Name="FunctionType">
-					<Value>0</Value>
-				</Property>
-				<Property Name="FunctionType2">
-					<Value>0</Value>
-				</Property>
-				<Property Name="CriticalControl">
-					<Value>0</Value>
-				</Property>
-				<Property Name="AssignmentLock">
-					<Value>0</Value>
-				</Property>
-				<Property Name="SingleAssignment">
-					<Value>1</Value>
-				</Property>
-				<Property Name="ISO-Version">
-					<Value>ISO_2009</Value>
-				</Property>
-				<Property Name="EnableExport">
-					<Value>0</Value>
-				</Property>
-				<Property Name="FileName">
-					<Value/>
-				</Property>
-				<Property Name="Width">
-					<Value>80</Value>
-				</Property>
-				<Property Name="Height">
-					<Value>80</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
