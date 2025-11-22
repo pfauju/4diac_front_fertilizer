@@ -6061,19 +6061,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6107,19 +6107,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6153,19 +6153,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6199,19 +6199,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6245,19 +6245,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6291,19 +6291,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(231.999989,0)(231.999989,80)(0,80)</Value>
+					<Value>(0,0)(231.999989,0)(231.999989,80.000002)(0,80.000002)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(220,0)(220,120)(0,120)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666666666667)(0.0000000000000000)</Value>
+					<Value>(1.0545454025268555)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.6666666865348816)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>231.999989</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000002</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6383,19 +6383,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(360,0)(360,80)(0,80)</Value>
+					<Value>(0,0)(360,0)(360,80.000004)(0,80.000004)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(360,0)(360,70)(0,70)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.1428571428571428)(0.0000000000000000)</Value>
+					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.1428571939468384)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>360</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000004</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6429,19 +6429,19 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Points">
-					<Value>(0,0)(360,0)(360,80)(0,80)</Value>
+					<Value>(0,0)(360,0)(360,80.000004)(0,80.000004)</Value>
 				</Property>
 				<Property Name="OriginalPoints">
 					<Value>(0,0)(360,0)(360,70)(0,70)</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.1428571428571428)(0.0000000000000000)</Value>
+					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.1428571939468384)(0.0000000000000000)</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>360</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>80</Value>
+					<Value>80.000004</Value>
 				</Property>
 				<Property Name="Visible">
 					<Value>1</Value>
@@ -6752,7 +6752,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>1</Value>
 				</Property>
 				<Property Name="Transparency">
-					<Value>1</Value>
+					<Value>0</Value>
 				</Property>
 				<Property Name="TransColor">
 					<Value>16777215</Value>
@@ -7837,6 +7837,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Text</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(165.0000000000000000)(0.0000000000000000)(1.0000000000000000)(20.0000000000000000)</Value>
 				</Property>
@@ -7855,6 +7858,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -7897,6 +7903,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Text</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(4.0000000000000000)(0.0000000000000000)(1.0000000000000000)(0.0000000000000000)</Value>
 				</Property>
@@ -7915,6 +7924,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Group</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.0000000000000000)(0.0000000000000000)</Value>
@@ -7957,6 +7969,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Button</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(135.0000000000000000)(0.0000000000000000)(1.0000000000000000)(55.0000000000000000)</Value>
 				</Property>
@@ -7975,6 +7990,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -8083,6 +8101,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_1</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -8167,6 +8188,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -8407,6 +8431,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_1</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -8492,6 +8519,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_1</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -8511,6 +8541,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_1</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -8529,6 +8562,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_2</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -8724,6 +8760,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -9821,6 +9860,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_2</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(20.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
