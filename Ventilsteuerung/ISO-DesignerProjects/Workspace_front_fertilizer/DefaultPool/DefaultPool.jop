@@ -6619,7 +6619,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>1</Value>
 				</Property>
 				<Property Name="TransColor">
-					<Value>16711935</Value>
+					<Value>16777215</Value>
 				</Property>
 				<Property Name="ControlType">
 					<Value>0</Value>
