@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<JetView-Project ProductVersion="5.7.1.6514" PlatformID="15" Flags="0" StartPage=".\DataMask_M2.jvi" StartPageExtended="" NeedsWorkingSet="1" NeedsStartPage="1">
+<JetView-Project ProductVersion="5.7.1.6514" PlatformID="14" Flags="0" StartPage=".\DataMask_M1.jvi" StartPageExtended="" NeedsWorkingSet="1" NeedsStartPage="1">
   <Item NodeName="Languages" guid="e96a767c-e7a0-48f4-ad44-51ad78c551a2" />
   <Item NodeName="Resources" guid="553b1e85-0d32-4a9a-b99c-e37fa7b070d8">
     <Item Path=".\Devices_DefaultPool.jrc" guid="c10d599f-5782-4df2-847d-bc459de5bdde" Flags="0" ResourceNamespace="Devices_DefaultPool" ResourceFileType="Hardware Resource" />

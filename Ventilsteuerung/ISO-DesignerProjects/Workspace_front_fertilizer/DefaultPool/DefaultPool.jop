@@ -167,13 +167,29 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 			</PropertySheet>
 		</Object>
+		<Object Class="CMacro" JVS-ID="1" ObjectName="Macro_1" Pinned="FALSE">
+			<Commands>
+				<Command id="174" subid="-1">
+					<Params>
+						<Param Name="Type" Type="0">1</Param>
+						<Param Name="Mask ID" Type="8">1002 - DataMask_M1</Param>
+						<Param Name="New Soft Key Mask" Type="9">4000 - SoftKeyMask_S1</Param>
+					</Params>
+				</Command>
+			</Commands>
+			<Property Name="Comment">
+				<Value>
+					<![CDATA[AAA=]]>
+				</Value>
+			</Property>
+		</Object>
 		<Object Class="CFontStyle" JVS-ID="23000" ObjectName="FontAttributes_OutputNumber" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>12</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>16</Value>
@@ -194,7 +210,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>12</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>16</Value>
@@ -227,13 +243,13 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 		<Object Class="CFontStyle" JVS-ID="23002" ObjectName="FontAttributes_Header" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
-					<Value>MS Shell Dlg</Value>
+					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>30</Value>
+					<Value>28</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>40</Value>
+					<Value>48</Value>
 				</Property>
 				<Property Name="Color">
 					<Value>0</Value>
@@ -251,10 +267,10 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>18</Value>
+					<Value>19</Value>
 				</Property>
 				<Property Name="Width">
-					<Value>24</Value>
+					<Value>32</Value>
 				</Property>
 				<Property Name="Inverted">
 					<Value>0</Value>
@@ -266,7 +282,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Proportional">
-					<Value>1</Value>
+					<Value>0</Value>
 				</Property>
 				<Property Name="ISOFontType">
 					<Value>0</Value>
@@ -287,7 +303,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>MS Shell Dlg</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>15</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>20</Value>
@@ -308,7 +324,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>7</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -344,7 +360,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>MS Shell Dlg</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>16</Value>
+					<Value>13</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>22</Value>
@@ -365,7 +381,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>12</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>16</Value>
@@ -401,7 +417,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>24</Value>
+					<Value>19</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>32</Value>
@@ -422,7 +438,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>18</Value>
+					<Value>14</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>24</Value>
@@ -455,10 +471,10 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 		<Object Class="CFontStyle" JVS-ID="23009" ObjectName="FontAttributes_23009_reset" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
-					<Value>MS Shell Dlg</Value>
+					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>12</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>16</Value>
@@ -479,7 +495,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>7</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -494,7 +510,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Proportional">
-					<Value>1</Value>
+					<Value>0</Value>
 				</Property>
 				<Property Name="ISOFontType">
 					<Value>0</Value>
@@ -512,13 +528,13 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 		<Object Class="CFontStyle" JVS-ID="23010" ObjectName="FontAttributes_string_start_stop_button" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
-					<Value>MS Shell Dlg</Value>
+					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>15</Value>
+					<Value>14</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>20</Value>
+					<Value>24</Value>
 				</Property>
 				<Property Name="Color">
 					<Value>16777215</Value>
@@ -539,7 +555,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>9</Value>
 				</Property>
 				<Property Name="Width">
-					<Value>12</Value>
+					<Value>16</Value>
 				</Property>
 				<Property Name="Inverted">
 					<Value>0</Value>
@@ -551,7 +567,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Proportional">
-					<Value>1</Value>
+					<Value>0</Value>
 				</Property>
 				<Property Name="ISOFontType">
 					<Value>0</Value>
@@ -569,13 +585,13 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 		<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes" Pinned="FALSE">
 			<PropertySheet Name="Font" ID="68816">
 				<Property Name="Name">
-					<Value>MS Shell Dlg</Value>
+					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>15</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Height">
-					<Value>20</Value>
+					<Value>16</Value>
 				</Property>
 				<Property Name="Color">
 					<Value>0</Value>
@@ -593,7 +609,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>7</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -608,7 +624,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Proportional">
-					<Value>1</Value>
+					<Value>0</Value>
 				</Property>
 				<Property Name="ISOFontType">
 					<Value>0</Value>
@@ -629,7 +645,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>MS Shell Dlg</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>15</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>20</Value>
@@ -650,7 +666,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>7</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -2790,6 +2806,40 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 			</PropertySheet>
+			<Events>
+				<Event>
+					<Property Name="ID">
+						<Value>
+							<![CDATA[25]]>
+						</Value>
+					</Property>
+					<Property Name="Name">
+						<Value>
+							<![CDATA[OnKeyRelease]]>
+						</Value>
+					</Property>
+					<Property Name="Param">
+						<Value>
+							<![CDATA[]]>
+						</Value>
+					</Property>
+					<Property Name="Macros">
+						<Value>
+							<![CDATA[1]]>
+						</Value>
+					</Property>
+					<Property Name="Conditions">
+						<Value>
+							<![CDATA[]]>
+						</Value>
+					</Property>
+					<Property Name="KeyCode">
+						<Value>
+							<![CDATA[0]]>
+						</Value>
+					</Property>
+				</Event>
+			</Events>
 			<Objects>
 				<Object JVS-ID="4194320"/>
 			</Objects>
@@ -7914,7 +7964,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Object JVS-ID="11010"/>
 			</Objects>
 		</Object>
-		<Object Class="CProxy" Name="Group" ObjectName="" Pinned="FALSE" JVS-ID="4194322">
+		<Object Class="CProxy" Name="Group_1" ObjectName="" Pinned="FALSE" JVS-ID="4194322">
 			<PropertySheet Name="Proxy">
 				<Property Name="Top">
 					<Value>0</Value>
@@ -7923,7 +7973,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="Name">
-					<Value>Group</Value>
+					<Value>Group_1</Value>
 				</Property>
 				<Property Name="TabIndex">
 					<Value>-1</Value>
