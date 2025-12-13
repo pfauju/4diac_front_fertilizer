@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<JetView-Document Version="0" ObjectPoolVersion="3.0" ProductVersion="5.7.1.6514">
+<JetView-Document Version="4" ObjectPoolVersion="3.0" ProductVersion="5.7.1.6514">
 	<PropertySheets>
 		<PropertySheet Name="General">
 			<Property Name="ObjectID">
@@ -200,7 +200,7 @@
 				<Object JVS-ID="3006"/>
 			</Objects>
 		</Component>
-		<Component ID="315343063" Class="CGroup" Name="Group">
+		<Component ID="600796575" Class="CGroup" Name="Group">
 			<PropertySheets>
 				<PropertySheet Name="General">
 					<Property Name="ZOrder">
@@ -223,7 +223,7 @@
 				</PropertySheet>
 			</PropertySheets>
 			<Objects>
-				<Object JVS-ID="3010"/>
+				<Object JVS-ID="3000"/>
 			</Objects>
 		</Component>
 		<Component ID="37617321" Class="CGroup" Name="Group">

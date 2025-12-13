@@ -14,5 +14,6 @@
     <Item Path=".\SoftKeyMask_S2.jvi" guid="5016dbb7-c26c-44b4-a1c4-862f0ca81ab0" Flags="0" />
     <Item Path=".\SoftKeyMask_S3.jvi" guid="a17b52d8-208c-47d4-bee6-0a6c367792d7" Flags="0" />
     <Item Path=".\SoftKeyMask_S4.jvi" guid="efc6699f-c70e-4c05-843e-262212e1da0c" Flags="0" />
+    <Item Path=".\WindowMask_34000.jvi" guid="eedd04d2-d3cc-4565-a3e2-0e650ea4b787" Flags="0" />
   </Item>
 </JetView-Project>
