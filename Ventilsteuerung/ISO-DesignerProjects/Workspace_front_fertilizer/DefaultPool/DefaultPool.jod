@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <JetViewSoft-DefaultObjects Version="3.0" ProductVersion="5.7.1.6514" RelatedObjectPool=".\DefaultPool.jop">
 	<Objects>
+		<Object Class="CButton">
+			<Objects/>
+		</Object>
+		<Object Class="CInputNumber">
+			<Objects>
+				<Object Class="CNumberVariable" JVS-ID="21014" ObjectName="NumberVariable_W1_actual_quantity"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes"/>
+			</Objects>
+		</Object>
 		<Object Class="COutputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21003" ObjectName="NumberVariable_application_rate"/>
+				<Object Class="CNumberVariable" JVS-ID="21012" ObjectName="NumberVariable_flow_factor_new"/>
 				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes"/>
 			</Objects>
 		</Object>
 		<Object Class="COutputText">
 			<Objects>
-				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes"/>
+				<Object Class="CFontStyle" JVS-ID="23002" ObjectName="FontAttributes_Header"/>
 			</Objects>
 		</Object>
 		<Object Class="GraphicObject">
 			<Objects>
 				<Object Class="CLineStyle" JVS-ID="24000" ObjectName="LineAttributes_24000"/>
-				<Object Class="CFillStyle" JVS-ID="25000" ObjectName="FillAttributes_box"/>
+				<Object Class="CFillStyle" JVS-ID="25011" ObjectName="FillAttributes_main_colour"/>
 			</Objects>
 		</Object>
 	</Objects>
