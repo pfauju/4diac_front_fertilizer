@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<JetView-Project ProductVersion="5.7.1.6514" PlatformID="15" Flags="0" StartPage=".\DataMask_M2.jvi" StartPageExtended="" NeedsWorkingSet="1" NeedsStartPage="1">
+<JetView-Project ProductVersion="5.7.1.6514" PlatformID="14" Flags="0" StartPage=".\DataMask_M1.jvi" StartPageExtended="" NeedsWorkingSet="1" NeedsStartPage="1">
   <Item NodeName="Languages" guid="e96a767c-e7a0-48f4-ad44-51ad78c551a2" />
   <Item NodeName="Resources" guid="553b1e85-0d32-4a9a-b99c-e37fa7b070d8">
     <Item Path=".\Devices_DefaultPool.jrc" guid="c10d599f-5782-4df2-847d-bc459de5bdde" Flags="0" ResourceNamespace="Devices_DefaultPool" ResourceFileType="Hardware Resource" />
@@ -14,5 +14,6 @@
     <Item Path=".\SoftKeyMask_S2.jvi" guid="5016dbb7-c26c-44b4-a1c4-862f0ca81ab0" Flags="0" />
     <Item Path=".\SoftKeyMask_S3.jvi" guid="a17b52d8-208c-47d4-bee6-0a6c367792d7" Flags="0" />
     <Item Path=".\SoftKeyMask_S4.jvi" guid="efc6699f-c70e-4c05-843e-262212e1da0c" Flags="0" />
+    <Item Path=".\WindowMask_W1.jvi" guid="eedd04d2-d3cc-4565-a3e2-0e650ea4b787" Flags="0" />
   </Item>
 </JetView-Project>

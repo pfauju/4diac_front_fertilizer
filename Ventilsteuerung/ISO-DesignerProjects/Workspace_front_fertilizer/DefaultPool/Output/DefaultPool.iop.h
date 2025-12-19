@@ -7,6 +7,7 @@
 #define MASK_WIDTH                          480
 #define MASK_HEIGHT                         480
 #define WorkingSet_0                          0
+#define Macro_1                               1
 #define DataMask_M3                        1000
 #define DataMask_M4                        1001
 #define DataMask_M1                        1002
