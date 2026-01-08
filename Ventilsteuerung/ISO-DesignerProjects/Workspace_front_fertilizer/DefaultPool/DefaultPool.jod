@@ -6,19 +6,19 @@
 		</Object>
 		<Object Class="CInputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21014" ObjectName="NumberVariable_W1_actual_quantity"/>
-				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes"/>
+				<Object Class="CNumberVariable" JVS-ID="21016" ObjectName="NumberVariable_flow_factor"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>
 		<Object Class="COutputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21012" ObjectName="NumberVariable_flow_factor_new"/>
-				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_23011_main_boxes"/>
+				<Object Class="CNumberVariable" JVS-ID="21015" ObjectName="NumberVariable_engine_speed_rpm"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>
 		<Object Class="COutputText">
 			<Objects>
-				<Object Class="CFontStyle" JVS-ID="23002" ObjectName="FontAttributes_Header"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>
 		<Object Class="GraphicObject">
