@@ -227,42 +227,126 @@ Not part of normal operator workflow.
 
 # Global Variable Summary
 
-## Speed
+## Speed & Engine
 
 - NumberVariable_selected_speed  
-  Active machine speed
+  Active machine speed used by the system
+
+- NumberVariable_bool_selected_speed  
+  Boolean selector for active speed source (wheel / ground)
 
 - NumberVariable_Ground_based_machine_speed  
-  Radar-based speed
+  Ground-based machine speed (radar)
 
 - NumberVariable_Wheel_based_machine_speed  
-  Wheel-based speed
+  Wheel-based machine speed
 
-## Application / Calibration
+- NumberVariable_engine_speed_rpm  
+  Electric metering motor speed (rpm)
+
+- NumberVariable_engine_speed_percent  
+  Electric metering motor speed (%)
+
+---
+
+## Application & Calibration
 
 - NumberVariable_target_quantity  
-  Target fertilizer quantity
+  Target fertilizer quantity for calibration
+
+- NumberVariable_W1_actual_quantity  
+  Measured quantity entered during calibration run
+
+- NumberVariable_flow_factor  
+  Current active flow factor
+
+- NumberVariable_flow_factor_new  
+  Newly calculated flow factor after calibration
 
 - NumberVariable_application_rate  
   Application rate (kg/ha)
 
 - NumberVariable_application_rate_percent  
-  Application rate (%)
+  Application rate relative to target (%)
 
-- NumberVariable_flow_actual_quantity  
-  Measured calibration quantity
+---
 
-- NumberVariable_flow_factor_new  
-  Calculated flow factor
-
-## Tank / Hardware
+## Tank & Material
 
 - NumberVariable_weight  
-  Tank weight
+  Current fertilizer weight in front tank
 
-- NumberVariable_engine_speed_rpm  
-  Electric motor speed
+---
 
+# Button Summary
+
+## Calibration Area Selection (DataMask_M2)
+
+- Button_M2_calibration_area_1a  
+  Select calibration area of 1 are
+
+- Button_M2_calibration_area_5a  
+  Select calibration area of 5 are
+
+- Button_M2_calibration_area_10a  
+  Select calibration area of 10 are
+
+---
+
+## Target Quantity Input (DataMask_M2)
+
+- Button_M2_target_quantity_yes  
+  Confirm target quantity input
+
+- Button_M2_target_quantity_no  
+  Cancel / reset target quantity input
+
+---
+
+## Flow Factor Input (DataMask_M2)
+
+- Button_M2_flow_factor_yes  
+  Confirm flow factor input
+
+- Button_M2_flow_factor_no  
+  Cancel / reset flow factor input
+
+---
+
+## Calibration Control
+
+- Button_M2_start  
+  Start calibration procedure (switch to WindowMask_W1)
+
+- Button_W1_stop  
+  Abort calibration run immediately
+
+---
+
+## Actual Quantity Input (WindowMask_W1)
+
+- Button_W1_actual_quantity_yes  
+  Confirm measured calibration quantity
+
+- Button_W1_actual_quantity_no  
+  Cancel / reset measured quantity input
+
+---
+
+## Speed Source Selection (DataMask_M3)
+
+- Button_M3_radar_speed_select  
+  Select ground-based (radar) speed as active source
+
+- Button_M3_wheel_speed_select  
+  Select wheel-based speed as active source
+
+---
+
+## General / Operation
+
+- Button_M1_reset  
+  Reset front tank weight value
 ---
 
 ## Notes
