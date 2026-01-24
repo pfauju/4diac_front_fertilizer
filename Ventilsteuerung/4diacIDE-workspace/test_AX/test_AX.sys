@@ -21,33 +21,8 @@
 						<Parameter Name="QI" Value="TRUE"/>
 						<Parameter Name="Output" Value="Output_Q1"/>
 					</FB>
-					<FB Name="Q_SoftKeyMask" Type="isobus::UT::Q::Q_SoftKeyMask" x="-1400" y="100">
-						<Parameter Name="u8MaskType" Value="1"/>
-						<Parameter Name="u16DataMaskId" Value="1200"/>
-						<Parameter Name="u16SoftKeyMaskId" Value="4000"/>
-					</FB>
-					<FB Name="DigitalInput_I2" Type="logiBUS::io::DI::logiBUS_IXA" x="-4500" y="300">
-						<Parameter Name="QI" Value="TRUE"/>
-						<Parameter Name="Input" Value="Input_I2"/>
-					</FB>
-					<FB Name="DigitalOutput_Q2" Type="logiBUS::io::DQ::logiBUS_QXA" x="-1300" y="1400">
-						<Parameter Name="QI" Value="TRUE"/>
-						<Parameter Name="PARAMS" Value="">
-							<Attribute Name="Visible" Value="false"/>
-						</Parameter>
-						<Parameter Name="Output" Value="Output_Q2"/>
-					</FB>
-					<FB Name="SoftKey_F1" Type="isobus::UT::io::Softkey::Softkey_IXA" x="-4500" y="1300">
-						<Parameter Name="QI" Value="TRUE"/>
-						<Parameter Name="u16ObjId" Value="SoftKey_F1"/>
-					</FB>
-					<EventConnections>
-						<Connection Source="DigitalInput_I1.INITO" Destination="Q_SoftKeyMask.INIT" dx1="1146.67"/>
-						<Connection Source="DigitalInput_I2.INITO" Destination="Q_SoftKeyMask.REQ" dx1="1146.67"/>
-					</EventConnections>
 					<AdapterConnections>
-						<Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
-						<Connection Source="SoftKey_F1.IN" Destination="DigitalOutput_Q2.OUT" dx1="1200"/>
+						<Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT" dx1="980"/>
 					</AdapterConnections>
 				</SubAppNetwork>
 				<Attribute Name="width" Type="LREAL" Value="3000"/>
