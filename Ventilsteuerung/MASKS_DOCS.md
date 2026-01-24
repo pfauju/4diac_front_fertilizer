@@ -280,6 +280,11 @@ Not part of normal operator workflow.
 
 # Button Summary
 
+## DataMask_M1##
+
+- Button_M1_reset
+  Reset weight 
+
 ## Calibration Area Selection (DataMask_M2)
 
 - Button_M2_calibration_area_1a  
