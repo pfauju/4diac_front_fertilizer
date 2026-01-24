@@ -362,7 +362,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>28</Value>
+					<Value>36</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>48</Value>
@@ -383,7 +383,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>19</Value>
+					<Value>24</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>32</Value>
@@ -419,7 +419,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>14</Value>
+					<Value>18</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>24</Value>
@@ -440,7 +440,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>16</Value>
@@ -476,7 +476,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>9</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>16</Value>
@@ -497,7 +497,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>7</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -533,7 +533,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>14</Value>
+					<Value>18</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>24</Value>
@@ -554,7 +554,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>16</Value>
@@ -590,7 +590,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>9</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>16</Value>
@@ -611,7 +611,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>7</Value>
+					<Value>9</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>12</Value>
@@ -647,7 +647,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>14</Value>
+					<Value>18</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>24</Value>
@@ -668,7 +668,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>9</Value>
+					<Value>12</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>16</Value>
@@ -704,7 +704,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>Lucida Console</Value>
 				</Property>
 				<Property Name="Size">
-					<Value>28</Value>
+					<Value>36</Value>
 				</Property>
 				<Property Name="Height">
 					<Value>48</Value>
@@ -725,7 +725,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>0</Value>
 				</Property>
 				<Property Name="PointWidth">
-					<Value>19</Value>
+					<Value>24</Value>
 				</Property>
 				<Property Name="Width">
 					<Value>32</Value>
@@ -1318,6 +1318,112 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					</Value>
 				</Property>
 			</PropertySheet>
+		</Object>
+		<Object Class="COutputText" Name="Text" ObjectName="OutputString_M2_calibration_area" Pinned="FALSE" JVS-ID="11033">
+			<PropertySheet Name="Text">
+				<Property Name="Text">
+					<Value>
+						<![CDATA[QQBiAGQAcgBlAGgAZgBsAOQAYwBoAGUAAAA=]]>
+					</Value>
+				</Property>
+				<Property Name="ResourceID">
+					<Value/>
+				</Property>
+				<Property Name="MultiLine">
+					<Value>1</Value>
+				</Property>
+				<Property Name="WordBreak">
+					<Value>0</Value>
+				</Property>
+				<Property Name="WrapOnHyphen">
+					<Value>0</Value>
+				</Property>
+				<Property Name="AlignH">
+					<Value>1</Value>
+				</Property>
+				<Property Name="AlignV">
+					<Value>4</Value>
+				</Property>
+				<Property Name="Appearance">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ControlType">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Numeric">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Offset">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Scale">
+					<Value>1</Value>
+				</Property>
+				<Property Name="FormatType">
+					<Value>0</Value>
+				</Property>
+				<Property Name="FormatString">
+					<Value>0</Value>
+				</Property>
+				<Property Name="NoOfDecimals">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Value">
+					<Value>
+						<![CDATA[QQBiAGQAcgBlAGgAZgBsAOQAYwBoAGUAAAA=]]>
+					</Value>
+				</Property>
+				<Property Name="SetLengthAsMaximumLength">
+					<Value>0</Value>
+				</Property>
+				<Property Name="StringLength">
+					<Value>4</Value>
+				</Property>
+				<Property Name="Transparent">
+					<Value>1</Value>
+				</Property>
+				<Property Name="LeadingZeros">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ZeroAsBlank">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Truncate">
+					<Value>0</Value>
+				</Property>
+				<Property Name="BkColor">
+					<Value>16777215</Value>
+				</Property>
+				<Property Name="RoundEdgeRadius">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Width">
+					<Value>230</Value>
+				</Property>
+				<Property Name="Height">
+					<Value>30</Value>
+				</Property>
+				<Property Name="Visible">
+					<Value>1</Value>
+				</Property>
+				<Property Name="Locked">
+					<Value>0</Value>
+				</Property>
+				<Property Name="Comment">
+					<Value>
+						<![CDATA[AAA=]]>
+					</Value>
+				</Property>
+				<Property Name="Disabled">
+					<Value>0</Value>
+				</Property>
+				<Property Name="ExternalReferenceAllowed">
+					<Value>0</Value>
+				</Property>
+			</PropertySheet>
+			<Objects>
+				<Object JVS-ID="23011"/>
+			</Objects>
 		</Object>
 		<Object Class="CWorkingSet" Name="" ObjectName="WorkingSet_0" Pinned="FALSE" JVS-ID="0" JVS-RefCount="1">
 			<PropertySheet Name="Model">
@@ -8060,112 +8166,6 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Object JVS-ID="23011"/>
 			</Objects>
 		</Object>
-		<Object Class="COutputText" Name="Text" ObjectName="OutputString_M2_calibration_area" Pinned="FALSE" JVS-ID="11033">
-			<PropertySheet Name="Text">
-				<Property Name="Text">
-					<Value>
-						<![CDATA[QQBiAGQAcgBlAGgAZgBsAOQAYwBoAGUAAAA=]]>
-					</Value>
-				</Property>
-				<Property Name="ResourceID">
-					<Value/>
-				</Property>
-				<Property Name="MultiLine">
-					<Value>1</Value>
-				</Property>
-				<Property Name="WordBreak">
-					<Value>0</Value>
-				</Property>
-				<Property Name="WrapOnHyphen">
-					<Value>0</Value>
-				</Property>
-				<Property Name="AlignH">
-					<Value>1</Value>
-				</Property>
-				<Property Name="AlignV">
-					<Value>4</Value>
-				</Property>
-				<Property Name="Appearance">
-					<Value>0</Value>
-				</Property>
-				<Property Name="ControlType">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Numeric">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Offset">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Scale">
-					<Value>1</Value>
-				</Property>
-				<Property Name="FormatType">
-					<Value>0</Value>
-				</Property>
-				<Property Name="FormatString">
-					<Value>0</Value>
-				</Property>
-				<Property Name="NoOfDecimals">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Value">
-					<Value>
-						<![CDATA[QQBiAGQAcgBlAGgAZgBsAOQAYwBoAGUAAAA=]]>
-					</Value>
-				</Property>
-				<Property Name="SetLengthAsMaximumLength">
-					<Value>0</Value>
-				</Property>
-				<Property Name="StringLength">
-					<Value>4</Value>
-				</Property>
-				<Property Name="Transparent">
-					<Value>1</Value>
-				</Property>
-				<Property Name="LeadingZeros">
-					<Value>0</Value>
-				</Property>
-				<Property Name="ZeroAsBlank">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Truncate">
-					<Value>0</Value>
-				</Property>
-				<Property Name="BkColor">
-					<Value>16777215</Value>
-				</Property>
-				<Property Name="RoundEdgeRadius">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Width">
-					<Value>230</Value>
-				</Property>
-				<Property Name="Height">
-					<Value>30</Value>
-				</Property>
-				<Property Name="Visible">
-					<Value>1</Value>
-				</Property>
-				<Property Name="Locked">
-					<Value>0</Value>
-				</Property>
-				<Property Name="Comment">
-					<Value>
-						<![CDATA[AAA=]]>
-					</Value>
-				</Property>
-				<Property Name="Disabled">
-					<Value>0</Value>
-				</Property>
-				<Property Name="ExternalReferenceAllowed">
-					<Value>0</Value>
-				</Property>
-			</PropertySheet>
-			<Objects>
-				<Object JVS-ID="23011"/>
-			</Objects>
-		</Object>
 		<Object Class="COutputText" Name="Text" ObjectName="OutputString_M2_calibration_area_1a" Pinned="FALSE" JVS-ID="11034">
 			<PropertySheet Name="Text">
 				<Property Name="Text">
@@ -9665,7 +9665,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 			<PropertySheet Name="Text">
 				<Property Name="Text">
 					<Value>
-						<![CDATA[OAAuADAAMAAAAA==]]>
+						<![CDATA[MQAuADAAMAAAAA==]]>
 					</Value>
 				</Property>
 				<Property Name="ResourceID">
@@ -11202,7 +11202,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 			<PropertySheet Name="Image">
 				<Property Name="Path">
 					<Value>
-						<![CDATA[..\..\..\..\..\..\Users\04jul\OneDrive\Ju\Projekte\Nordsten NS 5030\Umbau Isobus\Workspace_Nordsten\DefaultPool\img\img_DM_2\Tractor_forward_side_200.bmp]]>
+						<![CDATA[.\img\img_DM_2\Tractor_forward_side_200.bmp]]>
 					</Value>
 				</Property>
 				<Property Name="ResourceID">
@@ -15467,7 +15467,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>4</Value>
 				</Property>
 				<Property Name="Left">
-					<Value>20</Value>
+					<Value>5</Value>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
@@ -15476,7 +15476,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
-					<Value>(1.0000000000000000)(0.0000000000000000)(20.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
+					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
 			</PropertySheet>
 			<Objects>
@@ -15956,6 +15956,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_2</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -16217,6 +16220,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_2</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -16368,6 +16374,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Image_2</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
 				</Property>
@@ -16386,6 +16395,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Image_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(4.0000000000000000)</Value>
@@ -16582,6 +16594,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Button</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(5.0000000000000000)(0.0000000000000000)(1.0000000000000000)(30.0000000000000000)</Value>
 				</Property>
@@ -16600,6 +16615,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Text</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.0000000000000000)(0.0000000000000000)</Value>
@@ -16620,6 +16638,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Text</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.0000000000000000)(0.0000000000000000)</Value>
 				</Property>
@@ -16638,6 +16659,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Button_1</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(80.0000000000000000)(0.0000000000000000)(1.0000000000000000)(30.0000000000000000)</Value>
@@ -16658,6 +16682,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Property Name="Name">
 					<Value>Text</Value>
 				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
+				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(0.0000000000000000)(0.0000000000000000)(1.0000000000000000)(0.0000000000000000)</Value>
 				</Property>
@@ -16676,6 +16703,9 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 				<Property Name="Name">
 					<Value>Button_2</Value>
+				</Property>
+				<Property Name="TabIndex">
+					<Value>-1</Value>
 				</Property>
 				<Property Name="Transform">
 					<Value>(1.0000000000000000)(0.0000000000000000)(155.0000000000000000)(0.0000000000000000)(1.0000000000000000)(30.0000000000000000)</Value>
