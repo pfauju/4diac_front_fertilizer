@@ -5,11 +5,28 @@
 	<VersionInfo Version="1.0" Author="04jul" Date="2026-01-24">
 	</VersionInfo>
 	<CompilerInfo packageName="Main">
+		<Import declaration="DefaultPool::DataMask_M1"/>
+		<Import declaration="DefaultPool::DataMask_M2"/>
+		<Import declaration="DefaultPool::DataMask_M3"/>
+		<Import declaration="DefaultPool::DataMask_M4"/>
+		<Import declaration="DefaultPool::NumberVariable_application_rate_percent"/>
+		<Import declaration="DefaultPool::SoftKeyMask_S1"/>
+		<Import declaration="DefaultPool::SoftKeyMask_S2"/>
+		<Import declaration="DefaultPool::SoftKeyMask_S3"/>
+		<Import declaration="DefaultPool::SoftKeyMask_S4"/>
+		<Import declaration="DefaultPool::SoftKey_100_percent"/>
+		<Import declaration="DefaultPool::SoftKey_calibration_run"/>
+		<Import declaration="DefaultPool::SoftKey_debug"/>
 		<Import declaration="DefaultPool::SoftKey_main"/>
+		<Import declaration="DefaultPool::SoftKey_minus_percent"/>
+		<Import declaration="DefaultPool::SoftKey_plus_percent"/>
+		<Import declaration="DefaultPool::SoftKey_settings"/>
+		<Import declaration="DefaultPool::SoftKey_start"/>
+		<Import declaration="DefaultPool::SoftKey_stop"/>
+		<Import declaration="DefaultPool::WorkingSet_0"/>
 		<Import declaration="isobus::UT::io::Softkey::SoftKeyActivationCode::SK_RELEASED"/>
 		<Import declaration="logiBUS::io::DI::logiBUS_DI::Input_I1"/>
 		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q1"/>
-		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q2"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 	</SubAppInterfaceList>
@@ -27,26 +44,130 @@
 			<Parameter Name="u16DataMaskId" Value="1002"/>
 			<Parameter Name="u16SoftKeyMaskId" Value="4000"/>
 		</FB>
-		<FB Name="DigitalOutput_Q2" Type="logiBUS::io::DQ::logiBUS_QX" x="-1300" y="1700">
-			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="Output" Value="Output_Q2"/>
-		</FB>
-		<FB Name="SoftKey_UP_F1" Type="isobus::UT::io::Softkey::Softkey_IE" x="-4600" y="1600">
+		<FB Name="Softkey_IE_main" Type="isobus::UT::io::Softkey::Softkey_IE" x="-5200" y="2600">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="u16ObjId" Value="SoftKey_main"/>
 			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
 		</FB>
-		<FB Name="E_T_FF" Type="iec61499::events::E_T_FF" x="-2960" y="1800">
+		<FB Name="Softkey_IE_calibration_run" Type="isobus::UT::io::Softkey::Softkey_IE" x="-5400" y="3600">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_calibration_run"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_settings" Type="isobus::UT::io::Softkey::Softkey_IE" x="-5200" y="4600">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_settings"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_debug" Type="isobus::UT::io::Softkey::Softkey_IE" x="-5200" y="5600">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_debug"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Q_ActiveMask_DataMask_M1" Type="isobus::UT::Q::Q_ActiveMask" x="-3500" y="2700">
+			<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+			<Parameter Name="u16NewMaskId" Value="DataMask_M1"/>
+		</FB>
+		<FB Name="Q_ActiveMask_DataMask_M2" Type="isobus::UT::Q::Q_ActiveMask" x="-3500" y="3700">
+			<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+			<Parameter Name="u16NewMaskId" Value="DataMask_M2"/>
+		</FB>
+		<FB Name="Q_ActiveMask_DataMask_M3" Type="isobus::UT::Q::Q_ActiveMask" x="-3500" y="4700">
+			<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+			<Parameter Name="u16NewMaskId" Value="DataMask_M3"/>
+		</FB>
+		<FB Name="Q_ActiveMask_DataMask_M4" Type="isobus::UT::Q::Q_ActiveMask" x="-3500" y="5700">
+			<Parameter Name="u16WorkSetId" Value="WorkingSet_0"/>
+			<Parameter Name="u16NewMaskId" Value="DataMask_M4"/>
+		</FB>
+		<FB Name="Q_NumericValue" Type="isobus::UT::Q::Q_NumericValue" x="5300" y="2700">
+			<Parameter Name="u16ObjId" Value="NumberVariable_application_rate_percent"/>
+		</FB>
+		<FB Name="Softkey_IE_start" Type="isobus::UT::io::Softkey::Softkey_IE" x="2400" y="400">
+			<Parameter Name="QI" Value="FALSE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_start"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_stop" Type="isobus::UT::io::Softkey::Softkey_IE" x="2400" y="1500">
+			<Parameter Name="QI" Value="FALSE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_stop"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_100_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2300" y="2600">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_100_percent"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_plus_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2300" y="3700">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_plus_percent"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Softkey_IE_minus_percent" Type="isobus::UT::io::Softkey::Softkey_IE" x="2300" y="4800">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="SoftKey_minus_percent"/>
+			<Parameter Name="InputEvent" Value="SK_RELEASED"/>
+		</FB>
+		<FB Name="Q_NumericValue_2" Type="isobus::UT::Q::Q_NumericValue" x="6900" y="4000">
+			<Parameter Name="u16ObjId" Value="NumberVariable_application_rate_percent"/>
+		</FB>
+		<FB Name="F_ADD" Type="iec61131::arithmetic::F_ADD" x="5200" y="3800">
+			<Parameter Name="IN1" Value="NumberVariable_application_rate_percent"/>
+			<Parameter Name="IN2" Value="INT#1" Comment="Second function input"/>
+		</FB>
+		<FB Name="F_SUB" Type="iec61131::arithmetic::F_SUB" x="5200" y="4900">
+			<Parameter Name="IN1" Value="NumberVariable_application_rate_percent"/>
+			<Parameter Name="IN2" Value="INT#1" Comment="Second function input"/>
+		</FB>
+		<FB Name="Q_NumericValue_3" Type="isobus::UT::Q::Q_NumericValue" x="6900" y="5100">
+			<Parameter Name="u16ObjId" Value="NumberVariable_application_rate_percent"/>
+		</FB>
+		<FB Name="Q_SoftKeyMask_S1" Type="isobus::UT::Q::Q_SoftKeyMask" x="-1500" y="2400">
+			<Parameter Name="u8MaskType" Value="1"/>
+			<Parameter Name="u16DataMaskId" Value="DataMask_M1"/>
+			<Parameter Name="u16SoftKeyMaskId" Value="SoftKeyMask_S1"/>
+		</FB>
+		<FB Name="Q_SoftKeyMask_S2" Type="isobus::UT::Q::Q_SoftKeyMask" x="-1500" y="3400">
+			<Parameter Name="u8MaskType" Value="1"/>
+			<Parameter Name="u16DataMaskId" Value="DataMask_M2"/>
+			<Parameter Name="u16SoftKeyMaskId" Value="SoftKeyMask_S2"/>
+		</FB>
+		<FB Name="Q_SoftKeyMask_S3" Type="isobus::UT::Q::Q_SoftKeyMask" x="-1500" y="4400">
+			<Parameter Name="u8MaskType" Value="1"/>
+			<Parameter Name="u16DataMaskId" Value="DataMask_M3"/>
+			<Parameter Name="u16SoftKeyMaskId" Value="SoftKeyMask_S3"/>
+		</FB>
+		<FB Name="Q_SoftKeyMask_S4" Type="isobus::UT::Q::Q_SoftKeyMask" x="-1500" y="5400">
+			<Parameter Name="u8MaskType" Value="1"/>
+			<Parameter Name="u16DataMaskId" Value="DataMask_M4"/>
+			<Parameter Name="u16SoftKeyMaskId" Value="SoftKeyMask_S4"/>
+		</FB>
+		<FB Name="F_INT_TO_UDINT" Type="iec61131::conversion::F_INT_TO_UDINT" x="3900" y="3300">
+			<Parameter Name="IN" Value="100"/>
 		</FB>
 		<EventConnections>
 			<Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q1.REQ" dx1="953.33"/>
 			<Connection Source="DigitalInput_I1.IND" Destination="Q_SoftKeyMask.REQ" dx1="1073.33"/>
-			<Connection Source="SoftKey_UP_F1.IND" Destination="E_T_FF.CLK" dx1="366.67"/>
-			<Connection Source="E_T_FF.EO" Destination="DigitalOutput_Q2.REQ" dx1="540"/>
+			<Connection Source="Softkey_IE_main.IND" Destination="Q_ActiveMask_DataMask_M1.REQ" dx1="726.67"/>
+			<Connection Source="Softkey_IE_calibration_run.IND" Destination="Q_ActiveMask_DataMask_M2.REQ" dx1="760"/>
+			<Connection Source="Softkey_IE_settings.IND" Destination="Q_ActiveMask_DataMask_M3.REQ" dx1="726.67"/>
+			<Connection Source="Softkey_IE_debug.IND" Destination="Q_ActiveMask_DataMask_M4.REQ" dx1="726.67"/>
+			<Connection Source="F_ADD.CNF" Destination="Q_NumericValue_2.REQ" dx1="653.33"/>
+			<Connection Source="Softkey_IE_plus_percent.CNF" Destination="F_ADD.REQ" dx1="853.33"/>
+			<Connection Source="F_SUB.CNF" Destination="Q_NumericValue_3.REQ" dx1="653.33"/>
+			<Connection Source="Softkey_IE_minus_percent.CNF" Destination="F_SUB.REQ" dx1="940"/>
+			<Connection Source="Softkey_IE_main.CNF" Destination="Q_SoftKeyMask_S1.REQ" dx1="740"/>
+			<Connection Source="Softkey_IE_calibration_run.CNF" Destination="Q_SoftKeyMask_S2.REQ" dx1="753.33"/>
+			<Connection Source="Softkey_IE_settings.CNF" Destination="Q_SoftKeyMask_S3.REQ" dx1="733.33"/>
+			<Connection Source="Softkey_IE_debug.CNF" Destination="Q_SoftKeyMask_S4.REQ" dx1="706.67"/>
+			<Connection Source="Softkey_IE_100_percent.CNF" Destination="F_INT_TO_UDINT.REQ" dx1="313.33"/>
+			<Connection Source="F_INT_TO_UDINT.CNF" Destination="Q_NumericValue.REQ" dx1="80"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT" dx1="953.33"/>
-			<Connection Source="E_T_FF.Q" Destination="DigitalOutput_Q2.OUT" dx1="580"/>
+			<Connection Source="F_ADD.OUT" Destination="Q_NumericValue_2.u32NewValue" dx1="380"/>
+			<Connection Source="F_SUB.OUT" Destination="Q_NumericValue_3.u32NewValue" dx1="380"/>
+			<Connection Source="F_INT_TO_UDINT.OUT" Destination="Q_NumericValue.u32NewValue" dx1="126.67"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>

@@ -86,7 +86,7 @@
 #define InputNumber_M2_flow_factor_Offset                    1686
 #define OutputString_M3_radar_speed_kmh_Offset               1724
 #define OutputString_M1_settings_header_Offset               1745
-#define OutputString_M1_kg_haa_Offset                        1773
+#define OutputString_M1_kg_ha_Offset                         1773
 #define OutputString_M1_filllevel_Offset                     1795
 #define OutputString_W1_actual_quantity_kg_Offset            1821
 #define OutputString_M3_radar_speed_header_Offset            1840
@@ -194,7 +194,7 @@
 #define NumberVariable_W1_actual_quantity_Offset            43740
 #define NumberVariable_engine_speed_rpm_Offset              43747
 #define NumberVariable_flow_factor_Offset                   43754
-#define NumberVariable_21018_Offset                         43761
+#define NumberVariable_application_rate_percent_old_Offset  43761
 #define FontAttributes_Header_Offset                        43768
 #define FontAttributes_WindowMask_Offset                    43776
 #define FontAttributes_reset_Offset                         43784

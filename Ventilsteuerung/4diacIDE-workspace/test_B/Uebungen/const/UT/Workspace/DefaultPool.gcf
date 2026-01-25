@@ -92,7 +92,7 @@
         <VarDeclaration Name="InputNumber_M2_flow_factor" Type="UINT" Comment="" InitialValue="9003"/>
         <VarDeclaration Name="OutputString_M3_radar_speed_kmh" Type="UINT" Comment="" InitialValue="11000"/>
         <VarDeclaration Name="OutputString_M1_settings_header" Type="UINT" Comment="" InitialValue="11001"/>
-        <VarDeclaration Name="OutputString_M1_kg_haa" Type="UINT" Comment="" InitialValue="11002"/>
+        <VarDeclaration Name="OutputString_M1_kg_ha" Type="UINT" Comment="" InitialValue="11002"/>
         <VarDeclaration Name="OutputString_M1_filllevel" Type="UINT" Comment="" InitialValue="11003"/>
         <VarDeclaration Name="OutputString_W1_actual_quantity_kg" Type="UINT" Comment="" InitialValue="11004"/>
         <VarDeclaration Name="OutputString_M3_radar_speed_header" Type="UINT" Comment="" InitialValue="11005"/>
@@ -200,7 +200,7 @@
         <VarDeclaration Name="NumberVariable_W1_actual_quantity" Type="UINT" Comment="" InitialValue="21014"/>
         <VarDeclaration Name="NumberVariable_engine_speed_rpm" Type="UINT" Comment="" InitialValue="21015"/>
         <VarDeclaration Name="NumberVariable_flow_factor" Type="UINT" Comment="" InitialValue="21016"/>
-        <VarDeclaration Name="NumberVariable_21018" Type="UINT" Comment="" InitialValue="21018"/>
+        <VarDeclaration Name="NumberVariable_application_rate_percent_old" Type="UINT" Comment="" InitialValue="21018"/>
         <VarDeclaration Name="FontAttributes_Header" Type="UINT" Comment="" InitialValue="23002"/>
         <VarDeclaration Name="FontAttributes_WindowMask" Type="UINT" Comment="" InitialValue="23003"/>
         <VarDeclaration Name="FontAttributes_reset" Type="UINT" Comment="" InitialValue="23009"/>

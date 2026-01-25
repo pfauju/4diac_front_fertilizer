@@ -197,7 +197,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				</Property>
 			</PropertySheet>
 		</Object>
-		<Object Class="CNumberVariable" JVS-ID="21018" ObjectName="NumberVariable_21018" Pinned="FALSE">
+		<Object Class="CNumberVariable" JVS-ID="21018" ObjectName="NumberVariable_application_rate_percent_old" Pinned="FALSE">
 			<Property Name="Group">
 				<Value/>
 			</Property>
@@ -208,7 +208,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 			</Property>
 			<PropertySheet Name="NumberVariable" ID="68736">
 				<Property Name="Value">
-					<Value>8</Value>
+					<Value>100</Value>
 				</Property>
 			</PropertySheet>
 		</Object>
@@ -5092,7 +5092,7 @@ AG4AZABiAGEAcwBlAGQAIABTAHAAZQBlAGQAAAA=]]>
 				<Object JVS-ID="23002"/>
 			</Objects>
 		</Object>
-		<Object Class="COutputText" Name="Text" ObjectName="OutputString_M1_kg_haa" Pinned="FALSE" JVS-ID="11002">
+		<Object Class="COutputText" Name="Text" ObjectName="OutputString_M1_kg_ha" Pinned="FALSE" JVS-ID="11002">
 			<PropertySheet Name="Text">
 				<Property Name="Text">
 					<Value>
