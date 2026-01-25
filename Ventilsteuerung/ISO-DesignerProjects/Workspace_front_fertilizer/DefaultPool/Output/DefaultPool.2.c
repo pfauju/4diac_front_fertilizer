@@ -89,7 +89,7 @@ const unsigned long ISO_OP_MEMORY_CLASS isoOP_DefaultPool_Offset[] = {
 	  1686,  // InputNumber_M2_flow_factor_Offset
 	  1724,  // OutputString_M3_radar_speed_kmh_Offset
 	  1745,  // OutputString_M1_settings_header_Offset
-	  1773,  // OutputString_M1_kg_ha_Offset
+	  1773,  // OutputString_M1_kg_haa_Offset
 	  1795,  // OutputString_M1_filllevel_Offset
 	  1821,  // OutputString_W1_actual_quantity_kg_Offset
 	  1840,  // OutputString_M3_radar_speed_header_Offset

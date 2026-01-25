@@ -86,7 +86,7 @@
 #define InputNumber_M2_flow_factor_Offset                    1686
 #define OutputString_M3_radar_speed_kmh_Offset               1724
 #define OutputString_M1_settings_header_Offset               1745
-#define OutputString_M1_kg_ha_Offset                         1773
+#define OutputString_M1_kg_haa_Offset                        1773
 #define OutputString_M1_filllevel_Offset                     1795
 #define OutputString_W1_actual_quantity_kg_Offset            1821
 #define OutputString_M3_radar_speed_header_Offset            1840

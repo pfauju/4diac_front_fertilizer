@@ -91,7 +91,7 @@
 #define InputNumber_M2_flow_factor         9003
 #define OutputString_M3_radar_speed_kmh   11000
 #define OutputString_M1_settings_header   11001
-#define OutputString_M1_kg_ha             11002
+#define OutputString_M1_kg_haa            11002
 #define OutputString_M1_filllevel         11003
 #define OutputString_W1_actual_quantity_kg  11004
 #define OutputString_M3_radar_speed_header  11005
