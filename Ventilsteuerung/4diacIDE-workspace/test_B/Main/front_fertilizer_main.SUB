@@ -374,7 +374,7 @@
 			<Parameter Name="u16ObjId" Value="OutputNumber_M1_weight"/>
 		</FB>
 		<FB Name="E_DELAY" Type="iec61499::events::E_DELAY" x="-5600" y="200">
-			<Parameter Name="DT" Value="T#1s"/>
+			<Parameter Name="DT" Value="T#2s"/>
 		</FB>
 		<SubApp Name="Speedcontrol" Type="Speedcontrol" x="12100" y="700">
 			<Parameter Name="SET_SPEED" Value="REAL#0.0"/>
@@ -405,19 +405,20 @@
 		<FB Name="I_WBSD" Type="isobus::tecu::I_WBSD" x="6840" y="9866.67">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
-		<FB Name="I_VDS" Type="isobus::tecu::I_VDS" x="6900" y="11800">
-			<Parameter Name="QI" Value="TRUE"/>
-		</FB>
 		<FB Name="I_RHS" Type="isobus::tecu::I_RHS" x="9600" y="11800">
-			<Parameter Name="QI" Value="TRUE"/>
-		</FB>
-		<FB Name="I_MSS" Type="isobus::tecu::I_MSS" x="9600" y="9900">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
 		<FB Name="Q_NumericValue_8" Type="isobus::UT::Q::Q_NumericValue" x="10300" y="13700">
 			<Parameter Name="u16ObjId" Value="NumberVariable_selected_speed"/>
 		</FB>
 		<FB Name="F_UINT_TO_UDINT" Type="iec61131::conversion::F_UINT_TO_UDINT" x="7200" y="13700">
+		</FB>
+		<FB Name="F_STRING_AS_BOOL" Type="iec61131::conversion::F_STRING_AS_BOOL" x="13500" y="13100">
+		</FB>
+		<FB Name="F_BYTE_AS_STRING" Type="iec61131::conversion::F_BYTE_AS_STRING" x="12200" y="12900">
+		</FB>
+		<FB Name="E_CYCLE" Type="iec61499::events::E_CYCLE" x="12240" y="12006.67">
+			<Parameter Name="DT" Value="T#1s"/>
 		</FB>
 		<EventConnections>
 			<Connection Source="Softkey_IE_minus_percent.IND" Destination="F_SUB.REQ" dx1="940"/>
@@ -520,8 +521,12 @@
 			<Connection Source="Speedcontrol.CNF_SPEED" Destination="F_REAL_TO_UDINT_1.REQ" dx1="186.67"/>
 			<Connection Source="F_REAL_TO_UDINT_1.CNF" Destination="Q_NumericValue_7.REQ" dx1="246.67"/>
 			<Connection Source="Button_IE_7.IND" Destination="Q_ActiveMask_DataMask_M2.REQ" dx1="606.67"/>
-			<Connection Source="I_VDS.IND" Destination="F_UINT_TO_UDINT.REQ" dx1="80" dx2="80" dy="893.33"/>
 			<Connection Source="F_UINT_TO_UDINT.CNF" Destination="Q_NumericValue_8.REQ" dx1="453.33"/>
+			<Connection Source="I_WBSD.IND" Destination="F_UINT_TO_UDINT.REQ" dx1="80" dx2="80" dy="1860"/>
+			<Connection Source="F_BYTE_AS_STRING.CNF" Destination="F_STRING_AS_BOOL.REQ" dx1="126.67"/>
+			<Connection Source="I_WBSD.INITO" Destination="E_CYCLE.START" dx1="1973.33"/>
+			<Connection Source="E_CYCLE.EO" Destination="I_RHS.INIT" dx1="80" dx2="80" dy="-100"/>
+			<Connection Source="I_RHS.INITO" Destination="F_BYTE_AS_STRING.REQ" dx1="366.67"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="Q_NumericValue.u32OldValue" Destination="F_ADD.IN1" dx1="80" dx2="80" dy="293.33"/>
@@ -581,7 +586,9 @@
 			<Connection Source="Speedcontrol.OUTPUT_SPEED" Destination="F_REAL_TO_UDINT_1.IN" dx1="186.67"/>
 			<Connection Source="F_REAL_TO_UDINT_1.OUT" Destination="Q_NumericValue_7.u32NewValue" dx1="560"/>
 			<Connection Source="F_UINT_TO_UDINT.OUT" Destination="Q_NumericValue_8.u32NewValue" dx1="453.33"/>
-			<Connection Source="I_VDS.NavigationBasedVehicleSpeed" Destination="F_UINT_TO_UDINT.IN" dx1="80" dx2="80" dy="520"/>
+			<Connection Source="I_WBSD.WHEELBASEDMACHINESPEED" Destination="F_UINT_TO_UDINT.IN" dx1="80" dx2="80" dy="1540"/>
+			<Connection Source="I_RHS.REAR_HITCH_WORK_INDICATION" Destination="F_BYTE_AS_STRING.IN" dx1="360"/>
+			<Connection Source="F_BYTE_AS_STRING.OUT" Destination="F_STRING_AS_BOOL.IN" dx1="126.67"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
