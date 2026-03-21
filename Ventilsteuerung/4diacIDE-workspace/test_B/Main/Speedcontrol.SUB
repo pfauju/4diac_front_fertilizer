@@ -30,6 +30,9 @@
 		<InputVars>
 			<VarDeclaration Name="M_INPUT" Type="REAL"/>
 			<VarDeclaration Name="SET_SPEED" Type="REAL"/>
+			<VarDeclaration Name="P" Type="REAL"/>
+			<VarDeclaration Name="I" Type="REAL"/>
+			<VarDeclaration Name="DIF" Type="REAL"/>
 		</InputVars>
 		<OutputVars>
 			<VarDeclaration Name="OUTPUT_PWM" Type="UDINT"/>
@@ -40,12 +43,12 @@
 		<FB Name="logiBUS_PI_ID" Type="logiBUS::io::PI::logiBUS_PI_ID" x="-4700" y="400">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="Input" Value="PulseInput_I2"/>
-			<Parameter Name="ImpulseDelta" Value="12"/>
-			<Parameter Name="TimeDelta" Value="50000"/>
+			<Parameter Name="ImpulseDelta" Value="0"/>
+			<Parameter Name="TimeDelta" Value="250"/>
 		</FB>
 		<FB Name="FT_DERIV" Type="OSCAT::Basic::POUs::Engineering::Control::FT_DERIV_10" x="500" y="-1600">
 			<Parameter Name="K" Value="4"/>
-			<Parameter Name="Faktor" Value="6.0"/>
+			<Parameter Name="Faktor" Value="5.0"/>
 			<Parameter Name="run" Value="TRUE"/>
 		</FB>
 		<FB Name="F_DWORD_TO_UDINT" Type="iec61131::conversion::F_DWORD_TO_UDINT" x="-2900" y="700">
@@ -61,9 +64,6 @@
 			<Parameter Name="SUP" Value="0.0"/>
 			<Parameter Name="OFS" Value="0.0"/>
 			<Parameter Name="M_I" Value="8184.0"/>
-			<Parameter Name="KP" Value="10.0"/>
-			<Parameter Name="TN" Value="1.0"/>
-			<Parameter Name="TV" Value="1.0"/>
 			<Parameter Name="LL" Value="0.0"/>
 			<Parameter Name="LH" Value="8192.0"/>
 		</FB>
@@ -86,7 +86,6 @@
 			<Connection Source="CTRL_PID.CNF" Destination="F_LREAL_TO_UDINT.REQ"/>
 			<Connection Source="F_LREAL_TO_UDINT.CNF" Destination="F_UDINT_TO_DWORD.REQ"/>
 			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="PWMOutput_Q1.REQ" dx1="380"/>
-			<Connection Source="logiBUS_PI_ID.CNF" Destination="F_DWORD_TO_UDINT.REQ" dx1="406.67"/>
 			<Connection Source="E_CYCLE.EO" Destination="logiBUS_PI_ID.REQ" dx1="593.33"/>
 			<Connection Source="START" Destination="E_CYCLE.START" dx1="593.33"/>
 			<Connection Source="E_SR.EO" Destination="CTRL_PID.REQ" dx1="2006.67"/>
@@ -101,6 +100,7 @@
 			<Connection Source="STOP" Destination="E_CYCLE.STOP" dx1="1833.33"/>
 			<Connection Source="M_STOP" Destination="E_CYCLE.STOP" dx1="1833.33"/>
 			<Connection Source="F_DWORD_TO_UDINT.CNF" Destination="F_DIV.REQ" dx1="346.67"/>
+			<Connection Source="logiBUS_PI_ID.IND" Destination="F_DWORD_TO_UDINT.REQ" dx1="406.67"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="logiBUS_PI_ID.IN" Destination="F_DWORD_TO_UDINT.IN" dx1="406.67"/>
@@ -116,6 +116,9 @@
 			<Connection Source="SET_SPEED" Destination="CTRL_PID.SET" dx1="6380"/>
 			<Connection Source="FT_DERIV.out" Destination="OUTPUT_SPEED" dx1="4300"/>
 			<Connection Source="F_DWORD_TO_UDINT.OUT" Destination="F_DIV.IN1" dx1="346.67"/>
+			<Connection Source="P" Destination="CTRL_PID.KP" dx1="6380"/>
+			<Connection Source="I" Destination="CTRL_PID.TN" dx1="6380"/>
+			<Connection Source="DIF" Destination="CTRL_PID.TV" dx1="6380"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>

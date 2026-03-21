@@ -8,7 +8,12 @@
 		</Object>
 		<Object Class="CInputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21005" ObjectName="NumberVariable_engine_speed_manuel"/>
+				<Object Class="CNumberVariable" JVS-ID="21010" ObjectName="NumberVariable_manuel_auto_speed"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
+			</Objects>
+		</Object>
+		<Object Class="CInputText">
+			<Objects>
 				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>
