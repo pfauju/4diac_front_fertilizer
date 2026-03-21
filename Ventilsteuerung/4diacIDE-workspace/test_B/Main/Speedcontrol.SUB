@@ -5,7 +5,9 @@
 	<VersionInfo Version="1.0" Author="04jul" Date="2026-03-10">
 	</VersionInfo>
 	<CompilerInfo>
+		<Import declaration="logiBUS::io::DO_LED::LED_FREQ::LED_5HZ"/>
 		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q4"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q5"/>
 		<Import declaration="logiBUS::io::PI::logiBUS_PI::PulseInput_I2"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>

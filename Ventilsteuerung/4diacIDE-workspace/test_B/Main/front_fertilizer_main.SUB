@@ -25,6 +25,7 @@
 		<Import declaration="DefaultPool::NumberVariable_engine_speed_manuel"/>
 		<Import declaration="DefaultPool::NumberVariable_engine_speed_rpm"/>
 		<Import declaration="DefaultPool::NumberVariable_flow_factor"/>
+		<Import declaration="DefaultPool::NumberVariable_selected_speed"/>
 		<Import declaration="DefaultPool::NumberVariable_target_quantity"/>
 		<Import declaration="DefaultPool::NumberVariable_target_quantity_calibration_run"/>
 		<Import declaration="DefaultPool::OutputNumber_M1_weight"/>
@@ -401,6 +402,23 @@
 			<Parameter Name="u16ObjId" Value="Button_M1_refresh"/>
 			<Parameter Name="InputEvent" Value="BT_RELEASED_UNLATCHED"/>
 		</FB>
+		<FB Name="I_WBSD" Type="isobus::tecu::I_WBSD" x="6840" y="9866.67">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="I_VDS" Type="isobus::tecu::I_VDS" x="6900" y="11800">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="I_RHS" Type="isobus::tecu::I_RHS" x="9600" y="11800">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="I_MSS" Type="isobus::tecu::I_MSS" x="9600" y="9900">
+			<Parameter Name="QI" Value="TRUE"/>
+		</FB>
+		<FB Name="Q_NumericValue_8" Type="isobus::UT::Q::Q_NumericValue" x="10300" y="13700">
+			<Parameter Name="u16ObjId" Value="NumberVariable_selected_speed"/>
+		</FB>
+		<FB Name="F_UINT_TO_UDINT" Type="iec61131::conversion::F_UINT_TO_UDINT" x="7200" y="13700">
+		</FB>
 		<EventConnections>
 			<Connection Source="Softkey_IE_minus_percent.IND" Destination="F_SUB.REQ" dx1="940"/>
 			<Connection Source="Softkey_IE_main.IND" Destination="F_SEL_E_4.REQ1" dx1="746.67"/>
@@ -502,6 +520,8 @@
 			<Connection Source="Speedcontrol.CNF_SPEED" Destination="F_REAL_TO_UDINT_1.REQ" dx1="186.67"/>
 			<Connection Source="F_REAL_TO_UDINT_1.CNF" Destination="Q_NumericValue_7.REQ" dx1="246.67"/>
 			<Connection Source="Button_IE_7.IND" Destination="Q_ActiveMask_DataMask_M2.REQ" dx1="606.67"/>
+			<Connection Source="I_VDS.IND" Destination="F_UINT_TO_UDINT.REQ" dx1="80" dx2="80" dy="893.33"/>
+			<Connection Source="F_UINT_TO_UDINT.CNF" Destination="Q_NumericValue_8.REQ" dx1="453.33"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="Q_NumericValue.u32OldValue" Destination="F_ADD.IN1" dx1="80" dx2="80" dy="293.33"/>
@@ -560,6 +580,8 @@
 			<Connection Source="F_DWORD_TO_UDINT_5.OUT" Destination="F_UDINT_TO_REAL_1.IN" dx1="80" dx2="80" dy="-373.33"/>
 			<Connection Source="Speedcontrol.OUTPUT_SPEED" Destination="F_REAL_TO_UDINT_1.IN" dx1="186.67"/>
 			<Connection Source="F_REAL_TO_UDINT_1.OUT" Destination="Q_NumericValue_7.u32NewValue" dx1="560"/>
+			<Connection Source="F_UINT_TO_UDINT.OUT" Destination="Q_NumericValue_8.u32NewValue" dx1="453.33"/>
+			<Connection Source="I_VDS.NavigationBasedVehicleSpeed" Destination="F_UINT_TO_UDINT.IN" dx1="80" dx2="80" dy="520"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
