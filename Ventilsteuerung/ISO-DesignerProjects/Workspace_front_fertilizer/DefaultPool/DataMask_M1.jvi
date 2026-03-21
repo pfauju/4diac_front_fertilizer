@@ -304,5 +304,31 @@
 				<Object JVS-ID="3009"/>
 			</Objects>
 		</Component>
+		<Component ID="95289624" Class="CButton" Name="Button">
+			<PropertySheets>
+				<PropertySheet Name="General">
+					<Property Name="ZOrder">
+						<Value>7</Value>
+					</Property>
+				</PropertySheet>
+				<PropertySheet Name="Proxy">
+					<Property Name="Top">
+						<Value>10</Value>
+					</Property>
+					<Property Name="Left">
+						<Value>424</Value>
+					</Property>
+					<Property Name="Transform">
+						<Value>(1.0000000000000000)(0.0000000000000000)(424.0000000000000000)(0.0000000000000000)(1.0000000000000000)(10.0000000000000000)</Value>
+					</Property>
+					<Property Name="ReferencedObjectForMask">
+						<Value>-1</Value>
+					</Property>
+				</PropertySheet>
+			</PropertySheets>
+			<Objects>
+				<Object JVS-ID="6008"/>
+			</Objects>
+		</Component>
 	</Components>
 </JetView-Document>
