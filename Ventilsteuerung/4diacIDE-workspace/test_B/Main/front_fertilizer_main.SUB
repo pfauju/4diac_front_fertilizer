@@ -11,6 +11,7 @@
 		<Import declaration="DefaultPool::Button_M2_calibration_area_1a"/>
 		<Import declaration="DefaultPool::Button_M2_calibration_area_5a"/>
 		<Import declaration="DefaultPool::Button_M2_start"/>
+		<Import declaration="DefaultPool::Button_M4_auto"/>
 		<Import declaration="DefaultPool::Button_M4_manuel_start"/>
 		<Import declaration="DefaultPool::Button_M4_manuel_stop"/>
 		<Import declaration="DefaultPool::Button_W1_stop"/>
@@ -337,32 +338,12 @@
 			<Parameter Name="IN0" Value="COLOR_GREY"/>
 			<Parameter Name="IN1" Value="COLOR_RED"/>
 		</FB>
-		<FB Name="PWMOutput_Q4" Type="logiBUS::io::DQ::logiBUS_QD_PWM" x="1686.67" y="10300">
-			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="OUT" Value="16#FFFFFFFF"/>
-			<Parameter Name="Output" Value="Output_Q4"/>
-		</FB>
 		<FB Name="AnalogInput_I6" Type="logiBUS::io::AI::logiBUS_AI_ID" x="-5900" y="11300">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="Input" Value="AnalogInput_I6"/>
 			<Parameter Name="AnalogInput_hysteresis" Value="40"/>
 		</FB>
 		<FB Name="F_DWORD_TO_UDINT_3" Type="iec61131::conversion::F_DWORD_TO_UDINT" x="-3700" y="11800">
-		</FB>
-		<FB Name="F_DWORD_TO_UDINT_4" Type="iec61131::conversion::F_DWORD_TO_UDINT" x="-5800" y="10600">
-		</FB>
-		<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="-2900" y="10600">
-			<Parameter Name="IN2" Value="REAL#81.92"/>
-		</FB>
-		<FB Name="F_REAL_TO_UDINT" Type="iec61131::conversion::F_REAL_TO_UDINT" x="-2100" y="10600">
-		</FB>
-		<FB Name="F_UDINT_TO_REAL" Type="iec61131::conversion::F_UDINT_TO_REAL" x="-4400" y="10600">
-		</FB>
-		<FB Name="F_UDINT_TO_DWORD" Type="iec61131::conversion::F_UDINT_TO_DWORD" x="200" y="10600">
-		</FB>
-		<FB Name="F_LIMIT" Type="iec61131::selection::F_LIMIT" x="-700" y="10600">
-			<Parameter Name="MN" Value="UDINT#0"/>
-			<Parameter Name="MX" Value="UDINT#8192"/>
 		</FB>
 		<FB Name="F_NOT" Type="iec61131::bitwiseOperators::F_NOT" x="-6700" y="15900">
 		</FB>
@@ -455,6 +436,26 @@
 		</FB>
 		<FB Name="F_UDINT_TO_REAL_5" Type="iec61131::conversion::F_UDINT_TO_REAL" x="14800" y="6600">
 		</FB>
+		<FB Name="F_DIV_1" Type="iec61131::arithmetic::F_DIV" x="16300" y="4700">
+			<Parameter Name="IN2" Value="REAL#10.0"/>
+		</FB>
+		<FB Name="F_DIV_2" Type="iec61131::arithmetic::F_DIV" x="16300" y="5600">
+			<Parameter Name="IN2" Value="REAL#10.0"/>
+		</FB>
+		<FB Name="F_DIV_3" Type="iec61131::arithmetic::F_DIV" x="16200" y="3600">
+			<Parameter Name="IN2" Value="REAL#10.0"/>
+		</FB>
+		<FB Name="Button_IE_8" Type="isobus::UT::io::Button::Button_IE" x="11000" y="-2000">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u16ObjId" Value="Button_M4_auto"/>
+			<Parameter Name="InputEvent" Value="BT_RELEASED_UNLATCHED"/>
+		</FB>
+		<FB Name="F_UDINT_TO_REAL_6" Type="iec61131::conversion::F_UDINT_TO_REAL" x="11200" y="19600">
+		</FB>
+		<FB Name="F_DIV_4" Type="iec61131::arithmetic::F_DIV" x="13500" y="19700">
+		</FB>
+		<FB Name="F_UDINT_TO_REAL_7" Type="iec61131::conversion::F_UDINT_TO_REAL" x="12700" y="18600">
+		</FB>
 		<EventConnections>
 			<Connection Source="Softkey_IE_minus_percent.IND" Destination="F_SUB.REQ" dx1="940"/>
 			<Connection Source="Softkey_IE_main.IND" Destination="F_SEL_E_4.REQ1" dx1="746.67"/>
@@ -531,14 +532,6 @@
 			<Connection Source="F_SEL_1.CNF" Destination="Q_BackgroundColour.REQ" dx1="386.67"/>
 			<Connection Source="Q_ActiveMask_DataMask_M1.CNF" Destination="E_SR_1.R" dx1="646.67"/>
 			<Connection Source="AnalogInput_I6.IND" Destination="F_DWORD_TO_UDINT_3.REQ" dx1="420"/>
-			<Connection Source="InputNumber_I1.IND" Destination="F_DWORD_TO_UDINT_4.REQ" dx1="80" dx2="80" dy="740"/>
-			<Connection Source="InputNumber_I1.INITO" Destination="F_DWORD_TO_UDINT_4.REQ" dx1="80" dx2="80" dy="846.67"/>
-			<Connection Source="F_MUL.CNF" Destination="F_REAL_TO_UDINT.REQ"/>
-			<Connection Source="F_DWORD_TO_UDINT_4.CNF" Destination="F_UDINT_TO_REAL.REQ"/>
-			<Connection Source="F_UDINT_TO_REAL.CNF" Destination="F_MUL.REQ"/>
-			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="PWMOutput_Q4.REQ" dx1="226.67"/>
-			<Connection Source="F_REAL_TO_UDINT.CNF" Destination="F_LIMIT.REQ"/>
-			<Connection Source="F_LIMIT.CNF" Destination="F_UDINT_TO_DWORD.REQ"/>
 			<Connection Source="F_NOT.CNF" Destination="Q_ObjHideShow_1.REQ" dx1="986.67"/>
 			<Connection Source="logiBUS_IX.IND" Destination="F_NOT.REQ" dx1="373.33"/>
 			<Connection Source="Button_IX.IND" Destination="logiBUS_QX.REQ" dx1="353.33"/>
@@ -564,16 +557,23 @@
 			<Connection Source="I_RHS.INITO" Destination="F_BYTE_AS_STRING.REQ" dx1="366.67"/>
 			<Connection Source="NumericValue_ID_1.IND" Destination="F_DWORD_TO_UDINT_6.REQ" dx1="346.67"/>
 			<Connection Source="F_DWORD_TO_UDINT_6.CNF" Destination="F_UDINT_TO_REAL_2.REQ"/>
-			<Connection Source="F_UDINT_TO_REAL_2.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1233.33"/>
 			<Connection Source="NumericValue_ID_2.IND" Destination="F_DWORD_TO_UDINT_7.REQ" dx1="346.67"/>
-			<Connection Source="F_UDINT_TO_REAL_3.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1233.33"/>
 			<Connection Source="F_DWORD_TO_UDINT_7.CNF" Destination="F_UDINT_TO_REAL_3.REQ"/>
 			<Connection Source="NumericValue_ID_3.IND" Destination="F_DWORD_TO_UDINT_8.REQ" dx1="346.67"/>
-			<Connection Source="F_UDINT_TO_REAL_4.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1233.33"/>
 			<Connection Source="F_DWORD_TO_UDINT_8.CNF" Destination="F_UDINT_TO_REAL_4.REQ"/>
 			<Connection Source="NumericValue_ID_4.IND" Destination="F_DWORD_TO_UDINT_9.REQ" dx1="346.67"/>
 			<Connection Source="F_UDINT_TO_REAL_5.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1233.33"/>
 			<Connection Source="F_DWORD_TO_UDINT_9.CNF" Destination="F_UDINT_TO_REAL_5.REQ"/>
+			<Connection Source="F_DIV_1.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1786.67"/>
+			<Connection Source="F_DIV_2.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1493.33"/>
+			<Connection Source="F_DIV_3.CNF" Destination="Speedcontrol.REQ_PID" dx1="80" dx2="80" dy="-1786.67"/>
+			<Connection Source="F_UDINT_TO_REAL_4.CNF" Destination="F_DIV_2.REQ"/>
+			<Connection Source="F_UDINT_TO_REAL_3.CNF" Destination="F_DIV_1.REQ" dx1="226.67"/>
+			<Connection Source="F_UDINT_TO_REAL_2.CNF" Destination="F_DIV_3.REQ"/>
+			<Connection Source="Button_IE_8.IND" Destination="Speedcontrol.START" dx1="100"/>
+			<Connection Source="INI_1.GETO" Destination="F_UDINT_TO_REAL_6.REQ" dx1="533.33"/>
+			<Connection Source="F_UDINT_TO_REAL_6.CNF" Destination="F_DIV_4.REQ" dx1="653.33"/>
+			<Connection Source="F_UDINT_TO_REAL_7.CNF" Destination="F_DIV_4.REQ" dx1="80" dx2="80" dy="546.67"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="Q_NumericValue.u32OldValue" Destination="F_ADD.IN1" dx1="80" dx2="80" dy="293.33"/>
@@ -616,13 +616,6 @@
 			<Connection Source="F_SEL_1.OUT" Destination="Q_BackgroundColour.u8Colour" dx1="386.67"/>
 			<Connection Source="F_SEL_2.OUT" Destination="Q_BackgroundColour_1.u8Colour" dx1="386.67"/>
 			<Connection Source="AnalogInput_I6.IN" Destination="F_DWORD_TO_UDINT_3.IN" dx1="366.67"/>
-			<Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT_4.IN" dx1="80" dx2="80" dy="633.33"/>
-			<Connection Source="F_MUL.OUT" Destination="F_REAL_TO_UDINT.IN"/>
-			<Connection Source="F_DWORD_TO_UDINT_4.OUT" Destination="F_UDINT_TO_REAL.IN"/>
-			<Connection Source="F_UDINT_TO_REAL.OUT" Destination="F_MUL.IN1"/>
-			<Connection Source="F_UDINT_TO_DWORD.OUT" Destination="PWMOutput_Q4.OUT" dx1="226.67"/>
-			<Connection Source="F_REAL_TO_UDINT.OUT" Destination="F_LIMIT.IN" dx1="200"/>
-			<Connection Source="F_LIMIT.OUT" Destination="F_UDINT_TO_DWORD.IN"/>
 			<Connection Source="logiBUS_IX.IN" Destination="F_NOT.IN" dx1="373.33"/>
 			<Connection Source="F_NOT.OUT" Destination="Q_ObjHideShow_1.qVisible" dx1="986.67"/>
 			<Connection Source="Button_IX.IN" Destination="logiBUS_QX.OUT" dx1="353.33"/>
@@ -644,10 +637,16 @@
 			<Connection Source="NumericValue_ID_3.IN" Destination="F_DWORD_TO_UDINT_8.IN" dx1="346.67"/>
 			<Connection Source="F_DWORD_TO_UDINT_9.OUT" Destination="F_UDINT_TO_REAL_5.IN"/>
 			<Connection Source="NumericValue_ID_4.IN" Destination="F_DWORD_TO_UDINT_9.IN" dx1="346.67"/>
-			<Connection Source="F_UDINT_TO_REAL_2.OUT" Destination="Speedcontrol.P" dx1="80" dx2="80" dy="-1126.67"/>
-			<Connection Source="F_UDINT_TO_REAL_3.OUT" Destination="Speedcontrol.I" dx1="80" dx2="80" dy="-1580"/>
-			<Connection Source="F_UDINT_TO_REAL_4.OUT" Destination="Speedcontrol.DIF" dx1="80" dx2="80" dy="-2026.67"/>
+			<Connection Source="F_UDINT_TO_REAL_4.OUT" Destination="F_DIV_2.IN1"/>
+			<Connection Source="F_UDINT_TO_REAL_3.OUT" Destination="F_DIV_1.IN1" dx1="226.67"/>
 			<Connection Source="F_UDINT_TO_REAL_5.OUT" Destination="Speedcontrol.SET_SPEED" dx1="80" dx2="80" dy="-2680"/>
+			<Connection Source="F_UDINT_TO_REAL_2.OUT" Destination="F_DIV_3.IN1"/>
+			<Connection Source="F_DIV_3.OUT" Destination="Speedcontrol.P" dx1="80" dx2="80" dy="-1126.67"/>
+			<Connection Source="F_DIV_1.OUT" Destination="Speedcontrol.I" dx1="80" dx2="80" dy="-1620"/>
+			<Connection Source="F_DIV_2.OUT" Destination="Speedcontrol.DIF" dx1="80" dx2="80" dy="-2020"/>
+			<Connection Source="INI_1.VALUEO" Destination="F_UDINT_TO_REAL_6.IN" dx1="533.33"/>
+			<Connection Source="F_UDINT_TO_REAL_6.OUT" Destination="F_DIV_4.IN1" dx1="653.33"/>
+			<Connection Source="F_UDINT_TO_REAL_7.OUT" Destination="F_DIV_4.IN2" dx1="80" dx2="80" dy="600"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
