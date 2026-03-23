@@ -32,9 +32,6 @@
 		<InputVars>
 			<VarDeclaration Name="M_INPUT" Type="REAL"/>
 			<VarDeclaration Name="SET_SPEED" Type="REAL"/>
-			<VarDeclaration Name="P" Type="REAL"/>
-			<VarDeclaration Name="I" Type="REAL"/>
-			<VarDeclaration Name="DIF" Type="REAL"/>
 		</InputVars>
 		<OutputVars>
 			<VarDeclaration Name="OUTPUT_PWM" Type="UDINT"/>
@@ -69,6 +66,7 @@
 			<Parameter Name="M_I" Value="8184.0"/>
 			<Parameter Name="KP" Value="20.0"/>
 			<Parameter Name="TN" Value="0.8"/>
+			<Parameter Name="TV" Value="0.0"/>
 			<Parameter Name="LL" Value="0.0"/>
 			<Parameter Name="LH" Value="8192.0"/>
 		</FB>
@@ -119,7 +117,6 @@
 			<Connection Source="E_SR.Q" Destination="CTRL_PID.MAN" dx1="2006.67"/>
 			<Connection Source="SET_SPEED" Destination="CTRL_PID.SET" dx1="6380"/>
 			<Connection Source="FT_DERIV.out" Destination="OUTPUT_SPEED" dx1="4300"/>
-			<Connection Source="DIF" Destination="CTRL_PID.TV" dx1="6380"/>
 			<Connection Source="F_DWORD_TO_UDINT.OUT" Destination="OUTPUT_PULSE" dx1="5926.67"/>
 		</DataConnections>
 	</SubAppNetwork>

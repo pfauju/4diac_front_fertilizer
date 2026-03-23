@@ -13,6 +13,8 @@
 		<VarDeclaration Name="SECTION_I2_STORE" Type="STRING" InitialValue="'SECTION'"/>
 		<VarDeclaration Name="KEY_I3_STORE" Type="STRING" InitialValue="'K_I3'"/>
 		<VarDeclaration Name="SECTION_I3_STORE" Type="STRING" InitialValue="'SECTION'"/>
+		<VarDeclaration Name="KEY_I4_STORE" Type="STRING" InitialValue="'K_I4'"/>
+		<VarDeclaration Name="SECTION_I4_STORE" Type="STRING" InitialValue="'SECTION'"/>
 		<VarDeclaration Name="KEY_S1_STORE" Type="STRING" InitialValue="'K_S1'"/>
 		<VarDeclaration Name="SECTION_S1_STORE" Type="STRING" InitialValue="'SECTION_str'"/>
 	</GlobalConstants>
@@ -26,6 +28,8 @@ GLOBALCONSTANTS NVS_Keys
 		SECTION_I2_STORE : STRING := 'SECTION';
 		KEY_I3_STORE : STRING := 'K_I3';
 		SECTION_I3_STORE : STRING := 'SECTION';
+		KEY_I4_STORE : STRING := 'K_I4';
+		SECTION_I4_STORE : STRING := 'SECTION';
 		KEY_S1_STORE : STRING := 'K_S1';
 		SECTION_S1_STORE : STRING := 'SECTION_str';
 	END_VAR
