@@ -74,6 +74,7 @@
         <VarDeclaration Name="Button_M1_reset" Type="UINT" Comment="" InitialValue="6000"/>
         <VarDeclaration Name="Button_6001" Type="UINT" Comment="" InitialValue="6001"/>
         <VarDeclaration Name="Button_M4_manuel_start" Type="UINT" Comment="" InitialValue="6002"/>
+        <VarDeclaration Name="Button_M1_restart" Type="UINT" Comment="" InitialValue="6003"/>
         <VarDeclaration Name="Button_M4_manuel_stop" Type="UINT" Comment="" InitialValue="6004"/>
         <VarDeclaration Name="Button_6005" Type="UINT" Comment="" InitialValue="6005"/>
         <VarDeclaration Name="Button_6006" Type="UINT" Comment="" InitialValue="6006"/>
@@ -173,6 +174,7 @@
         <VarDeclaration Name="settings_softkeys" Type="UINT" Comment="" InitialValue="20008"/>
         <VarDeclaration Name="Picture_Tractor_forward_side_M1_speed" Type="UINT" Comment="" InitialValue="20009"/>
         <VarDeclaration Name="Picturere_Graphic_refresh" Type="UINT" Comment="" InitialValue="20010"/>
+        <VarDeclaration Name="Picture_Graphic_restart" Type="UINT" Comment="" InitialValue="20011"/>
         <VarDeclaration Name="Picture_fertilzier_bin_empty_M1_filllevel" Type="UINT" Comment="" InitialValue="20012"/>
         <VarDeclaration Name="Picture_M1_weight" Type="UINT" Comment="" InitialValue="20013"/>
         <VarDeclaration Name="Picture_application_rate_per_area_M1_kg_ha" Type="UINT" Comment="" InitialValue="20014"/>
@@ -201,6 +203,7 @@
         <VarDeclaration Name="NumberVariable_W1_actual_quantity" Type="UINT" Comment="" InitialValue="21014"/>
         <VarDeclaration Name="NumberVariable_flow_factor" Type="UINT" Comment="" InitialValue="21016"/>
         <VarDeclaration Name="NumberVariable_application_rate_percent_old" Type="UINT" Comment="" InitialValue="21018"/>
+        <VarDeclaration Name="StringVariable_calibration_run" Type="UINT" Comment="" InitialValue="22000"/>
         <VarDeclaration Name="FontAttributes_23000" Type="UINT" Comment="" InitialValue="23000"/>
         <VarDeclaration Name="FontAttributes_Header" Type="UINT" Comment="" InitialValue="23002"/>
         <VarDeclaration Name="FontAttributes_WindowMask" Type="UINT" Comment="" InitialValue="23003"/>

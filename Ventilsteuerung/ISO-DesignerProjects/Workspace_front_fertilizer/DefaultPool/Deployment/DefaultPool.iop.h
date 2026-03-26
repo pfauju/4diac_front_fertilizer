@@ -73,6 +73,7 @@
 #define Button_M1_reset                    6000
 #define Button_6001                        6001
 #define Button_M4_manuel_start             6002
+#define Button_M1_restart                  6003
 #define Button_M4_manuel_stop              6004
 #define Button_6005                        6005
 #define Button_6006                        6006
@@ -172,6 +173,7 @@
 #define settings_softkeys                 20008
 #define Picture_Tractor_forward_side_M1_speed  20009
 #define Picturere_Graphic_refresh         20010
+#define Picture_Graphic_restart           20011
 #define Picture_fertilzier_bin_empty_M1_filllevel  20012
 #define Picture_M1_weight                 20013
 #define Picture_application_rate_per_area_M1_kg_ha  20014
@@ -200,6 +202,7 @@
 #define NumberVariable_W1_actual_quantity  21014
 #define NumberVariable_flow_factor        21016
 #define NumberVariable_application_rate_percent_old  21018
+#define StringVariable_calibration_run    22000
 #define FontAttributes_23000              23000
 #define FontAttributes_Header             23002
 #define FontAttributes_WindowMask         23003
