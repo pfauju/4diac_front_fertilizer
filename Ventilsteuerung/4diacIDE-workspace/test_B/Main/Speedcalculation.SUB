@@ -30,6 +30,8 @@
 			</SubAppEvent>
 			<SubAppEvent Name="E_CALIB_QUANTITY" Type="Event">
 			</SubAppEvent>
+			<SubAppEvent Name="EI1" Type="Event">
+			</SubAppEvent>
 		</SubAppEventInputs>
 		<SubAppEventOutputs>
 			<SubAppEvent Name="CNF" Type="Event">
@@ -37,6 +39,10 @@
 			<SubAppEvent Name="CNF_ALARM" Type="Event">
 			</SubAppEvent>
 			<SubAppEvent Name="CNF_CALIB" Type="Event">
+			</SubAppEvent>
+			<SubAppEvent Name="RST" Type="Event">
+			</SubAppEvent>
+			<SubAppEvent Name="CNF_ROUNDS" Type="Event">
 			</SubAppEvent>
 		</SubAppEventOutputs>
 		<InputVars>
@@ -46,11 +52,12 @@
 			<VarDeclaration Name="FLOWFACTOR" Type="UDINT"/>
 			<VarDeclaration Name="NSPEED" Type="REAL"/>
 			<VarDeclaration Name="CALIB_PULSE" Type="UDINT"/>
-			<VarDeclaration Name="CALIB_QUANTITY" Type="UDINT"/>
+			<VarDeclaration Name="CALIB_QUANTITY" Type="REAL"/>
 		</InputVars>
 		<OutputVars>
 			<VarDeclaration Name="RPM" Type="REAL"/>
 			<VarDeclaration Name="ALARM" Type="BOOL"/>
+			<VarDeclaration Name="ROUNDS" Type="REAL"/>
 		</OutputVars>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
@@ -59,25 +66,19 @@
 		</FB>
 		<FB Name="F_DIV_1" Type="iec61131::arithmetic::F_DIV" x="1800" y="-600">
 		</FB>
-		<FB Name="F_UDINT_TO_REAL" Type="iec61131::conversion::F_UDINT_TO_REAL" x="200" y="-800">
-		</FB>
 		<FB Name="F_UDINT_TO_REAL_1" Type="iec61131::conversion::F_UDINT_TO_REAL" x="200" y="-300">
 		</FB>
 		<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="4200" y="-600">
-			<Parameter Name="IN2" Value="UDINT#12"/>
+			<Parameter Name="IN2" Value="LREAL#12.0"/>
 		</FB>
-		<FB Name="F_REAL_TO_UDINT" Type="iec61131::conversion::F_REAL_TO_UDINT" x="2600" y="-600">
+		<FB Name="F_REAL_TO_UDINT" Type="iec61131::conversion::F_REAL_TO_LREAL" x="2600" y="-600">
 		</FB>
-		<FB Name="F_EQ" Type="iec61131::comparison::F_GE" x="6700" y="-200">
+		<FB Name="F_EQ" Type="iec61131::comparison::F_GT" x="6700" y="-200">
 		</FB>
-		<FB Name="F_UDINT_TO_REAL_2" Type="iec61131::conversion::F_UDINT_TO_REAL" x="4800" y="-1100">
-		</FB>
-		<FB Name="F_LREAL_TO_UDINT" Type="iec61131::conversion::F_REAL_TO_UDINT" x="5400" y="-500">
+		<FB Name="F_UDINT_TO_REAL_2" Type="iec61131::conversion::F_LREAL_TO_REAL" x="5200" y="-800">
 		</FB>
 		<FB Name="SEL_SPEED" Type="iec61131::selection::F_SEL" x="15400" y="1300">
 			<Parameter Name="IN0" Value="REAL#0.0"/>
-		</FB>
-		<FB Name="F_MOVE" Type="iec61131::selection::F_MOVE" x="300" y="200">
 		</FB>
 		<FB Name="F_SUB" Type="iec61131::arithmetic::F_SUB" x="4300" y="100">
 		</FB>
@@ -85,7 +86,7 @@
 		</FB>
 		<FB Name="F_UDINT_TO_REAL_4" Type="iec61131::conversion::F_UDINT_TO_REAL" x="1800" y="600">
 		</FB>
-		<FB Name="F_REAL_TO_UDINT_1" Type="iec61131::conversion::F_REAL_TO_UDINT" x="5200" y="100">
+		<FB Name="F_REAL_TO_UDINT_1" Type="iec61131::conversion::F_REAL_TO_LREAL" x="5200" y="100">
 		</FB>
 		<FB Name="m2_s" Type="iec61131::arithmetic::F_MUL" x="4900" y="1400">
 			<Parameter Name="IN2" Value="LREAL#3.5"/>
@@ -97,7 +98,7 @@
 		<FB Name="F_LREAL_TO_REAL" Type="iec61131::conversion::F_LREAL_TO_REAL" x="5600" y="1400">
 		</FB>
 		<FB Name="F_DIV_2" Type="iec61131::arithmetic::F_DIV" x="2700" y="2000">
-			<Parameter Name="IN2" Value="LREAL#10000.0"/>
+			<Parameter Name="IN2" Value="LREAL#10.0"/>
 		</FB>
 		<FB Name="F_UDINT_TO_REAL_5" Type="iec61131::conversion::F_UDINT_TO_LREAL" x="600" y="2000">
 		</FB>
@@ -116,9 +117,6 @@
 		</FB>
 		<FB Name="F_REAL_TO_LREAL_2" Type="iec61131::conversion::F_REAL_TO_LREAL" x="12200" y="1400">
 		</FB>
-		<FB Name="F_GE" Type="iec61131::comparison::F_GE" x="14100" y="700">
-			<Parameter Name="IN2" Value="LREAL#55.0"/>
-		</FB>
 		<FB Name="F_SEL_E_3" Type="eclipse4diac::utils::selection::F_SEL_E_3" x="17400" y="-400">
 			<Parameter Name="IN1" Value="REAL#0.0"/>
 		</FB>
@@ -130,7 +128,7 @@
 			<Parameter Name="IN2" Value="REAL#3.6"/>
 		</FB>
 		<FB Name="F_DIV_4" Type="iec61131::arithmetic::F_DIV" x="2700" y="5700">
-			<Parameter Name="IN2" Value="LREAL#10000.0"/>
+			<Parameter Name="IN2" Value="LREAL#10.0"/>
 		</FB>
 		<FB Name="F_REAL_TO_LREAL_4" Type="iec61131::conversion::F_REAL_TO_LREAL" x="3600" y="5100">
 		</FB>
@@ -166,24 +164,41 @@
 		</FB>
 		<FB Name="E_PERMIT_2" Type="iec61499::events::E_PERMIT" x="900" y="900">
 		</FB>
-		<FB Name="E_PERMIT_3" Type="iec61499::events::E_PERMIT" x="18000" y="1300">
-		</FB>
 		<FB Name="E_PERMIT_4" Type="iec61499::events::E_PERMIT" x="14500" y="4700">
+		</FB>
+		<FB Name="F_UDINT_TO_REAL_9" Type="iec61131::conversion::F_UDINT_TO_REAL" x="-1500" y="6700">
+		</FB>
+		<FB Name="F_DIV_5" Type="iec61131::arithmetic::F_DIV" x="300" y="6700">
+			<Parameter Name="IN2" Value="REAL#27780.0"/>
+		</FB>
+		<FB Name="F_LE" Type="iec61131::comparison::F_GT" x="20000" y="400">
+			<Parameter Name="IN2" Value="LREAL#0.0"/>
+		</FB>
+		<FB Name="F_REAL_TO_LREAL_7" Type="iec61131::conversion::F_REAL_TO_LREAL" x="18600" y="400">
+		</FB>
+		<FB Name="E_F_TRIG" Type="iec61499::events::E_F_TRIG" x="21000" y="400">
+		</FB>
+		<FB Name="F_SEL_E_2" Type="eclipse4diac::utils::selection::F_SEL_E_2" x="7300" y="-1000">
+			<Parameter Name="IN2" Value="LREAL#0.0"/>
+		</FB>
+		<FB Name="F_REAL_TO_LREAL_8" Type="iec61131::conversion::F_REAL_TO_LREAL" x="8300" y="-1000">
+		</FB>
+		<FB Name="E_F_TRIG_1" Type="iec61499::events::E_F_TRIG" x="15400" y="2000">
+		</FB>
+		<FB Name="E_PERMIT_3" Type="iec61499::events::E_PERMIT" x="6500" y="-1500">
+		</FB>
+		<FB Name="F_LREAL_TO_REAL_2" Type="iec61131::conversion::F_LREAL_TO_REAL" x="8500" y="300">
 		</FB>
 		<EventConnections>
 			<Connection Source="E_NSPEED" Destination="F_DIV.REQ" dx1="1073.33"/>
-			<Connection Source="F_UDINT_TO_REAL.CNF" Destination="F_DIV_1.REQ" dx1="353.33"/>
-			<Connection Source="E_CALIB_QUANTITY" Destination="F_UDINT_TO_REAL.REQ" dx1="1020"/>
+			<Connection Source="E_CALIB_QUANTITY" Destination="F_DIV_1.REQ" dx1="1020"/>
 			<Connection Source="F_UDINT_TO_REAL_1.CNF" Destination="F_DIV_1.REQ" dx1="353.33"/>
 			<Connection Source="E_FLOWFACTOR" Destination="F_UDINT_TO_REAL_1.REQ" dx1="1020"/>
 			<Connection Source="F_DIV_1.CNF" Destination="F_REAL_TO_UDINT.REQ"/>
 			<Connection Source="F_REAL_TO_UDINT.CNF" Destination="F_MUL.REQ"/>
-			<Connection Source="F_UDINT_TO_REAL_2.CNF" Destination="F_LREAL_TO_UDINT.REQ" dx1="80" dx2="80" dy="300"/>
-			<Connection Source="F_MUL.CNF" Destination="F_UDINT_TO_REAL_2.REQ" dx1="80" dx2="80" dy="-246.67"/>
-			<Connection Source="F_LREAL_TO_UDINT.CNF" Destination="F_EQ.REQ" dx1="133.33"/>
+			<Connection Source="F_MUL.CNF" Destination="F_UDINT_TO_REAL_2.REQ" dx1="233.33"/>
 			<Connection Source="F_EQ.CNF" Destination="SEL_SPEED.REQ" dx1="813.33"/>
-			<Connection Source="START_CALIB" Destination="F_MOVE.REQ" dx1="1073.33"/>
-			<Connection Source="F_MOVE.CNF" Destination="F_UDINT_TO_REAL_3.REQ" dx1="466.67"/>
+			<Connection Source="START_CALIB" Destination="F_UDINT_TO_REAL_3.REQ" dx1="1073.33"/>
 			<Connection Source="F_UDINT_TO_REAL_3.CNF" Destination="F_SUB.REQ"/>
 			<Connection Source="F_UDINT_TO_REAL_4.CNF" Destination="F_SUB.REQ" dx1="1253.33"/>
 			<Connection Source="E_PULSE" Destination="E_PERMIT_2.EI" dx1="1820"/>
@@ -204,11 +219,8 @@
 			<Connection Source="F_LREAL_TO_UDINT_1.CNF" Destination="u_min.REQ"/>
 			<Connection Source="F_UDINT_TO_REAL_6.CNF" Destination="u_min.REQ" dx1="253.33"/>
 			<Connection Source="u_min.CNF" Destination="F_REAL_TO_LREAL_2.REQ"/>
-			<Connection Source="F_REAL_TO_LREAL_2.CNF" Destination="F_GE.REQ" dx1="346.67"/>
-			<Connection Source="F_GE.CNF" Destination="CNF_ALARM" dx1="446.67"/>
 			<Connection Source="F_SEL_E_3.CNF" Destination="CNF" dx1="613.33"/>
 			<Connection Source="SEL_SPEED.CNF" Destination="F_REAL_TO_LREAL_3.REQ"/>
-			<Connection Source="F_REAL_TO_LREAL_3.CNF" Destination="E_PERMIT_3.EI"/>
 			<Connection Source="STOP" Destination="F_SEL_E_3.REQ1" dx1="9620"/>
 			<Connection Source="F_LREAL_TO_REAL_3.CNF" Destination="g_s_1.REQ"/>
 			<Connection Source="F_DIV_3.CNF" Destination="F_REAL_TO_LREAL_4.REQ"/>
@@ -234,25 +246,39 @@
 			<Connection Source="STOP" Destination="CALIB.R" dx1="1366.67"/>
 			<Connection Source="START_CALIB" Destination="CALIB.S" dx1="1366.67"/>
 			<Connection Source="CALIB.EO" Destination="E_PERMIT_1.EI" dx1="413.33"/>
-			<Connection Source="E_PERMIT_1.EO" Destination="F_MOVE.REQ" dx1="80" dx2="80" dy="-1446.67"/>
+			<Connection Source="E_PERMIT_1.EO" Destination="F_UDINT_TO_REAL_3.REQ" dx1="80" dx2="80" dy="-1446.67"/>
 			<Connection Source="E_PERMIT_2.EO" Destination="F_UDINT_TO_REAL_4.REQ" dx1="120"/>
-			<Connection Source="E_PERMIT_3.EO" Destination="F_SEL_E_3.REQ3" dx1="80" dx2="80" dy="-740"/>
 			<Connection Source="E_PERMIT_4.EO" Destination="F_SEL_E_3.REQ2" dx1="1120"/>
+			<Connection Source="E_PERCENT" Destination="F_UDINT_TO_REAL_9.REQ" dx1="1660"/>
+			<Connection Source="F_UDINT_TO_REAL_9.CNF" Destination="F_DIV_5.REQ"/>
+			<Connection Source="F_UDINT_TO_REAL_2.CNF" Destination="E_PERMIT_3.EI" dx1="173.33"/>
+			<Connection Source="F_SEL_E_3.CNF" Destination="F_REAL_TO_LREAL_7.REQ" dx1="240"/>
+			<Connection Source="F_REAL_TO_LREAL_7.CNF" Destination="F_LE.REQ"/>
+			<Connection Source="F_LE.CNF" Destination="E_F_TRIG.EI"/>
+			<Connection Source="E_F_TRIG.EO" Destination="RST" dx1="906.67"/>
+			<Connection Source="F_SEL_E_2.CNF" Destination="F_REAL_TO_LREAL_8.REQ"/>
+			<Connection Source="F_REAL_TO_LREAL_8.CNF" Destination="F_EQ.REQ" dx1="80" dx2="80" dy="593.33"/>
+			<Connection Source="STOP" Destination="F_SEL_E_2.REQ2" dx1="5900"/>
+			<Connection Source="E_F_TRIG_1.EO" Destination="RST" dx1="3706.67"/>
+			<Connection Source="F_EQ.CNF" Destination="E_F_TRIG_1.EI" dx1="4113.33"/>
+			<Connection Source="START_CALIB" Destination="E_PERMIT_3.EI" dx1="5906.67"/>
+			<Connection Source="F_REAL_TO_LREAL_3.CNF" Destination="F_SEL_E_3.REQ3" dx1="80" dx2="80" dy="-740"/>
+			<Connection Source="E_PERMIT_3.EO" Destination="F_SEL_E_2.REQ1" dx1="80" dx2="80" dy="246.67"/>
+			<Connection Source="E_F_TRIG_1.EO" Destination="CALIB.R" dx1="80" dx2="80" dy="493.33"/>
+			<Connection Source="STOP" Destination="RST"/>
+			<Connection Source="E_F_TRIG_1.EO" Destination="F_LREAL_TO_REAL_2.REQ" dx1="80" dx2="80" dy="-846.67"/>
+			<Connection Source="F_LREAL_TO_REAL_2.CNF" Destination="CNF_ROUNDS" dx1="6780"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="NSPEED" Destination="F_DIV.IN1" dx1="1073.33"/>
-			<Connection Source="CALIB_QUANTITY" Destination="F_UDINT_TO_REAL.IN" dx1="1020"/>
-			<Connection Source="F_UDINT_TO_REAL.OUT" Destination="F_DIV_1.IN1" dx1="353.33"/>
+			<Connection Source="CALIB_QUANTITY" Destination="F_DIV_1.IN1" dx1="1020"/>
 			<Connection Source="F_UDINT_TO_REAL_1.OUT" Destination="F_DIV_1.IN2" dx1="353.33"/>
 			<Connection Source="FLOWFACTOR" Destination="F_UDINT_TO_REAL_1.IN" dx1="1020"/>
 			<Connection Source="F_DIV_1.OUT" Destination="F_REAL_TO_UDINT.IN"/>
 			<Connection Source="F_REAL_TO_UDINT.OUT" Destination="F_MUL.IN1"/>
-			<Connection Source="F_UDINT_TO_REAL_2.OUT" Destination="F_LREAL_TO_UDINT.IN" dx1="80" dx2="80" dy="300"/>
-			<Connection Source="F_MUL.OUT" Destination="F_UDINT_TO_REAL_2.IN" dx1="80" dx2="80" dy="-246.67"/>
-			<Connection Source="F_LREAL_TO_UDINT.OUT" Destination="F_EQ.IN1" dx1="133.33"/>
+			<Connection Source="F_MUL.OUT" Destination="F_UDINT_TO_REAL_2.IN" dx1="233.33"/>
 			<Connection Source="F_EQ.OUT" Destination="SEL_SPEED.G" dx1="813.33"/>
-			<Connection Source="CALIB_PULSE" Destination="F_MOVE.IN" dx1="1073.33"/>
-			<Connection Source="F_MOVE.OUT" Destination="F_UDINT_TO_REAL_3.IN" dx1="466.67"/>
+			<Connection Source="CALIB_PULSE" Destination="F_UDINT_TO_REAL_3.IN" dx1="1073.33"/>
 			<Connection Source="F_UDINT_TO_REAL_3.OUT" Destination="F_SUB.IN2" dx1="1253.33"/>
 			<Connection Source="F_UDINT_TO_REAL_4.OUT" Destination="F_SUB.IN1" dx1="1006.67"/>
 			<Connection Source="CALIB_PULSE" Destination="F_UDINT_TO_REAL_4.IN" dx1="1820"/>
@@ -273,9 +299,6 @@
 			<Connection Source="F_LREAL_TO_UDINT_1.OUT" Destination="u_min.IN1"/>
 			<Connection Source="F_UDINT_TO_REAL_6.OUT" Destination="u_min.IN2" dx1="253.33"/>
 			<Connection Source="u_min.OUT" Destination="F_REAL_TO_LREAL_2.IN"/>
-			<Connection Source="F_REAL_TO_LREAL_2.OUT" Destination="F_GE.IN1" dx1="346.67"/>
-			<Connection Source="F_GE.OUT" Destination="ALARM" dx1="540"/>
-			<Connection Source="F_SEL_E_3.OUT" Destination="RPM" dx1="613.33"/>
 			<Connection Source="SEL_SPEED.OUT" Destination="F_REAL_TO_LREAL_3.IN"/>
 			<Connection Source="F_REAL_TO_LREAL_3.OUT" Destination="F_SEL_E_3.IN3" dx1="80" dx2="80" dy="-633.33"/>
 			<Connection Source="F_REAL_TO_LREAL_4.OUT" Destination="m2_s_1.IN1"/>
@@ -299,8 +322,20 @@
 			<Connection Source="AUTO.Q" Destination="E_PERMIT.PERMIT" dx1="80" dx2="80" dy="586.67"/>
 			<Connection Source="CALIB.Q" Destination="E_PERMIT_1.PERMIT" dx1="413.33"/>
 			<Connection Source="CALIB.Q" Destination="E_PERMIT_2.PERMIT" dx1="80" dx2="80" dy="-1100"/>
-			<Connection Source="CALIB.Q" Destination="E_PERMIT_3.PERMIT" dx1="8306.67"/>
 			<Connection Source="AUTO.Q" Destination="E_PERMIT_4.PERMIT" dx1="6560"/>
+			<Connection Source="PERCENT" Destination="F_UDINT_TO_REAL_9.IN" dx1="1660"/>
+			<Connection Source="F_UDINT_TO_REAL_9.OUT" Destination="F_DIV_5.IN1"/>
+			<Connection Source="F_UDINT_TO_REAL_2.OUT" Destination="F_SEL_E_2.IN1" dx1="426.67"/>
+			<Connection Source="F_SEL_E_3.OUT" Destination="RPM" dx1="1346.67"/>
+			<Connection Source="F_SEL_E_3.OUT" Destination="F_REAL_TO_LREAL_7.IN" dx1="240"/>
+			<Connection Source="F_REAL_TO_LREAL_7.OUT" Destination="F_LE.IN1"/>
+			<Connection Source="F_LE.OUT" Destination="E_F_TRIG.QI"/>
+			<Connection Source="F_SEL_E_2.OUT" Destination="F_REAL_TO_LREAL_8.IN" dx1="140"/>
+			<Connection Source="F_REAL_TO_LREAL_8.OUT" Destination="F_EQ.IN1" dx1="80" dx2="80" dy="400"/>
+			<Connection Source="F_EQ.OUT" Destination="E_F_TRIG_1.QI" dx1="4113.33"/>
+			<Connection Source="CALIB.Q" Destination="E_PERMIT_3.PERMIT" dx1="2560"/>
+			<Connection Source="F_REAL_TO_UDINT_1.OUT" Destination="F_LREAL_TO_REAL_2.IN" dx1="1153.33"/>
+			<Connection Source="F_LREAL_TO_REAL_2.OUT" Destination="ROUNDS" dx1="6780"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
