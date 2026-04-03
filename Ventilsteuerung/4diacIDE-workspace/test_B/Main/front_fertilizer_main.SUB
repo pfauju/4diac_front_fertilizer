@@ -36,6 +36,7 @@
 		<Import declaration="DefaultPool::NumberVariable_target_quantity_calibration_run"/>
 		<Import declaration="DefaultPool::NumberVariable_weight"/>
 		<Import declaration="DefaultPool::OutputString_M1_filllevel"/>
+		<Import declaration="DefaultPool::OutputString_W1_header"/>
 		<Import declaration="DefaultPool::SoftKeyMask_S1"/>
 		<Import declaration="DefaultPool::SoftKeyMask_S2"/>
 		<Import declaration="DefaultPool::SoftKeyMask_S3"/>
@@ -49,7 +50,6 @@
 		<Import declaration="DefaultPool::SoftKey_settings"/>
 		<Import declaration="DefaultPool::SoftKey_start"/>
 		<Import declaration="DefaultPool::SoftKey_stop"/>
-		<Import declaration="DefaultPool::StringVariable_calibration_run"/>
 		<Import declaration="DefaultPool::WorkingSet_0"/>
 		<Import declaration="Uebungen::const::NVS::NVS_Keys::KEY_I1_STORE"/>
 		<Import declaration="Uebungen::const::NVS::NVS_Keys::KEY_I2_STORE"/>
@@ -329,7 +329,7 @@
 		<FB Name="AnalogInput_I6" Type="logiBUS::io::AI::logiBUS_AI_ID" x="-5900" y="11300">
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="Input" Value="AnalogInput_I8"/>
-			<Parameter Name="AnalogInput_hysteresis" Value="2"/>
+			<Parameter Name="AnalogInput_hysteresis" Value="3"/>
 		</FB>
 		<FB Name="F_DWORD_TO_UDINT_3" Type="iec61131::conversion::F_DWORD_TO_UDINT" x="-3700" y="11800">
 		</FB>
@@ -437,7 +437,7 @@
 		<FB Name="F_UDINT_TO_LREAL" Type="iec61131::conversion::F_UDINT_TO_LREAL" x="-2300" y="11800">
 		</FB>
 		<FB Name="F_DIV_1" Type="iec61131::arithmetic::F_SUB" x="-700" y="11800">
-			<Parameter Name="IN2" Value="LREAL#308.0"/>
+			<Parameter Name="IN2" Value="LREAL#314.0"/>
 		</FB>
 		<FB Name="F_LREAL_TO_UDINT" Type="iec61131::conversion::F_LREAL_TO_REAL" x="0" y="11800">
 		</FB>
@@ -467,13 +467,8 @@
 		</FB>
 		<FB Name="F_DWORD_TO_UDINT_6" Type="iec61131::conversion::F_DWORD_TO_UDINT" x="20400" y="6300">
 		</FB>
-		<FB Name="Q_StringValue_1" Type="isobus::UT::Q::Q_StringValue" x="18700" y="4700">
-			<Parameter Name="u16ObjId" Value="StringVariable_calibration_run"/>
-			<Parameter Name="pau8String" Value="'Abdrehprobe fertig!'"/>
-		</FB>
-		<FB Name="Q_StringValue_2" Type="isobus::UT::Q::Q_StringValue" x="27600" y="8600">
-			<Parameter Name="u16ObjId" Value="StringVariable_calibration_run"/>
-			<Parameter Name="pau8String" Value="'Abdrehprobe läuft!'"/>
+		<FB Name="Q_StringValue_1" Type="isobus::UT::Q::Q_StringValue" x="20400" y="4800">
+			<Parameter Name="u16ObjId" Value="OutputString_W1_header"/>
 		</FB>
 		<FB Name="F_DIV_3" Type="iec61131::arithmetic::F_DIV" x="23300" y="6300">
 		</FB>
@@ -482,11 +477,11 @@
 		<FB Name="F_REAL_TO_LREAL_1" Type="iec61131::conversion::F_REAL_TO_LREAL" x="24100" y="6300">
 		</FB>
 		<FB Name="F_DIV_5" Type="iec61131::arithmetic::F_MUL" x="25700" y="6300">
-			<Parameter Name="IN2" Value="LREAL#3336.0"/>
+			<Parameter Name="IN2" Value="LREAL#12.0"/>
 		</FB>
 		<FB Name="F_LREAL_TO_UDINT_2" Type="iec61131::conversion::F_REAL_TO_UDINT" x="26700" y="6300">
 		</FB>
-		<FB Name="Q_NumericValue_9" Type="isobus::UT::Q::Q_NumericValue" x="28700" y="6400">
+		<FB Name="Q_NumericValue_9" Type="isobus::UT::Q::Q_NumericValue" x="30500" y="6200">
 			<Parameter Name="u16ObjId" Value="NumberVariable_flow_factor_new"/>
 		</FB>
 		<FB Name="F_SEL_E_11" Type="eclipse4diac::utils::selection::F_SEL_E_2" x="-3900" y="8400">
@@ -497,6 +492,17 @@
 			<Parameter Name="QI" Value="TRUE"/>
 			<Parameter Name="u16ObjId" Value="Button_W1_accept"/>
 			<Parameter Name="InputEvent" Value="BT_RELEASED_UNLATCHED"/>
+		</FB>
+		<FB Name="F_SEL_E_12" Type="eclipse4diac::utils::selection::F_SEL_E_2" x="18300" y="5000">
+			<Parameter Name="IN1" Value="STRING#'Abdrehprobe fertig!'"/>
+			<Parameter Name="IN2" Value="STRING#'Abdrehprobe läuft!'"/>
+		</FB>
+		<FB Name="Q_NumericValue_11" Type="isobus::UT::Q::Q_NumericValue" x="27500" y="9600">
+			<Parameter Name="u16ObjId" Value="NumberVariable_W1_actual_quantity"/>
+			<Parameter Name="u32NewValue" Value="UDINT#0"/>
+		</FB>
+		<FB Name="F_SEL_E_13" Type="eclipse4diac::utils::selection::F_SEL_E_2" x="29000" y="6200">
+			<Parameter Name="IN2" Value="UDINT#0"/>
 		</FB>
 		<EventConnections>
 			<Connection Source="Softkey_IE_minus_percent.IND" Destination="F_SUB.REQ" dx1="940"/>
@@ -633,20 +639,24 @@
 			<Connection Source="F_REAL_TO_LREAL.CNF" Destination="F_MUL.REQ" dx1="80" dx2="80" dy="300"/>
 			<Connection Source="F_LREAL_TO_UDINT_1.CNF" Destination="Q_NumericValue_6.REQ" dx1="126.67"/>
 			<Connection Source="NumericValue_ID_2.IND" Destination="F_DWORD_TO_UDINT_6.REQ" dx1="353.33"/>
-			<Connection Source="Speedcalculation.CNF_ROUNDS" Destination="Q_StringValue_1.REQ" dx1="2766.67"/>
+			<Connection Source="Speedcalculation.CNF_ROUNDS" Destination="F_SEL_E_12.REQ1" dx1="2766.67"/>
 			<Connection Source="F_DWORD_TO_UDINT_6.CNF" Destination="F_UDINT_TO_REAL_4.REQ"/>
 			<Connection Source="F_UDINT_TO_REAL_4.CNF" Destination="F_DIV_3.REQ"/>
 			<Connection Source="F_DIV_3.CNF" Destination="F_REAL_TO_LREAL_1.REQ"/>
 			<Connection Source="F_REAL_TO_LREAL_1.CNF" Destination="F_DIV_5.REQ"/>
 			<Connection Source="F_DIV_5.CNF" Destination="F_LREAL_TO_UDINT_2.REQ"/>
-			<Connection Source="F_LREAL_TO_UDINT_2.CNF" Destination="Q_NumericValue_9.REQ" dx1="500"/>
+			<Connection Source="F_LREAL_TO_UDINT_2.CNF" Destination="F_SEL_E_13.REQ1" dx1="500"/>
 			<Connection Source="InputNumber_I1.IND" Destination="F_SEL_E_11.REQ1" dx1="353.33"/>
 			<Connection Source="F_SEL_E_11.CNF" Destination="F_DWORD_TO_UDINT.REQ" dx1="80" dx2="80" dy="546.67"/>
 			<Connection Source="F_DWORD_TO_UDINT.CNF" Destination="INI.SET" dx1="526.67"/>
 			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="F_SEL_E_11.REQ2" dx1="80" dx2="80" dy="453.33"/>
 			<Connection Source="Button_IE_9.IND" Destination="F_UDINT_TO_DWORD.REQ" dx1="600"/>
-			<Connection Source="Button_IE_9.IND" Destination="Q_StringValue_2.REQ" dx1="653.33"/>
 			<Connection Source="Button_IE_9.IND" Destination="F_SEL_E_8.REQ2" dx1="80" dx2="80" dy="6600"/>
+			<Connection Source="F_SEL_E_12.CNF" Destination="Q_StringValue_1.REQ" dx1="693.33"/>
+			<Connection Source="Button_IE_9.IND" Destination="F_SEL_E_12.REQ2" dx1="80" dx2="80" dy="-1100"/>
+			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="F_SEL_E_13.REQ2" dx1="86.67"/>
+			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="Q_NumericValue_11.REQ" dx1="80" dx2="80" dy="1046.67"/>
+			<Connection Source="F_SEL_E_13.CNF" Destination="Q_NumericValue_9.REQ" dx1="393.33"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="Q_NumericValue.u32OldValue" Destination="F_ADD.IN1" dx1="80" dx2="80" dy="293.33"/>
@@ -734,12 +744,14 @@
 			<Connection Source="F_DIV_3.OUT" Destination="F_REAL_TO_LREAL_1.IN"/>
 			<Connection Source="F_REAL_TO_LREAL_1.OUT" Destination="F_DIV_5.IN1"/>
 			<Connection Source="F_DIV_5.OUT" Destination="F_LREAL_TO_UDINT_2.IN"/>
-			<Connection Source="F_LREAL_TO_UDINT_2.OUT" Destination="Q_NumericValue_9.u32NewValue" dx1="500"/>
 			<Connection Source="InputNumber_I1.IN" Destination="F_SEL_E_11.IN1" dx1="353.33"/>
 			<Connection Source="F_SEL_E_11.OUT" Destination="F_DWORD_TO_UDINT.IN" dx1="80" dx2="80" dy="493.33"/>
 			<Connection Source="F_DWORD_TO_UDINT.OUT" Destination="INI.VALUE" dx1="226.67"/>
 			<Connection Source="F_LREAL_TO_UDINT_2.OUT" Destination="F_UDINT_TO_DWORD.IN" dx1="80" dx2="80" dy="546.67"/>
 			<Connection Source="F_UDINT_TO_DWORD.OUT" Destination="F_SEL_E_11.IN2" dx1="80" dx2="80" dy="506.67"/>
+			<Connection Source="F_SEL_E_12.OUT" Destination="Q_StringValue_1.pau8String" dx1="693.33"/>
+			<Connection Source="F_LREAL_TO_UDINT_2.OUT" Destination="F_SEL_E_13.IN1" dx1="700"/>
+			<Connection Source="F_SEL_E_13.OUT" Destination="Q_NumericValue_9.u32NewValue" dx1="340"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>

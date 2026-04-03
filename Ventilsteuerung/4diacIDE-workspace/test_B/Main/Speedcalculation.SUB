@@ -189,6 +189,12 @@
 		</FB>
 		<FB Name="F_LREAL_TO_REAL_2" Type="iec61131::conversion::F_LREAL_TO_REAL" x="8500" y="300">
 		</FB>
+		<FB Name="F_MUL_1" Type="iec61131::arithmetic::F_MUL" x="12800" y="6600">
+		</FB>
+		<FB Name="F_LREAL_TO_REAL_5" Type="iec61131::conversion::F_LREAL_TO_REAL" x="12000" y="6000">
+		</FB>
+		<FB Name="F_REAL_TO_LREAL_9" Type="iec61131::conversion::F_REAL_TO_LREAL" x="1600" y="6800">
+		</FB>
 		<EventConnections>
 			<Connection Source="E_NSPEED" Destination="F_DIV.REQ" dx1="1073.33"/>
 			<Connection Source="E_CALIB_QUANTITY" Destination="F_DIV_1.REQ" dx1="1020"/>
@@ -238,7 +244,6 @@
 			<Connection Source="F_REAL_TO_LREAL_5.CNF" Destination="g_min_1.REQ"/>
 			<Connection Source="E_SPEED" Destination="E_PERMIT.EI" dx1="2266.67"/>
 			<Connection Source="F_REAL_TO_LREAL_2.CNF" Destination="SEL_SPEED.REQ" dx1="1106.67"/>
-			<Connection Source="u_min_1.CNF" Destination="F_REAL_TO_LREAL_6.REQ"/>
 			<Connection Source="F_REAL_TO_LREAL_6.CNF" Destination="E_PERMIT_4.EI" dx1="626.67"/>
 			<Connection Source="E_PERMIT.EO" Destination="F_DIV_3.REQ" dx1="466.67"/>
 			<Connection Source="START_AUTO" Destination="AUTO.S" dx1="1366.67"/>
@@ -268,6 +273,11 @@
 			<Connection Source="STOP" Destination="RST"/>
 			<Connection Source="E_F_TRIG_1.EO" Destination="F_LREAL_TO_REAL_2.REQ" dx1="80" dx2="80" dy="-846.67"/>
 			<Connection Source="F_LREAL_TO_REAL_2.CNF" Destination="CNF_ROUNDS" dx1="6780"/>
+			<Connection Source="F_MUL_1.CNF" Destination="F_REAL_TO_LREAL_6.REQ" dx1="80" dx2="80" dy="-746.67"/>
+			<Connection Source="F_LREAL_TO_REAL_5.CNF" Destination="F_MUL_1.REQ" dx1="80" dx2="80" dy="300"/>
+			<Connection Source="u_min_1.CNF" Destination="F_LREAL_TO_REAL_5.REQ" dx1="80" dx2="80" dy="446.67"/>
+			<Connection Source="F_DIV_5.CNF" Destination="F_REAL_TO_LREAL_9.REQ" dx1="386.67"/>
+			<Connection Source="F_REAL_TO_LREAL_9.CNF" Destination="F_MUL_1.REQ" dx1="5106.67"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="NSPEED" Destination="F_DIV.IN1" dx1="1073.33"/>
@@ -317,7 +327,6 @@
 			<Connection Source="F_REAL_TO_LREAL_5.OUT" Destination="g_min_1.IN1"/>
 			<Connection Source="SPEED" Destination="F_DIV_3.IN1" dx1="2266.67"/>
 			<Connection Source="F_REAL_TO_LREAL_2.OUT" Destination="SEL_SPEED.IN1" dx1="1106.67"/>
-			<Connection Source="u_min_1.OUT" Destination="F_REAL_TO_LREAL_6.IN"/>
 			<Connection Source="F_REAL_TO_LREAL_6.OUT" Destination="F_SEL_E_3.IN2" dx1="1800"/>
 			<Connection Source="AUTO.Q" Destination="E_PERMIT.PERMIT" dx1="80" dx2="80" dy="586.67"/>
 			<Connection Source="CALIB.Q" Destination="E_PERMIT_1.PERMIT" dx1="413.33"/>
@@ -336,6 +345,11 @@
 			<Connection Source="CALIB.Q" Destination="E_PERMIT_3.PERMIT" dx1="2560"/>
 			<Connection Source="F_REAL_TO_UDINT_1.OUT" Destination="F_LREAL_TO_REAL_2.IN" dx1="1153.33"/>
 			<Connection Source="F_LREAL_TO_REAL_2.OUT" Destination="ROUNDS" dx1="6780"/>
+			<Connection Source="F_MUL_1.OUT" Destination="F_REAL_TO_LREAL_6.IN" dx1="80" dx2="80" dy="-746.67"/>
+			<Connection Source="F_LREAL_TO_REAL_5.OUT" Destination="F_MUL_1.IN1" dx1="80" dx2="80" dy="300"/>
+			<Connection Source="u_min_1.OUT" Destination="F_LREAL_TO_REAL_5.IN" dx1="80" dx2="80" dy="446.67"/>
+			<Connection Source="F_DIV_5.OUT" Destination="F_REAL_TO_LREAL_9.IN" dx1="386.67"/>
+			<Connection Source="F_REAL_TO_LREAL_9.OUT" Destination="F_MUL_1.IN2" dx1="5106.67"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
