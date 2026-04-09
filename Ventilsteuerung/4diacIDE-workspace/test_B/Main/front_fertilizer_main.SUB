@@ -442,7 +442,7 @@
 		<FB Name="F_LREAL_TO_UDINT" Type="iec61131::conversion::F_LREAL_TO_REAL" x="0" y="11800">
 		</FB>
 		<FB Name="F_MUL" Type="iec61131::arithmetic::F_MUL" x="2700" y="11800">
-			<Parameter Name="IN2" Value="LREAL#80.0"/>
+			<Parameter Name="IN2" Value="LREAL#278.0"/>
 		</FB>
 		<FB Name="F_LREAL_TO_UDINT_1" Type="iec61131::conversion::F_LREAL_TO_UDINT" x="3400" y="11100">
 		</FB>
@@ -503,6 +503,11 @@
 		</FB>
 		<FB Name="F_SEL_E_13" Type="eclipse4diac::utils::selection::F_SEL_E_2" x="29000" y="6200">
 			<Parameter Name="IN2" Value="UDINT#0"/>
+		</FB>
+		<FB Name="F_DIV_6" Type="iec61131::arithmetic::F_DIV" x="600" y="10700">
+			<Parameter Name="IN2" Value="REAL#3.56"/>
+		</FB>
+		<FB Name="F_REAL_TO_LREAL_2" Type="iec61131::conversion::F_REAL_TO_LREAL" x="1700" y="10600">
 		</FB>
 		<EventConnections>
 			<Connection Source="Softkey_IE_minus_percent.IND" Destination="F_SUB.REQ" dx1="940"/>
@@ -625,7 +630,6 @@
 			<Connection Source="F_DIV.CNF" Destination="Speedcalculation.E_CALIB_QUANTITY" dx1="2933.33"/>
 			<Connection Source="F_UDINT_TO_LREAL.CNF" Destination="F_DIV_1.REQ"/>
 			<Connection Source="F_DIV_1.CNF" Destination="F_LREAL_TO_UDINT.REQ"/>
-			<Connection Source="F_LREAL_TO_UDINT.CNF" Destination="F_MIN_1.REQ" dx1="153.33"/>
 			<Connection Source="F_MUL.CNF" Destination="F_LREAL_TO_UDINT_1.REQ" dx1="86.67"/>
 			<Connection Source="F_MUL_1.CNF" Destination="F_REAL_TO_UDINT_1.REQ"/>
 			<Connection Source="INI_1.SETO" Destination="F_UDINT_TO_UINT_1.REQ" dx1="80" dx2="80" dy="-1253.33"/>
@@ -657,6 +661,9 @@
 			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="F_SEL_E_13.REQ2" dx1="86.67"/>
 			<Connection Source="F_UDINT_TO_DWORD.CNF" Destination="Q_NumericValue_11.REQ" dx1="80" dx2="80" dy="1046.67"/>
 			<Connection Source="F_SEL_E_13.CNF" Destination="Q_NumericValue_9.REQ" dx1="393.33"/>
+			<Connection Source="F_LREAL_TO_UDINT.CNF" Destination="F_DIV_6.REQ" dx1="80" dx2="80" dy="-546.67"/>
+			<Connection Source="F_DIV_6.CNF" Destination="F_REAL_TO_LREAL_2.REQ" dx1="286.67"/>
+			<Connection Source="F_REAL_TO_LREAL_2.CNF" Destination="F_MIN_1.REQ" dx1="80" dx2="80" dy="746.67"/>
 		</EventConnections>
 		<DataConnections>
 			<Connection Source="Q_NumericValue.u32OldValue" Destination="F_ADD.IN1" dx1="80" dx2="80" dy="293.33"/>
@@ -736,7 +743,6 @@
 			<Connection Source="F_MIN_1.OUT" Destination="F_REAL_TO_LREAL.IN" dx1="80" dx2="80" dy="-300"/>
 			<Connection Source="F_REAL_TO_LREAL.OUT" Destination="F_MUL.IN1" dx1="80" dx2="80" dy="300"/>
 			<Connection Source="F_LREAL_TO_UDINT_1.OUT" Destination="Q_NumericValue_6.u32NewValue" dx1="126.67"/>
-			<Connection Source="F_LREAL_TO_UDINT.OUT" Destination="F_MIN_1.IN2" dx1="153.33"/>
 			<Connection Source="NumericValue_ID_2.IN" Destination="F_DWORD_TO_UDINT_6.IN" dx1="353.33"/>
 			<Connection Source="F_DWORD_TO_UDINT_6.OUT" Destination="F_UDINT_TO_REAL_4.IN"/>
 			<Connection Source="F_UDINT_TO_REAL_4.OUT" Destination="F_DIV_3.IN1"/>
@@ -748,10 +754,13 @@
 			<Connection Source="F_SEL_E_11.OUT" Destination="F_DWORD_TO_UDINT.IN" dx1="80" dx2="80" dy="493.33"/>
 			<Connection Source="F_DWORD_TO_UDINT.OUT" Destination="INI.VALUE" dx1="226.67"/>
 			<Connection Source="F_LREAL_TO_UDINT_2.OUT" Destination="F_UDINT_TO_DWORD.IN" dx1="80" dx2="80" dy="546.67"/>
-			<Connection Source="F_UDINT_TO_DWORD.OUT" Destination="F_SEL_E_11.IN2" dx1="80" dx2="80" dy="506.67"/>
+			<Connection Source="F_UDINT_TO_DWORD.OUT" Destination="F_SEL_E_11.IN2" dx1="80" dx2="80" dy="786.67"/>
 			<Connection Source="F_SEL_E_12.OUT" Destination="Q_StringValue_1.pau8String" dx1="693.33"/>
 			<Connection Source="F_LREAL_TO_UDINT_2.OUT" Destination="F_SEL_E_13.IN1" dx1="700"/>
 			<Connection Source="F_SEL_E_13.OUT" Destination="Q_NumericValue_9.u32NewValue" dx1="340"/>
+			<Connection Source="F_LREAL_TO_UDINT.OUT" Destination="F_DIV_6.IN1" dx1="80" dx2="80" dy="-546.67"/>
+			<Connection Source="F_DIV_6.OUT" Destination="F_REAL_TO_LREAL_2.IN" dx1="286.67"/>
+			<Connection Source="F_REAL_TO_LREAL_2.OUT" Destination="F_MIN_1.IN2" dx1="80" dx2="80" dy="800"/>
 		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
