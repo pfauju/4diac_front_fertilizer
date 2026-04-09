@@ -226,37 +226,11 @@
 				<Object JVS-ID="3012"/>
 			</Objects>
 		</Component>
-		<Component ID="410440000" Class="CGroup" Name="Group">
-			<PropertySheets>
-				<PropertySheet Name="General">
-					<Property Name="ZOrder">
-						<Value>4</Value>
-					</Property>
-				</PropertySheet>
-				<PropertySheet Name="Proxy">
-					<Property Name="Top">
-						<Value>206</Value>
-					</Property>
-					<Property Name="Left">
-						<Value>242</Value>
-					</Property>
-					<Property Name="Transform">
-						<Value>(1.0000000000000000)(0.0000000000000000)(242.0000000000000000)(0.0000000000000000)(1.0000000000000000)(206.0000000000000000)</Value>
-					</Property>
-					<Property Name="ReferencedObjectForMask">
-						<Value>-1</Value>
-					</Property>
-				</PropertySheet>
-			</PropertySheets>
-			<Objects>
-				<Object JVS-ID="3011"/>
-			</Objects>
-		</Component>
 		<Component ID="963607436" Class="CButton" Name="Button">
 			<PropertySheets>
 				<PropertySheet Name="General">
 					<Property Name="ZOrder">
-						<Value>5</Value>
+						<Value>4</Value>
 					</Property>
 				</PropertySheet>
 				<PropertySheet Name="Proxy">
@@ -282,7 +256,7 @@
 			<PropertySheets>
 				<PropertySheet Name="General">
 					<Property Name="ZOrder">
-						<Value>6</Value>
+						<Value>5</Value>
 					</Property>
 				</PropertySheet>
 				<PropertySheet Name="Proxy">
@@ -302,6 +276,32 @@
 			</PropertySheets>
 			<Objects>
 				<Object JVS-ID="3014"/>
+			</Objects>
+		</Component>
+		<Component ID="177977121" Class="CGroup" Name="Group">
+			<PropertySheets>
+				<PropertySheet Name="General">
+					<Property Name="ZOrder">
+						<Value>6</Value>
+					</Property>
+				</PropertySheet>
+				<PropertySheet Name="Proxy">
+					<Property Name="Top">
+						<Value>206</Value>
+					</Property>
+					<Property Name="Left">
+						<Value>242</Value>
+					</Property>
+					<Property Name="Transform">
+						<Value>(1.0000000000000000)(0.0000000000000000)(242.0000000000000000)(0.0000000000000000)(1.0000000000000000)(206.0000000000000000)</Value>
+					</Property>
+					<Property Name="ReferencedObjectForMask">
+						<Value>-1</Value>
+					</Property>
+				</PropertySheet>
+			</PropertySheets>
+			<Objects>
+				<Object JVS-ID="3001"/>
 			</Objects>
 		</Component>
 	</Components>

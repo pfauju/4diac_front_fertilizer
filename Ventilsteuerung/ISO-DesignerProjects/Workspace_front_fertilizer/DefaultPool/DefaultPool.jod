@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <JetViewSoft-DefaultObjects Version="3.0" ProductVersion="5.7.1.6514" RelatedObjectPool=".\DefaultPool.jop">
 	<Objects>
-		<Object Class="CButton">
-			<Objects>
-				<Object Class="CFontStyle" JVS-ID="23001" ObjectName="FontAttributes_23001"/>
-			</Objects>
-		</Object>
 		<Object Class="CInputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21005" ObjectName="NumberVariable_engine_speed_manuel"/>
+				<Object Class="CNumberVariable" JVS-ID="21000" ObjectName="NumberVariable_normal_speed"/>
+				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
+			</Objects>
+		</Object>
+		<Object Class="CInputText">
+			<Objects>
 				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>
 		<Object Class="COutputNumber">
 			<Objects>
-				<Object Class="CNumberVariable" JVS-ID="21003" ObjectName="NumberVariable_target_quantity_calibration_run"/>
+				<Object Class="CNumberVariable" JVS-ID="21016" ObjectName="NumberVariable_flow_factor"/>
 				<Object Class="CFontStyle" JVS-ID="23011" ObjectName="FontAttributes_main_boxes"/>
 			</Objects>
 		</Object>

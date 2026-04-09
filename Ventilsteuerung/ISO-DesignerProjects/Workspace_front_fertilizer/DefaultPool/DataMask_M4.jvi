@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<JetView-Document Version="1" ObjectPoolVersion="3.0" ProductVersion="5.7.1.6514">
+<JetView-Document Version="6" ObjectPoolVersion="3.0" ProductVersion="5.7.1.6514">
 	<PropertySheets>
 		<PropertySheet Name="General">
 			<Property Name="ObjectID">
@@ -157,13 +157,13 @@
 				</PropertySheet>
 				<PropertySheet Name="Proxy">
 					<Property Name="Top">
-						<Value>160.033333</Value>
+						<Value>155.03334</Value>
 					</Property>
 					<Property Name="Left">
-						<Value>65.454545</Value>
+						<Value>299.454544</Value>
 					</Property>
 					<Property Name="Transform">
-						<Value>(1.0000000000000000)(0.0000000000000000)(65.4545454545454390)(0.0000000000000000)(1.0000000000000000)(160.0333333333333314)</Value>
+						<Value>(1.0000000000000000)(0.0000000000000000)(299.4545440673828125)(0.0000000000000000)(1.0000000000000000)(155.0333404541015625)</Value>
 					</Property>
 					<Property Name="ReferencedObjectForMask">
 						<Value>-1</Value>
@@ -183,13 +183,13 @@
 				</PropertySheet>
 				<PropertySheet Name="Proxy">
 					<Property Name="Top">
-						<Value>159</Value>
+						<Value>267</Value>
 					</Property>
 					<Property Name="Left">
-						<Value>248</Value>
+						<Value>149</Value>
 					</Property>
 					<Property Name="Transform">
-						<Value>(1.0000000000000000)(0.0000000000000000)(248.0000000000000000)(0.0000000000000000)(1.0000000000000000)(159.0000000000000000)</Value>
+						<Value>(1.0000000000000000)(0.0000000000000000)(149.0000000000000000)(0.0000000000000000)(1.0000000000000000)(267.0000000000000000)</Value>
 					</Property>
 					<Property Name="ReferencedObjectForMask">
 						<Value>-1</Value>
@@ -278,7 +278,7 @@
 				<Object JVS-ID="11038"/>
 			</Objects>
 		</Component>
-		<Component ID="305773050" Class="CGroup" Name="Group">
+		<Component ID="42399585" Class="CButton" Name="Button">
 			<PropertySheets>
 				<PropertySheet Name="General">
 					<Property Name="ZOrder">
@@ -287,13 +287,13 @@
 				</PropertySheet>
 				<PropertySheet Name="Proxy">
 					<Property Name="Top">
-						<Value>242</Value>
+						<Value>227</Value>
 					</Property>
 					<Property Name="Left">
-						<Value>129</Value>
+						<Value>291</Value>
 					</Property>
 					<Property Name="Transform">
-						<Value>(1.0000000000000000)(0.0000000000000000)(129.0000000000000000)(0.0000000000000000)(1.0000000000000000)(242.0000000000000000)</Value>
+						<Value>(1.0000000000000000)(0.0000000000000000)(291.0000000000000000)(0.0000000000000000)(1.0000000000000000)(227.0000000000000000)</Value>
 					</Property>
 					<Property Name="ReferencedObjectForMask">
 						<Value>-1</Value>
@@ -301,7 +301,85 @@
 				</PropertySheet>
 			</PropertySheets>
 			<Objects>
-				<Object JVS-ID="3009"/>
+				<Object JVS-ID="6011"/>
+			</Objects>
+		</Component>
+		<Component ID="154108864" Class="CInputNumber" Name="Edit">
+			<PropertySheets>
+				<PropertySheet Name="General">
+					<Property Name="ZOrder">
+						<Value>7</Value>
+					</Property>
+				</PropertySheet>
+				<PropertySheet Name="Proxy">
+					<Property Name="Top">
+						<Value>192</Value>
+					</Property>
+					<Property Name="Left">
+						<Value>270</Value>
+					</Property>
+					<Property Name="Transform">
+						<Value>(1.0000000000000000)(0.0000000000000000)(270.0000000000000000)(0.0000000000000000)(1.0000000000000000)(192.0000000000000000)</Value>
+					</Property>
+					<Property Name="ReferencedObjectForMask">
+						<Value>-1</Value>
+					</Property>
+				</PropertySheet>
+			</PropertySheets>
+			<Objects>
+				<Object JVS-ID="9009"/>
+			</Objects>
+		</Component>
+		<Component ID="309337600" Class="COutputText" Name="Text">
+			<PropertySheets>
+				<PropertySheet Name="General">
+					<Property Name="ZOrder">
+						<Value>8</Value>
+					</Property>
+				</PropertySheet>
+				<PropertySheet Name="Proxy">
+					<Property Name="Top">
+						<Value>193</Value>
+					</Property>
+					<Property Name="Left">
+						<Value>62</Value>
+					</Property>
+					<Property Name="Transform">
+						<Value>(1.0000000000000000)(0.0000000000000000)(62.0000000000000000)(0.0000000000000000)(1.0000000000000000)(193.0000000000000000)</Value>
+					</Property>
+					<Property Name="ReferencedObjectForMask">
+						<Value>-1</Value>
+					</Property>
+				</PropertySheet>
+			</PropertySheets>
+			<Objects>
+				<Object JVS-ID="11041"/>
+			</Objects>
+		</Component>
+		<Component ID="295988526" Class="COutputText" Name="Text">
+			<PropertySheets>
+				<PropertySheet Name="General">
+					<Property Name="ZOrder">
+						<Value>9</Value>
+					</Property>
+				</PropertySheet>
+				<PropertySheet Name="Proxy">
+					<Property Name="Top">
+						<Value>191</Value>
+					</Property>
+					<Property Name="Left">
+						<Value>332</Value>
+					</Property>
+					<Property Name="Transform">
+						<Value>(1.0000000000000000)(0.0000000000000000)(332.0000000000000000)(0.0000000000000000)(1.0000000000000000)(191.0000000000000000)</Value>
+					</Property>
+					<Property Name="ReferencedObjectForMask">
+						<Value>-1</Value>
+					</Property>
+				</PropertySheet>
+			</PropertySheets>
+			<Objects>
+				<Object JVS-ID="11042"/>
 			</Objects>
 		</Component>
 	</Components>

@@ -23,9 +23,8 @@
         <VarDeclaration Name="DataMask_M2" Type="UINT" Comment="" InitialValue="1003"/>
         <VarDeclaration Name="DataMask_M5" Type="UINT" Comment="" InitialValue="1004"/>
         <VarDeclaration Name="Container_M1_weight" Type="UINT" Comment="" InitialValue="3000"/>
-        <VarDeclaration Name="Container_M3_radar_speed" Type="UINT" Comment="" InitialValue="3001"/>
+        <VarDeclaration Name="Container_W1_flow_factor_old" Type="UINT" Comment="" InitialValue="3001"/>
         <VarDeclaration Name="Container_M1_speed" Type="UINT" Comment="" InitialValue="3002"/>
-        <VarDeclaration Name="Container_M3_wheel_speed" Type="UINT" Comment="" InitialValue="3003"/>
         <VarDeclaration Name="Container_W1_actual_quantity" Type="UINT" Comment="" InitialValue="3004"/>
         <VarDeclaration Name="Container_M1_percent" Type="UINT" Comment="" InitialValue="3005"/>
         <VarDeclaration Name="Container_M1_kg_ha" Type="UINT" Comment="" InitialValue="3006"/>
@@ -33,7 +32,6 @@
         <VarDeclaration Name="Container_W1_flow_factor" Type="UINT" Comment="" InitialValue="3008"/>
         <VarDeclaration Name="Container_M1_electric_motor" Type="UINT" Comment="" InitialValue="3009"/>
         <VarDeclaration Name="Container_W1_target_quantity" Type="UINT" Comment="" InitialValue="3010"/>
-        <VarDeclaration Name="Container_W1_engine_speed_percent" Type="UINT" Comment="" InitialValue="3011"/>
         <VarDeclaration Name="Container_W1_engine_speed_rpm" Type="UINT" Comment="" InitialValue="3012"/>
         <VarDeclaration Name="Container_M2_target_quantity" Type="UINT" Comment="" InitialValue="3013"/>
         <VarDeclaration Name="Container_W1_header" Type="UINT" Comment="" InitialValue="3014"/>
@@ -74,16 +72,17 @@
         <VarDeclaration Name="SoftKey_5026" Type="UINT" Comment="" InitialValue="5026"/>
         <VarDeclaration Name="SoftKey_5027" Type="UINT" Comment="" InitialValue="5027"/>
         <VarDeclaration Name="Button_M1_reset" Type="UINT" Comment="" InitialValue="6000"/>
-        <VarDeclaration Name="Button_M3_radar_speed_select" Type="UINT" Comment="" InitialValue="6001"/>
+        <VarDeclaration Name="Button_6001" Type="UINT" Comment="" InitialValue="6001"/>
         <VarDeclaration Name="Button_M4_manuel_start" Type="UINT" Comment="" InitialValue="6002"/>
-        <VarDeclaration Name="Button_M3_wheel_speed_select" Type="UINT" Comment="" InitialValue="6003"/>
+        <VarDeclaration Name="Button_M1_restart" Type="UINT" Comment="" InitialValue="6003"/>
         <VarDeclaration Name="Button_M4_manuel_stop" Type="UINT" Comment="" InitialValue="6004"/>
         <VarDeclaration Name="Button_6005" Type="UINT" Comment="" InitialValue="6005"/>
         <VarDeclaration Name="Button_6006" Type="UINT" Comment="" InitialValue="6006"/>
         <VarDeclaration Name="Button_W1_stop" Type="UINT" Comment="" InitialValue="6007"/>
         <VarDeclaration Name="Button_M1_refresh" Type="UINT" Comment="" InitialValue="6008"/>
-        <VarDeclaration Name="Button_6009" Type="UINT" Comment="" InitialValue="6009"/>
+        <VarDeclaration Name="Button_W1_accept" Type="UINT" Comment="" InitialValue="6009"/>
         <VarDeclaration Name="Button_M2_start" Type="UINT" Comment="" InitialValue="6010"/>
+        <VarDeclaration Name="Button_M4_auto" Type="UINT" Comment="" InitialValue="6011"/>
         <VarDeclaration Name="Button_M2_calibration_area_1a" Type="UINT" Comment="" InitialValue="6013"/>
         <VarDeclaration Name="Button_M2_calibration_area_5a" Type="UINT" Comment="" InitialValue="6014"/>
         <VarDeclaration Name="Button_M2_calibration_area_10a" Type="UINT" Comment="" InitialValue="6015"/>
@@ -93,31 +92,33 @@
         <VarDeclaration Name="InputNumber_M2_flow_factor" Type="UINT" Comment="" InitialValue="9003"/>
         <VarDeclaration Name="InputNumber_9004" Type="UINT" Comment="" InitialValue="9004"/>
         <VarDeclaration Name="InputNumber_M4_motor_speed" Type="UINT" Comment="" InitialValue="9005"/>
+        <VarDeclaration Name="InputNumber_M3_speed" Type="UINT" Comment="" InitialValue="9006"/>
+        <VarDeclaration Name="InputNumber_M4_auto" Type="UINT" Comment="" InitialValue="9009"/>
         <VarDeclaration Name="OutputString_M3_radar_speed_kmh" Type="UINT" Comment="" InitialValue="11000"/>
-        <VarDeclaration Name="OutputString_M1_settings_header" Type="UINT" Comment="" InitialValue="11001"/>
+        <VarDeclaration Name="OutputString_M3_settings_header" Type="UINT" Comment="" InitialValue="11001"/>
         <VarDeclaration Name="OutputString_M1_kg_ha" Type="UINT" Comment="" InitialValue="11002"/>
         <VarDeclaration Name="OutputString_M1_filllevel" Type="UINT" Comment="" InitialValue="11003"/>
         <VarDeclaration Name="OutputString_W1_actual_quantity_g" Type="UINT" Comment="" InitialValue="11004"/>
-        <VarDeclaration Name="OutputString_M3_radar_speed_header" Type="UINT" Comment="" InitialValue="11005"/>
-        <VarDeclaration Name="OutputString_11006" Type="UINT" Comment="" InitialValue="11006"/>
+        <VarDeclaration Name="OutputString_W1_target_quantity_g" Type="UINT" Comment="" InitialValue="11005"/>
+        <VarDeclaration Name="OutputString_W1_accept" Type="UINT" Comment="" InitialValue="11006"/>
         <VarDeclaration Name="OutputString_M4_debug" Type="UINT" Comment="" InitialValue="11007"/>
         <VarDeclaration Name="OutputString_M1_header" Type="UINT" Comment="" InitialValue="11008"/>
         <VarDeclaration Name="OutputString_M2_header" Type="UINT" Comment="" InitialValue="11009"/>
         <VarDeclaration Name="OutputString_M1_reset" Type="UINT" Comment="" InitialValue="11010"/>
-        <VarDeclaration Name="OutputString_M3_radar_speed_x" Type="UINT" Comment="" InitialValue="11011"/>
+        <VarDeclaration Name="OutputString_W1_flow_factor_g_U" Type="UINT" Comment="" InitialValue="11011"/>
         <VarDeclaration Name="OutputString_SK_start" Type="UINT" Comment="" InitialValue="11012"/>
         <VarDeclaration Name="OutputString_SK_stop" Type="UINT" Comment="" InitialValue="11013"/>
         <VarDeclaration Name="OutputString_M1_weight" Type="UINT" Comment="" InitialValue="11014"/>
         <VarDeclaration Name="OutputString_M1_percent" Type="UINT" Comment="" InitialValue="11015"/>
         <VarDeclaration Name="OutputString_M1_electric_motor" Type="UINT" Comment="" InitialValue="11016"/>
-        <VarDeclaration Name="OutputString_11017" Type="UINT" Comment="" InitialValue="11017"/>
-        <VarDeclaration Name="OutputString_M3_wheel_speed_kmh" Type="UINT" Comment="" InitialValue="11018"/>
-        <VarDeclaration Name="OutputString_M3_wheel_speed_header" Type="UINT" Comment="" InitialValue="11019"/>
-        <VarDeclaration Name="OutputString_M3_wheel_speed_x" Type="UINT" Comment="" InitialValue="11020"/>
+        <VarDeclaration Name="OutputString_M4_start" Type="UINT" Comment="" InitialValue="11017"/>
+        <VarDeclaration Name="OutputString_W1_flow_factor_old" Type="UINT" Comment="" InitialValue="11018"/>
+        <VarDeclaration Name="OutputString_M3_speed" Type="UINT" Comment="" InitialValue="11019"/>
+        <VarDeclaration Name="OutputString_flow_factor_old_g_U" Type="UINT" Comment="" InitialValue="11020"/>
         <VarDeclaration Name="OutputString_W1_actual_quantity_header" Type="UINT" Comment="" InitialValue="11021"/>
         <VarDeclaration Name="OutputString_W1_flow_factor" Type="UINT" Comment="" InitialValue="11022"/>
         <VarDeclaration Name="OutputString_W1_target_quantity" Type="UINT" Comment="" InitialValue="11023"/>
-        <VarDeclaration Name="OutputString_W1_engine_speed_percent" Type="UINT" Comment="" InitialValue="11024"/>
+        <VarDeclaration Name="OutputString_W1_flow_factor_old_old" Type="UINT" Comment="" InitialValue="11024"/>
         <VarDeclaration Name="OutputString_W1_engine_speed_rpm" Type="UINT" Comment="" InitialValue="11025"/>
         <VarDeclaration Name="OutputString_M2_target_quantity_kg" Type="UINT" Comment="" InitialValue="11026"/>
         <VarDeclaration Name="OutputString_W1_header" Type="UINT" Comment="" InitialValue="11027"/>
@@ -132,15 +133,18 @@
         <VarDeclaration Name="OutputString_M2_calibration_area_10a" Type="UINT" Comment="" InitialValue="11036"/>
         <VarDeclaration Name="OutputString_M4_manuel" Type="UINT" Comment="" InitialValue="11037"/>
         <VarDeclaration Name="OutputString_M4_engine_speed_manuel" Type="UINT" Comment="" InitialValue="11038"/>
+        <VarDeclaration Name="OutputString_M4_auto" Type="UINT" Comment="" InitialValue="11039"/>
+        <VarDeclaration Name="OutputString_M2_flow_factor_g_U" Type="UINT" Comment="" InitialValue="11040"/>
+        <VarDeclaration Name="OutputString_M4_speed_auto" Type="UINT" Comment="" InitialValue="11041"/>
+        <VarDeclaration Name="OutputString_M4_rpm" Type="UINT" Comment="" InitialValue="11042"/>
+        <VarDeclaration Name="OutputString_W1_flow_factor_new" Type="UINT" Comment="" InitialValue="11043"/>
         <VarDeclaration Name="OutputNumber_W1_flow_factor" Type="UINT" Comment="" InitialValue="12000"/>
-        <VarDeclaration Name="OutputNumber_M3_radar_speed" Type="UINT" Comment="" InitialValue="12002"/>
+        <VarDeclaration Name="OutputNumber_W1_flow_factor_old" Type="UINT" Comment="" InitialValue="12001"/>
         <VarDeclaration Name="OutputNumber_M1_speed" Type="UINT" Comment="" InitialValue="12003"/>
         <VarDeclaration Name="OutputNumber_M1_percent" Type="UINT" Comment="" InitialValue="12004"/>
         <VarDeclaration Name="OutputNumber_M1_weight" Type="UINT" Comment="" InitialValue="12007"/>
         <VarDeclaration Name="OutputNumber_M1_electric_motor" Type="UINT" Comment="" InitialValue="12009"/>
-        <VarDeclaration Name="OutputNumber_M3_wheel_speed" Type="UINT" Comment="" InitialValue="12010"/>
         <VarDeclaration Name="OutputNumber_W1_target_quantity" Type="UINT" Comment="" InitialValue="12011"/>
-        <VarDeclaration Name="OutputNumber_W1_engine_speed_percent" Type="UINT" Comment="" InitialValue="12012"/>
         <VarDeclaration Name="OutputNumber_W1_engine_speed_rpm" Type="UINT" Comment="" InitialValue="12013"/>
         <VarDeclaration Name="OutputNumber_12014" Type="UINT" Comment="" InitialValue="12014"/>
         <VarDeclaration Name="Line_13000" Type="UINT" Comment="" InitialValue="13000"/>
@@ -150,13 +154,11 @@
         <VarDeclaration Name="Rectangle_M1_filllevel" Type="UINT" Comment="" InitialValue="14003"/>
         <VarDeclaration Name="Rectangle_M1_weight" Type="UINT" Comment="" InitialValue="14004"/>
         <VarDeclaration Name="Rectangle_M1_electric_motor" Type="UINT" Comment="" InitialValue="14005"/>
-        <VarDeclaration Name="Rectangle_M3_radar_speed" Type="UINT" Comment="" InitialValue="14007"/>
-        <VarDeclaration Name="Rectangle_M3_wheel_speed" Type="UINT" Comment="" InitialValue="14008"/>
+        <VarDeclaration Name="Rectangle_W1_flow_factor_old" Type="UINT" Comment="" InitialValue="14006"/>
         <VarDeclaration Name="Rectangle_M2_target_quantity" Type="UINT" Comment="" InitialValue="14009"/>
         <VarDeclaration Name="Rectangle_W1_actual_quantity" Type="UINT" Comment="" InitialValue="14010"/>
         <VarDeclaration Name="Rectangle_W1_flow_factor" Type="UINT" Comment="" InitialValue="14011"/>
         <VarDeclaration Name="Rectangle_W1_target_quantity" Type="UINT" Comment="" InitialValue="14012"/>
-        <VarDeclaration Name="Rectangle_W1_engine_speed_percent" Type="UINT" Comment="" InitialValue="14013"/>
         <VarDeclaration Name="Rectangle_W1_engine_speed_rpm" Type="UINT" Comment="" InitialValue="14014"/>
         <VarDeclaration Name="Rectangle_W1_header" Type="UINT" Comment="" InitialValue="14015"/>
         <VarDeclaration Name="Rectangle_M2_flow_factor" Type="UINT" Comment="" InitialValue="14016"/>
@@ -164,7 +166,7 @@
         <VarDeclaration Name="weight_W1_actual_quantity" Type="UINT" Comment="" InitialValue="20000"/>
         <VarDeclaration Name="_100_percent_softkeys" Type="UINT" Comment="" InitialValue="20001"/>
         <VarDeclaration Name="debug_softkeys" Type="UINT" Comment="" InitialValue="20002"/>
-        <VarDeclaration Name="Tractor_ground_speed_M3_radar_speed" Type="UINT" Comment="" InitialValue="20003"/>
+        <VarDeclaration Name="fertilzier_bin_W1_flow_factor_old" Type="UINT" Comment="" InitialValue="20003"/>
         <VarDeclaration Name="plus_percent_softkeys" Type="UINT" Comment="" InitialValue="20004"/>
         <VarDeclaration Name="minus_percent_softkeys" Type="UINT" Comment="" InitialValue="20005"/>
         <VarDeclaration Name="fertilzier_bin_softkeys" Type="UINT" Comment="" InitialValue="20006"/>
@@ -172,42 +174,40 @@
         <VarDeclaration Name="settings_softkeys" Type="UINT" Comment="" InitialValue="20008"/>
         <VarDeclaration Name="Picture_Tractor_forward_side_M1_speed" Type="UINT" Comment="" InitialValue="20009"/>
         <VarDeclaration Name="Picturere_Graphic_refresh" Type="UINT" Comment="" InitialValue="20010"/>
+        <VarDeclaration Name="Picture_Graphic_restart" Type="UINT" Comment="" InitialValue="20011"/>
         <VarDeclaration Name="Picture_fertilzier_bin_empty_M1_filllevel" Type="UINT" Comment="" InitialValue="20012"/>
         <VarDeclaration Name="Picture_M1_weight" Type="UINT" Comment="" InitialValue="20013"/>
         <VarDeclaration Name="Picture_application_rate_per_area_M1_kg_ha" Type="UINT" Comment="" InitialValue="20014"/>
         <VarDeclaration Name="Picture_application_rate_per_area_M1_percent" Type="UINT" Comment="" InitialValue="20015"/>
         <VarDeclaration Name="Picture_fertilzier_bin_full_M1_filllevel" Type="UINT" Comment="" InitialValue="20016"/>
         <VarDeclaration Name="Picture_M1_electric_motor" Type="UINT" Comment="" InitialValue="20018"/>
-        <VarDeclaration Name="Tractor_wheel_slip_M3_wheel_speed" Type="UINT" Comment="" InitialValue="20021"/>
         <VarDeclaration Name="fertilzier_bin_W1_flow_factor" Type="UINT" Comment="" InitialValue="20026"/>
         <VarDeclaration Name="weight_W1_target_quantity" Type="UINT" Comment="" InitialValue="20028"/>
-        <VarDeclaration Name="Electric_motor_W1_engine_speed_percent" Type="UINT" Comment="" InitialValue="20029"/>
         <VarDeclaration Name="Electric_motor_W1_engine_speed_rpm" Type="UINT" Comment="" InitialValue="20030"/>
         <VarDeclaration Name="weight_20031" Type="UINT" Comment="" InitialValue="20031"/>
         <VarDeclaration Name="application_rate_per_area_M2_target_quantity" Type="UINT" Comment="" InitialValue="20037"/>
         <VarDeclaration Name="application_rate_per_area_20039" Type="UINT" Comment="" InitialValue="20039"/>
         <VarDeclaration Name="fertilzier_bin_M2_flow_factor" Type="UINT" Comment="" InitialValue="20040"/>
         <VarDeclaration Name="fertilzier_bin_20041" Type="UINT" Comment="" InitialValue="20041"/>
-        <VarDeclaration Name="NumberVariable_engine_speed_percent" Type="UINT" Comment="" InitialValue="21000"/>
-        <VarDeclaration Name="NumberVariable_Ground_based_machine_speed" Type="UINT" Comment="" InitialValue="21001"/>
+        <VarDeclaration Name="NumberVariable_normal_speed" Type="UINT" Comment="" InitialValue="21000"/>
         <VarDeclaration Name="NumberVariable_bool_selected_speed" Type="UINT" Comment="" InitialValue="21002"/>
         <VarDeclaration Name="NumberVariable_target_quantity_calibration_run" Type="UINT" Comment="" InitialValue="21003"/>
         <VarDeclaration Name="NumberVariable_selected_speed" Type="UINT" Comment="" InitialValue="21004"/>
         <VarDeclaration Name="NumberVariable_engine_speed_manuel" Type="UINT" Comment="" InitialValue="21005"/>
         <VarDeclaration Name="NumberVariable_weight" Type="UINT" Comment="" InitialValue="21006"/>
+        <VarDeclaration Name="NumberVariable_rpm" Type="UINT" Comment="" InitialValue="21007"/>
         <VarDeclaration Name="NumberVariable_application_rate_percent" Type="UINT" Comment="" InitialValue="21008"/>
-        <VarDeclaration Name="NumberVariable_Wheel_based_machine_speed" Type="UINT" Comment="" InitialValue="21011"/>
+        <VarDeclaration Name="NumberVariable_manuel_auto_speed" Type="UINT" Comment="" InitialValue="21010"/>
         <VarDeclaration Name="NumberVariable_flow_factor_new" Type="UINT" Comment="" InitialValue="21012"/>
         <VarDeclaration Name="NumberVariable_target_quantity" Type="UINT" Comment="" InitialValue="21013"/>
         <VarDeclaration Name="NumberVariable_W1_actual_quantity" Type="UINT" Comment="" InitialValue="21014"/>
-        <VarDeclaration Name="NumberVariable_engine_speed_rpm" Type="UINT" Comment="" InitialValue="21015"/>
         <VarDeclaration Name="NumberVariable_flow_factor" Type="UINT" Comment="" InitialValue="21016"/>
         <VarDeclaration Name="NumberVariable_application_rate_percent_old" Type="UINT" Comment="" InitialValue="21018"/>
         <VarDeclaration Name="StringVariable_calibration_run" Type="UINT" Comment="" InitialValue="22000"/>
         <VarDeclaration Name="FontAttributes_23000" Type="UINT" Comment="" InitialValue="23000"/>
-        <VarDeclaration Name="FontAttributes_23001" Type="UINT" Comment="" InitialValue="23001"/>
         <VarDeclaration Name="FontAttributes_Header" Type="UINT" Comment="" InitialValue="23002"/>
         <VarDeclaration Name="FontAttributes_WindowMask" Type="UINT" Comment="" InitialValue="23003"/>
+        <VarDeclaration Name="FontAttributes_23005" Type="UINT" Comment="" InitialValue="23005"/>
         <VarDeclaration Name="FontAttributes_reset" Type="UINT" Comment="" InitialValue="23009"/>
         <VarDeclaration Name="FontAttributes_string_start_stop_button" Type="UINT" Comment="" InitialValue="23010"/>
         <VarDeclaration Name="FontAttributes_main_boxes" Type="UINT" Comment="" InitialValue="23011"/>
@@ -218,17 +218,17 @@
         <VarDeclaration Name="LineAttributes_24002" Type="UINT" Comment="" InitialValue="24002"/>
         <VarDeclaration Name="LineAttributes_24003" Type="UINT" Comment="" InitialValue="24003"/>
         <VarDeclaration Name="LineAttributes_24004" Type="UINT" Comment="" InitialValue="24004"/>
+        <VarDeclaration Name="LineAttributes_24005" Type="UINT" Comment="" InitialValue="24005"/>
         <VarDeclaration Name="LineAttributes_24006" Type="UINT" Comment="" InitialValue="24006"/>
         <VarDeclaration Name="LineAttributes_24007" Type="UINT" Comment="" InitialValue="24007"/>
-        <VarDeclaration Name="LineAttributes_24008" Type="UINT" Comment="" InitialValue="24008"/>
         <VarDeclaration Name="LineAttributes_24009" Type="UINT" Comment="" InitialValue="24009"/>
         <VarDeclaration Name="LineAttributes_24010" Type="UINT" Comment="" InitialValue="24010"/>
         <VarDeclaration Name="LineAttributes_24011" Type="UINT" Comment="" InitialValue="24011"/>
-        <VarDeclaration Name="LineAttributes_24012" Type="UINT" Comment="" InitialValue="24012"/>
         <VarDeclaration Name="LineAttributes_24013" Type="UINT" Comment="" InitialValue="24013"/>
         <VarDeclaration Name="LineAttributes_24014" Type="UINT" Comment="" InitialValue="24014"/>
         <VarDeclaration Name="LineAttributes_24015" Type="UINT" Comment="" InitialValue="24015"/>
         <VarDeclaration Name="LineAttributes_24016" Type="UINT" Comment="" InitialValue="24016"/>
+        <VarDeclaration Name="FillAttributes_25000" Type="UINT" Comment="" InitialValue="25000"/>
         <VarDeclaration Name="FillAttributes_main_colour" Type="UINT" Comment="" InitialValue="25011"/>
         <VarDeclaration Name="FillAttributes_new_holland_blue" Type="UINT" Comment="" InitialValue="25012"/>
     </GlobalConstants>
